@@ -28,7 +28,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header-img.png'), lightgray 50% / cover no-repeat;
+  background: url('../asset/header-img.png'), lightgray 50% / cover no-repeat;
 }
 .top {
   display: flex;
