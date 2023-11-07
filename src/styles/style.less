@@ -14,9 +14,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    font-style: normal;
-    // font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 
 * {
@@ -31,13 +29,17 @@ body {
 
 a {
     color: inherit;
+    font-size: inherit;
     text-decoration: none;
 }
 
 .header-font() {
     color: @white;
     font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
     line-height: 142%;
+    letter-spacing: normal;
     word-wrap: break-word;
 }
 
@@ -75,7 +77,6 @@ a {
         font-size: 96px;
         font-weight: 700;
         line-height: 109%;
-        letter-spacing: 1.92px;
     }
 
     &__description{
@@ -95,6 +96,7 @@ a {
     &__button > a {
         color: @black;
         font-size: 17px;
+        line-height: 142%;
         letter-spacing: -0.17px;
     }
 }
