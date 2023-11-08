@@ -14,6 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 135px;
+  background-color: #F9F7F4;
 }
 a {
   color: inherit;
@@ -35,7 +36,7 @@ a {
   align-items: center;
   background: url('../asset/header-img.png'), lightgray 50% / cover no-repeat;
 }
-.top {
+.head-top {
   display: flex;
   width: 1920px;
   height: 88px;
@@ -43,7 +44,7 @@ a {
   align-items: center;
   gap: 214px;
 }
-.bottom {
+.head-bottom {
   display: flex;
   width: 1920px;
   height: 743px;
@@ -52,18 +53,18 @@ a {
   align-items: center;
   gap: 50px;
 }
-.bottom__title {
+.head-bottom__title {
   width: 768px;
   text-align: center;
   font-size: 96px;
   font-weight: 700;
   line-height: 109%;
 }
-.bottom__description {
+.head-bottom__description {
   width: 562px;
   text-align: center;
 }
-.bottom__button {
+.head-bottom__button {
   display: flex;
   padding: 5px 20px;
   align-items: center;
@@ -71,22 +72,108 @@ a {
   border-radius: 10px;
   background: white;
 }
-.bottom__button > a {
+.head-bottom__button > a {
   color: black;
   font-size: 17px;
   line-height: 142%;
   letter-spacing: -0.17px;
 }
-.menu {
+.head-menu {
   display: flex;
   width: 1168px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
 }
-.menu__navigation {
+.head-menu__navigation {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+}
+.block-of-tours {
+  width: 1170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.block-of-tours .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.block-of-tours .menu__title {
+  text-align: center;
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 124%;
+}
+.block-of-tours .menu__navigation {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+.block-of-tours .menu__navigation a {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+}
+.block-of-tours .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.block-of-tours .cards .card-tour {
+  color: white;
+  width: 370px;
+  height: 531px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 50px;
+}
+.block-of-tours .cards .card-tour__title {
+  margin-bottom: 16px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 122%;
+}
+.block-of-tours .cards .card-tour__price {
+  margin-bottom: auto;
+  font-size: 17px;
+  line-height: 142%;
+  letter-spacing: -0.17px;
+}
+.block-of-tours .cards .card-tour__button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.block-of-tours .cards .card-tour__button a {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+}
+.block-of-tours .cards .card-tour:nth-child(1) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-of-tours .cards .card-tour:nth-child(2) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-of-tours .cards .card-tour:nth-child(3) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-of-tours .cards .card-tour:nth-child(4) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-4.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-of-tours .cards .card-tour:nth-child(5) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-5.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-of-tours .cards .card-tour:nth-child(6) {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-6.jpg'), lightgray 50% / cover no-repeat;
 }
