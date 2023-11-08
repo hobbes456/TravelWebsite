@@ -65,7 +65,7 @@
         </div>
         <div class="cards">
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -77,7 +77,7 @@
                 </span>
             </div>
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -89,7 +89,7 @@
                 </span>
             </div>
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -101,7 +101,7 @@
                 </span>
             </div>
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -113,7 +113,7 @@
                 </span>
             </div>
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -125,7 +125,7 @@
                 </span>
             </div>
             <div class="card-tour">
-                <h3 class="card-tour__title">Путешествие в горы</h3>
+                <h3 class="card-tour__title">Путешествие <br> в горы</h3>
                 <p class="card-tour__price">от 80 000 руб</p>
                 <span class="card-tour__button">
                     <a href="#">Подробнее</a>
@@ -137,6 +137,43 @@
                 </span>
             </div>
         </div>
+    </section>
+    <section class="tour-create">
+        <div class="block-title">
+            <h2 class="block-title__title">Собери свой тур</h2>
+            <p class="block-title__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
+        </div>
+        <form class="answers" action="#" method="post">
+            <div class="item">
+                <label for="name">Имя</label>
+                <div class="item__form item__form_half-width">
+                    <input type="text" id="name" name="name" placeholder="Введите Ваше имя" required>
+                </div>
+            </div>
+            <div class="item">
+                <label for="path">Направление</label>
+                <div class="item__form item__form_half-width">
+                    <input type="text" id="path" name="path" placeholder="Куда хотите ехать" required>
+                    <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13 19.4143L4.29289 10.7072C3.90236 10.3167 3.90237 9.68351 4.29289 9.29298C4.68341 8.90246 5.31658 8.90246 5.7071 9.29298L13 16.5859L20.2929 9.29298C20.6834 8.90246 21.3166 8.90246 21.7071 9.29298C22.0976 9.68351 22.0976 10.3167 21.7071 10.7072L13 19.4143Z"
+                            fill="#1B1F2B" />
+                    </svg>
+                </div>
+            </div>
+            <div class="item">
+                <label for="email">Email</label>
+                <div class="item__form item__form_half-width">
+                    <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                </div>
+            </div>
+            <div class="item">
+                <label for="number">Телефон</label>
+                <div class="item__form item__form_half-width">
+                    <input type="tel" id="number" name="number" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                </div>
+            </div>
+        </form>
     </section>
 </body>
 </html>
