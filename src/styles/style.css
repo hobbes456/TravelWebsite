@@ -186,7 +186,9 @@ a {
   align-items: center;
   gap: 100px;
 }
-.tour-create input {
+.tour-create input,
+.tour-create textarea {
+  width: 100%;
   outline: none;
   font-size: inherit;
   color: inherit;
@@ -239,6 +241,9 @@ a {
   gap: 8px;
   flex: 1 0 0;
 }
+.tour-create .answers .item_basis {
+  flex-basis: 100%;
+}
 .tour-create .answers .item__form {
   padding: 20px;
   display: flex;
@@ -251,4 +256,9 @@ a {
 }
 .tour-create .answers .item__form_half-width {
   width: 500px;
+}
+.tour-create .answers .item .radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 31px;
 }

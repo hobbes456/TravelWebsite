@@ -266,7 +266,8 @@ a {
     align-items: center;
     gap: 100px;
 
-    input {
+    input, textarea {
+        width: 100%;
         outline: none;
         font-size: inherit;
         color: inherit;
@@ -302,16 +303,16 @@ a {
         border-radius: 50px;
         background-color: @white;
 
-        // & .item_half-width {
-        //     width: 500px;
-        // }
-
         & .item {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
             flex: 1 0 0;
+
+            &_basis {
+                flex-basis: 100%;
+            }
 
             &__form {
                 padding: 20px;
@@ -328,8 +329,12 @@ a {
                 }
             }
 
+            & .radio-buttons {
+                display: flex;
+                align-items: center;
+                gap: 31px;
+            }
+
         }
-
-
     }
 }
