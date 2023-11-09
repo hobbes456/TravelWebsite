@@ -331,6 +331,10 @@ a {
         }
     }
 
+    input[type='radio'] {
+        display: none;
+    }
+
     .radio-buttons {
         display: flex;
         justify-content: flex-start;
@@ -343,10 +347,7 @@ a {
             align-items: center;
             gap: 11px;
             cursor: pointer;
-            
-        }
-        input[type='radio'] {
-            display: none;
+
         }
         input[type="radio"]:checked~label .yes {
             display: inline-flex;

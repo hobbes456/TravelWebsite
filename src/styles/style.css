@@ -257,6 +257,9 @@ a {
 .tour-create .answers .item__form_half-width {
   width: 500px;
 }
+.tour-create input[type='radio'] {
+  display: none;
+}
 .tour-create .radio-buttons {
   display: flex;
   justify-content: flex-start;
@@ -269,9 +272,6 @@ a {
   align-items: center;
   gap: 11px;
   cursor: pointer;
-}
-.tour-create .radio-buttons input[type='radio'] {
-  display: none;
 }
 .tour-create .radio-buttons input[type="radio"]:checked ~ label .yes {
   display: inline-flex;
