@@ -27,7 +27,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('../asset/header-img.png'), lightgray 50% / cover no-repeat;
+  background: url('../asset/header/header-img.png'), lightgray 50% / cover no-repeat;
 }
 .head-top {
   display: flex;
@@ -67,21 +67,20 @@ a {
   line-height: 142%;
   color: white;
 }
-.head-bottom__button {
-  display: flex;
+.head-bottom input[type='button'] {
+  outline: none;
+  border: none;
   padding: 5px 20px;
-  align-items: center;
-  gap: 10px;
-  border-radius: 10px;
-  background: white;
-}
-.head-bottom__button > a {
   color: black;
   font-size: 17px;
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.17px;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  background: white;
 }
 .head-menu {
   color: black;
@@ -103,12 +102,12 @@ a {
   gap: 50px;
 }
 .block-of-tours {
-  width: 1170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
+  width: 1170px;
 }
 .block-of-tours .menu {
   display: flex;
@@ -183,22 +182,22 @@ a {
   color: white;
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(2) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(3) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(4) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-4.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(5) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-5.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(6) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/card\ tour\ photo-6.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.jpg'), lightgray 50% / cover no-repeat;
 }
 .block-title {
   display: flex;
@@ -226,12 +225,12 @@ a {
   color: #A6A6A6;
 }
 .block-tour-create {
-  width: 1170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
+  width: 1170px;
 }
 .block-tour-create input,
 .block-tour-create textarea {
@@ -353,12 +352,12 @@ a {
   color: #A6A6A6;
 }
 .block-reviews {
-  width: 1170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 100px;
+  width: 1170px;
 }
 .block-reviews .reviews {
   display: flex;
@@ -419,8 +418,28 @@ a {
   border-radius: 100px;
 }
 .block-reviews .card__person .logo_1 {
-  background: url('../asset/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
 }
 .block-reviews .card__person .logo_2 {
-  background: url('../asset/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+}
+.block-gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.block-gallery .gallery {
+  padding: 0px 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.block-gallery .item {
+  flex: 0 1 300;
+}
+.block-gallery .item img {
+  border-radius: 50px;
 }

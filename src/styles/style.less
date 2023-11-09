@@ -98,7 +98,7 @@ a {
     background: 
         // linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%),
         // linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
-        url('../asset/header-img.png'),
+        url('../asset/header/header-img.png'),
         lightgray 50% / cover no-repeat;
 }
 
@@ -134,17 +134,15 @@ a {
         color: @white;
     }
 
-    &__button {
-        display: flex;
+    input[type='button'] {
+        outline: none;
+        border: none;
         padding: 5px 20px;
-        align-items: center;
-        gap: 10px;
-        border-radius: 10px;
-        background: @white;
-    }
-
-    &__button > a {
         .p-small-font();
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        background: @white;
     }
 }
 
@@ -167,7 +165,6 @@ a {
 
 
 .content() {
-    width: 1170px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -177,6 +174,7 @@ a {
 
 .block-of-tours {
     .content();
+    width: 1170px;
     // background-color: lightgray;
 
     & .menu {
@@ -240,37 +238,37 @@ a {
             &:nth-child(1) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-1.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-1.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
             &:nth-child(2) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-2.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-2.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
             &:nth-child(3) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-3.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-3.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
             &:nth-child(4) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-4.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-4.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
             &:nth-child(5) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-5.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-5.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
             &:nth-child(6) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/card\ tour\ photo-6.jpg'), 
+                    url('../asset/cardstour/card\ tour\ photo-6.jpg'), 
                     lightgray 50% / cover no-repeat;
             }
         }
@@ -299,6 +297,7 @@ a {
 
 .block-tour-create {
     .content();
+    width: 1170px;
 
     input, textarea {
         width: 100%;
@@ -433,6 +432,7 @@ a {
 
 .block-reviews {
     .content();
+    width: 1170px;
 
     .reviews {
         display: flex;
@@ -486,11 +486,31 @@ a {
             border-radius: 100px;
 
             &_1 {
-                background: url('../asset/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
             }
             &_2 {
-                background: url('../asset/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
             }
+        }
+    }
+}
+
+.block-gallery {
+    .content();
+
+    .gallery {
+        padding: 0px 30px;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .item {
+        flex: 0 1 300;
+        
+        img {
+            border-radius: 50px;
         }
     }
 }
