@@ -257,8 +257,31 @@ a {
 .tour-create .answers .item__form_half-width {
   width: 500px;
 }
-.tour-create .answers .item .radio-buttons {
+.tour-create .radio-buttons {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 31px;
+}
+.tour-create .radio-buttons label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+}
+.tour-create .radio-buttons input[type='radio'] {
+  display: none;
+}
+.tour-create .radio-buttons input[type="radio"]:checked ~ label .yes {
+  display: inline-flex;
+}
+.tour-create .radio-buttons input[type="radio"]:not(:checked) ~ label .yes {
+  display: none;
+}
+.tour-create .radio-buttons input[type="radio"]:checked ~ label .no {
+  display: none;
+}
+.tour-create .radio-buttons input[type="radio"]:not(:checked) ~ label .no {
+  display: inline-flex;
 }

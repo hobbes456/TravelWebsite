@@ -328,13 +328,39 @@ a {
                     width: 500px;
                 }
             }
-
-            & .radio-buttons {
-                display: flex;
-                align-items: center;
-                gap: 31px;
-            }
-
         }
+    }
+
+    .radio-buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 31px;
+        
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 11px;
+            cursor: pointer;
+            
+        }
+        input[type='radio'] {
+            display: none;
+        }
+        input[type="radio"]:checked~label .yes {
+            display: inline-flex;
+        }
+        input[type="radio"]:not(:checked)~label .yes {
+            display: none;
+        }
+        input[type="radio"]:checked~label .no {
+            display: none;
+        }
+        input[type="radio"]:not(:checked)~label .no {
+            display: inline-flex;
+        }
+        
+
     }
 }
