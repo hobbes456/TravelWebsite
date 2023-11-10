@@ -501,16 +501,21 @@ a {
     .gallery {
         padding: 0px 30px;
         display: flex;
-        align-items: flex-start;
         flex-wrap: wrap;
         gap: 30px;
     }
 
     .item {
-        flex: 0 1 300;
-        
-        img {
-            border-radius: 50px;
+        flex: 23%;
+
+        &_flex_15 {
+            flex: 15%;
         }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50px;
     }
 }

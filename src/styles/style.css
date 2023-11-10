@@ -433,13 +433,17 @@ a {
 .block-gallery .gallery {
   padding: 0px 30px;
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   gap: 30px;
 }
 .block-gallery .item {
-  flex: 0 1 300;
+  flex: 23%;
 }
-.block-gallery .item img {
+.block-gallery .item_flex_15 {
+  flex: 15%;
+}
+.block-gallery img {
+  max-width: 100%;
+  height: auto;
   border-radius: 50px;
 }
