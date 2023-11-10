@@ -698,3 +698,37 @@ a {
         }
     }
 }
+
+.footer {
+    width: 1920px;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: @beige200;
+
+    .our-contacts {
+        width: 1168px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            .p-normal-font();
+            color: @grey300;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        a {
+            .p-normal-font();
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
