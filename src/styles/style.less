@@ -62,6 +62,14 @@
     letter-spacing: -0.17px;
 }
 
+.content() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
 @font-face {
     font-family: 'Roboto';
     src: url(../asset/fonts/Roboto-Medium.ttf);
@@ -163,19 +171,17 @@ a {
     }
 }
 
-
-.content() {
+.a-with-arrow {
+    .p-big-font();
+    color: @white;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 15px;
 }
 
 .block-of-tours {
     .content();
     width: 1170px;
-    // background-color: lightgray;
 
     & .menu {
         display: flex;
@@ -222,16 +228,6 @@ a {
             &__price {
                 margin-bottom: auto;
                 .p-small-font();
-                color: @white;
-            }
-
-            &__button {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-            }
-            &__button a {
-                .p-big-font();
                 color: @white;
             }
 
@@ -623,6 +619,16 @@ a {
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
         }
+        &_photo2 {
+            background: 
+                linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
+                url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+        }
+        &_photo3 {
+            background: 
+                linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
+                url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+        }
     }
 
     .story {
@@ -648,24 +654,17 @@ a {
     }
 
     .information {
+        width: 100%;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-
-        .card-tour__button {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            }
-        
-        .card-tour__button a {
-            .p-big-font();
-            color: @white;
-        }
 
         .social-contacts {
             .p-normal-font();
             color: @white;
+            display: flex;
+            align-items: center;
+            gap: 35px;
         }
     }
 }

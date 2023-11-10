@@ -101,6 +101,17 @@ a {
   align-items: center;
   gap: 50px;
 }
+.a-with-arrow {
+  color: black;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 122%;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .block-of-tours {
   display: flex;
   flex-direction: column;
@@ -166,19 +177,6 @@ a {
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.17px;
-  color: white;
-}
-.block-of-tours .cards .card-tour__button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.block-of-tours .cards .card-tour__button a {
-  color: black;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 122%;
   color: white;
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
@@ -551,6 +549,12 @@ a {
 .block-story .card_photo1 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
 }
+.block-story .card_photo2 {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+}
+.block-story .card_photo3 {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+}
 .block-story .story {
   width: 554px;
 }
@@ -582,22 +586,10 @@ a {
   margin-left: 30px;
 }
 .block-story .information {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-}
-.block-story .information .card-tour__button {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.block-story .information .card-tour__button a {
-  color: black;
-  font-size: 23px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 122%;
-  color: white;
 }
 .block-story .information .social-contacts {
   color: black;
@@ -606,4 +598,7 @@ a {
   font-weight: 400;
   line-height: 142%;
   color: white;
+  display: flex;
+  align-items: center;
+  gap: 35px;
 }
