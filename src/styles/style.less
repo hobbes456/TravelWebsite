@@ -501,21 +501,149 @@ a {
     .gallery {
         padding: 0px 30px;
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 30px;
     }
 
     .item {
-        flex: 23%;
+        width: 442.5px;
+        height: 301px;
+        border-radius: 50px;
 
-        &_flex_15 {
-            flex: 15%;
+        &__small {
+            width: 348px;
+        }
+
+        &__photo-1 {
+            background-image: url('../asset/travelphoto/travel\ photo-1.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-2 {
+            background-image: url('../asset/travelphoto/travel\ photo-2.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-3 {
+            background-image: url('../asset/travelphoto/travel\ photo-3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-4 {
+            background-image: url('../asset/travelphoto/travel\ photo-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-5 {
+            background-image: url('../asset/travelphoto/travel\ photo-5.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-6 {
+            background-image: url('../asset/travelphoto/travel\ photo-6.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-7 {
+            background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-8 {
+            background-image: url('../asset/travelphoto/travel\ photo-8.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-9 {
+            background-image: url('../asset/travelphoto/travel\ photo-9.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-10 {
+            background-image: url('../asset/travelphoto/travel\ photo-10.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-11 {
+            background-image: url('../asset/travelphoto/travel\ photo-11.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-12 {
+            background-image: url('../asset/travelphoto/travel\ photo-12.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__photo-13 {
+            background-image: url('../asset/travelphoto/travel\ photo-13.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.block-story {
+    .content();
+    width: 1170px;
+
+    .story-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 1170px;
+        height: 567px;
+        padding: 60px;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-shrink: 0;
+        border-radius: 50px;
+
+        &_photo1 {
+            background: 
+                linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
+                url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
         }
     }
 
-    img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 50px;
+    .story {
+        width: 554px;
+
+        &__title {
+            .h3-font();
+            color: @white;
+            margin-bottom: 37px;
+        }
+
+        &__description {
+            .p-normal-font();
+            color: @white;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            .p-normal-font();
+            color: @white;
+            margin-left: 30px;
+        }
     }
 }
