@@ -198,12 +198,30 @@ a {
 
 }
 
-.a-with-arrow {
+button[type='button'] {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+button[type='button']:hover {
+    background-color: @green400;
+    border-radius: 50px;
+}
+button[type='button']:active {
+    background-color: @orange200;
+}
+
+.button-with-arrow button[type='button'] {
+    position: relative;
+    left: -20px;
+    padding: 7px 20px;
     .p-big-font();
     color: @white;
     display: inline-flex;
     align-items: center;
     gap: 15px;
+    cursor: pointer;
 }
 
 .block-of-tours {
