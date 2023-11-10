@@ -411,16 +411,12 @@ a {
         gap: 19px;
         cursor: pointer;
 
-        .text {
-            display: flex;
-            gap: 5px;
-            font-size: 17px;
-            font-weight: 400;
-            line-height: 142%;
-            letter-spacing: -0.17px;
+        p {
+            .p-small-font();
+            color: @grey300;
 
-            &_grey {
-                color: @grey300;
+            a {
+                color: @black;
             }
         }
     }
@@ -665,6 +661,40 @@ a {
             display: flex;
             align-items: center;
             gap: 35px;
+        }
+    }
+}
+
+.block-agitation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    .img {
+        width: 370px;
+        height: 370px;
+        border-radius: 50px;
+        background: url('../asset/footer/footer\ photo.jpg'), lightgray -117.363px 0px / 151.55% 100.781% no-repeat;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+
+        &__title {
+            .h3-font();
+        }
+
+        p {
+            .p-normal-font();
+            color: @grey300;
+        
+            a {
+                color: @black;
+            }
         }
     }
 }
