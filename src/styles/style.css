@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: url(../asset/fonts/Roboto-Medium.ttf);
+  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 * {
   padding: 0;
@@ -8,7 +8,6 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,6 +48,7 @@ a {
 .head-bottom__title {
   width: 768px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 96px;
   font-style: normal;
@@ -60,6 +60,7 @@ a {
 .head-bottom__description {
   width: 562px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -71,6 +72,7 @@ a {
   outline: none;
   border: none;
   padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 17px;
   font-style: normal;
@@ -83,6 +85,7 @@ a {
   background: white;
 }
 .head-menu {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -102,6 +105,7 @@ a {
   gap: 50px;
 }
 .a-with-arrow {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 23px;
   font-style: normal;
@@ -128,6 +132,7 @@ a {
   gap: 35px;
 }
 .block-of-tours .menu__title {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 59px;
   font-style: normal;
@@ -140,6 +145,7 @@ a {
   gap: 30px;
 }
 .block-of-tours .menu__navigation a {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 23px;
   font-style: normal;
@@ -162,6 +168,7 @@ a {
 }
 .block-of-tours .cards .card-tour__title {
   margin-bottom: 16px;
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 35px;
   font-style: normal;
@@ -171,6 +178,7 @@ a {
 }
 .block-of-tours .cards .card-tour__price {
   margin-bottom: auto;
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 17px;
   font-style: normal;
@@ -205,6 +213,7 @@ a {
   gap: 30px;
 }
 .block-title__title {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 59px;
   font-style: normal;
@@ -213,6 +222,7 @@ a {
   text-align: center;
 }
 .block-title__description {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -250,6 +260,7 @@ a {
   background-color: white;
 }
 .block-tour-create .answers .item {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -339,6 +350,7 @@ a {
   cursor: pointer;
 }
 .block-tour-create .licentia-description p {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 17px;
   font-style: normal;
@@ -356,15 +368,15 @@ a {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  width: 1170px;
 }
 .block-reviews .reviews {
   display: flex;
-  width: 100%;
+  width: 1170px;
   align-items: flex-start;
   gap: 30px;
 }
 .block-reviews .card {
+  width: 100%;
   display: flex;
   padding: 40px;
   flex-direction: column;
@@ -376,11 +388,13 @@ a {
   background-color: #F4F0E9;
 }
 .block-reviews .card p {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 23px;
   font-style: normal;
   font-weight: 700;
   line-height: 122%;
+  letter-spacing: -0.5px;
 }
 .block-reviews .card__person {
   display: flex;
@@ -396,6 +410,7 @@ a {
   flex: 1 0 0;
 }
 .block-reviews .card__person .name_big {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 35px;
   font-style: normal;
@@ -403,6 +418,7 @@ a {
   line-height: 122%;
 }
 .block-reviews .card__person .name_description {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 17px;
   font-style: normal;
@@ -560,6 +576,7 @@ a {
   width: 554px;
 }
 .block-story .story__title {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 35px;
   font-style: normal;
@@ -569,6 +586,7 @@ a {
   margin-bottom: 37px;
 }
 .block-story .story__description {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -578,6 +596,7 @@ a {
   margin-bottom: 25px;
 }
 .block-story .story ul {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -593,6 +612,7 @@ a {
   align-items: center;
 }
 .block-story .information .social-contacts {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -622,6 +642,7 @@ a {
   gap: 20px;
 }
 .block-agitation .text__title {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 35px;
   font-style: normal;
@@ -629,6 +650,7 @@ a {
   line-height: 122%;
 }
 .block-agitation .text p {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -654,6 +676,7 @@ a {
   align-items: center;
 }
 .footer .our-contacts p {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
@@ -667,6 +690,7 @@ a {
   gap: 25px;
 }
 .footer .contacts a {
+  font-family: "Roboto", sans-serif;
   color: black;
   font-size: 20px;
   font-style: normal;
