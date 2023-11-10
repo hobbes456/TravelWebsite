@@ -513,7 +513,7 @@ a {
 }
 .block-gallery .item__photo-12 {
   background-image: url('../asset/travelphoto/travel\ photo-12.png');
-  background-position: center;
+  background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
 }
