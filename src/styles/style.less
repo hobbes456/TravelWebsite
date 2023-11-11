@@ -89,7 +89,7 @@
     box-sizing: border-box;
 }
 
-body {
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,21 +198,47 @@ a {
 
 }
 
-button[type='button'] {
+.main button[type='button'] {
     outline: none;
     border: none;
     background-color: transparent;
 }
 
-button[type='button']:hover {
+button[type='button'].scroll-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: fixed;
+    display: none;
+    align-self: center;
+    z-index: 1;
+    right: 50px;
+    bottom: 50px;
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+button[type='button'].shown {
+    display: inline-flex;
+}
+
+button[type='button'].scroll-button:hover {
+    border: 2px solid @green400;
+    border-radius: 50%;
+}
+button[type='button'].scroll-button:active {
+    border: 2px solid @orange200;
+}
+
+.main button[type='button']:hover {
     background-color: @green400;
     border-radius: 50px;
 }
-button[type='button']:active {
+.main button[type='button']:active {
     background-color: @orange200;
 }
 
-.button-with-arrow button[type='button'] {
+.main .button-with-arrow button[type='button'] {
     position: relative;
     top: 7px;
     left: -20px;
