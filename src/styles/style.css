@@ -37,6 +37,27 @@ a {
   gap: 214px;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
+.head-top_white {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 1920px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  gap: 214px;
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.head-top_white .head-menu {
+  color: black;
+}
+.head-top_white.shown-head {
+  display: flex;
+}
 .head-bottom {
   display: flex;
   width: 1920px;
