@@ -330,7 +330,8 @@ button[type='button'].scroll-button:active {
   width: 1170px;
 }
 .block-tour-create input,
-.block-tour-create textarea {
+.block-tour-create textarea,
+.block-tour-create select {
   width: 100%;
   outline: none;
   font-size: inherit;
@@ -379,7 +380,8 @@ button[type='button'].scroll-button:active {
 }
 .block-tour-create .answers .item__form:hover,
 .block-tour-create .answers .item input:hover,
-.block-tour-create .answers .item textarea:hover {
+.block-tour-create .answers .item textarea:hover,
+.block-tour-create .answers .item select:hover {
   cursor: pointer;
   background-color: #F4F0E9;
 }

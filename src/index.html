@@ -195,12 +195,16 @@
                 <div class="item">
                     <label for="path">Направление</label>
                     <div class="item__form item__form_half-width">
-                        <input type="text" id="path" name="path" placeholder="Куда хотите ехать" required>
-                        <svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M13 19.4143L4.29289 10.7072C3.90236 10.3167 3.90237 9.68351 4.29289 9.29298C4.68341 8.90246 5.31658 8.90246 5.7071 9.29298L13 16.5859L20.2929 9.29298C20.6834 8.90246 21.3166 8.90246 21.7071 9.29298C22.0976 9.68351 22.0976 10.3167 21.7071 10.7072L13 19.4143Z"
-                                fill="#1B1F2B" />
-                        </svg>
+                        <select name="path" id="path" required>
+                            <option value="Москва">Москва</option>
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Тверь">Тверь</option>
+                            <option value="Клин">Клин</option>
+                            <option value="Волгоград">Волгоград</option>
+                            <option value="Сочи">Сочи</option>
+                            <option value="Сургут">Сургут</option>
+                            <option value="Пермь">Пермь</option>
+                        </select>
                     </div>
                 </div>
                 <div class="item">
@@ -212,7 +216,7 @@
                 <div class="item">
                     <label for="tel">Телефон</label>
                     <div class="item__form item__form_half-width">
-                        <input type="tel" id="tel" name="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required>
+                        <input type="tel" id="tel" name="tel" pattern="[+]{1}[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _" required>
                     </div>
                 </div>
                 <div class="item">

@@ -2,6 +2,7 @@ import "./styles/style.css";
 
 let scrollButton = document.querySelector('.scroll-button');
 let headTop = document.querySelector(".head-top_white");
+let getListButton = document.getElementById('get-list-button');
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 450) {
@@ -21,3 +22,7 @@ window.addEventListener('scroll', () => {
 scrollButton.onclick = () => {
     window.scrollTo(0, 0);
 }
+
+getListButton.addEventListener('click', e => {
+    console.log(e.target);
+})
