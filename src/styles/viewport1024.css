@@ -349,7 +349,8 @@ button[type='button'].scroll-button:active {
   justify-content: center;
   align-items: center;
   gap: 100px;
-  width: 1170px;
+  width: 100%;
+  padding: 0 53px;
 }
 .block-tour-create input,
 .block-tour-create textarea,
@@ -363,11 +364,11 @@ button[type='button'].scroll-button:active {
 }
 .block-tour-create .answers {
   width: 100%;
-  padding: 70px;
+  padding: 60px;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 33px 30px;
+  gap: 33px 20px;
   border-radius: 50px;
   background-color: white;
 }
@@ -398,7 +399,7 @@ button[type='button'].scroll-button:active {
   background: #F9F7F4;
 }
 .block-tour-create .answers .item__form_half-width {
-  width: 500px;
+  width: 389px;
 }
 .block-tour-create .answers .item__form:hover,
 .block-tour-create .answers .item input:hover,
@@ -509,9 +510,9 @@ button[type='button'].scroll-button:active {
 }
 .block-reviews .reviews {
   display: flex;
-  width: 1170px;
+  padding: 0 53px;
   align-items: flex-start;
-  gap: 30px;
+  gap: 18px;
 }
 .block-reviews .card {
   width: 100%;
@@ -584,95 +585,92 @@ button[type='button'].scroll-button:active {
   gap: 100px;
 }
 .block-gallery .gallery {
-  padding: 0px 30px;
+  padding: 0px 20px;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 30px 20px;
 }
 .block-gallery .item {
-  width: 442.5px;
-  height: 301px;
   border-radius: 50px;
 }
-.block-gallery .item__small {
-  width: 348px;
-}
 .block-gallery .item__photo-1 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-2 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-3 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-3.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.block-gallery .item__photo-4 {
-  background-image: url('../asset/travelphoto/travel\ photo-4.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .block-gallery .item__photo-5 {
+  width: 231px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-6 {
+  width: 231px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-6.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-7 {
+  width: 231px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-8 {
+  width: 231px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-8.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.block-gallery .item__photo-9 {
-  background-image: url('../asset/travelphoto/travel\ photo-9.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .block-gallery .item__photo-10 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-10.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-11 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-11.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-12 {
+  width: 314.66px;
+  height: 300px;
   background-image: url('../asset/travelphoto/travel\ photo-12.png');
   background-position: 50% 75%;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.block-gallery .item__photo-13 {
-  background-image: url('../asset/travelphoto/travel\ photo-13.png');
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
