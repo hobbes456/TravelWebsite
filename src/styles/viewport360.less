@@ -281,7 +281,6 @@ button[type='button'].scroll-button:active {
 
 .block-of-tours {
     .content();
-    padding: 0 21px;
 
     & .menu {
         display: flex;
@@ -292,15 +291,17 @@ button[type='button'].scroll-button:active {
 
         &__title {
             .mobile-h1-font();
+            letter-spacing: -0.5px;
         }
 
         &__navigation {
+            text-align: center;
             padding: 0 45px;
             width: 360px;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
-            align-items: flex-start;
+            align-items: center;
             gap: 10px;
 
             & a {
@@ -320,6 +321,7 @@ button[type='button'].scroll-button:active {
     }
 
     & .cards {
+        padding: 0 21px;
         display: flex;
         flex-wrap: wrap;
         // padding: 0 53px;
@@ -420,6 +422,7 @@ button[type='button'].scroll-button:active {
     &__title {
         .mobile-h1-font();
         text-align: center;
+        letter-spacing: -0.5px;
     }
 
     &__description {
@@ -450,9 +453,10 @@ button[type='button'].scroll-button:active {
         width: 100%;
         padding: 20px 20px 40px 20px;
         display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        gap: 30px;
+        flex-direction: column;
+        justify-content: flex-start;
+        // align-items: center;
+        gap: 35px;
         border-radius: 30px;
         background-color: @white;
 
@@ -464,9 +468,9 @@ button[type='button'].scroll-button:active {
             gap: 8px;
             flex: 1 0 0;
 
-            &_basis {
-                flex-basis: 100%;
-            }
+            // &_basis {
+            //     flex-basis: 100%;
+            // }
 
             &__form {
                 padding: 10px;
@@ -492,16 +496,17 @@ button[type='button'].scroll-button:active {
             // }
 
             .form-buttons {
-                width: 100%;
+                width: 278px;
                 height: 47px;
                 display: flex;
-                align-items: space-around;
+                justify-content: space-between;
+                align-items: center;
                 // gap: 30px;
 
                 input[type='submit'],
                 input[type='reset'] {
                     width: 134px;
-                    padding: 15px 30px;
+                    padding: 13px 30px;
                     text-align: center;
                     border-radius: 10px;
                     // cursor: pointer;
@@ -579,13 +584,14 @@ button[type='button'].scroll-button:active {
     .licentia-description {
         display: flex;
         justify-content: center;
-        align-items: center;
-        gap: 19px;
-        cursor: pointer;
+        align-items: flex-start;
+        gap: 10px;
+        // cursor: pointer;
 
         p {
             .mobile-p-small-font();
             color: @grey300;
+            letter-spacing: 1.05px;
 
             a {
                 color: @black;
@@ -601,6 +607,11 @@ button[type='button'].scroll-button:active {
                 text-decoration: underline;
             }
         }
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -630,7 +641,7 @@ button[type='button'].scroll-button:active {
 
         p {
             .mobile-p-big-font();
-            letter-spacing: -0.5px;
+            letter-spacing: -0.25px;
         }
     }
 
@@ -841,7 +852,7 @@ button[type='button'].scroll-button:active {
         ul {
             .mobile-p-normal-font();
             color: @white;
-            margin-left: 30px;
+            margin-left: 20px;
         }
     }
 

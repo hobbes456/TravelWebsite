@@ -251,7 +251,6 @@ button[type='button'].scroll-button:active {
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 50px;
-  transition: all 300ms ease;
   flex: 1 0 0;
   cursor: pointer;
 }
@@ -311,9 +310,6 @@ button[type='button'].scroll-button:active {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.block-of-tours .cards .card-tour:hover {
-  transform: scale(1.2);
 }
 .block-title {
   display: flex;
@@ -689,7 +685,6 @@ button[type='button'].scroll-button:active {
   align-items: flex-start;
   flex-shrink: 0;
   border-radius: 50px;
-  transition: all 300ms ease;
   cursor: pointer;
 }
 .block-story .card_photo1 {
@@ -700,9 +695,6 @@ button[type='button'].scroll-button:active {
 }
 .block-story .card_photo3 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
-}
-.block-story .card:hover {
-  transform: scale(1.2);
 }
 .block-story .story {
   width: 554px;

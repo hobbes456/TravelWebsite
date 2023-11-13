@@ -188,7 +188,6 @@ button[type='button'].scroll-button:active {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 0 21px;
 }
 .block-of-tours .menu {
   display: flex;
@@ -205,14 +204,16 @@ button[type='button'].scroll-button:active {
   font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
+  letter-spacing: -0.5px;
 }
 .block-of-tours .menu__navigation {
+  text-align: center;
   padding: 0 45px;
   width: 360px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
   gap: 10px;
 }
 .block-of-tours .menu__navigation a {
@@ -228,6 +229,7 @@ button[type='button'].scroll-button:active {
   text-decoration: underline;
 }
 .block-of-tours .cards {
+  padding: 0 21px;
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
@@ -316,6 +318,7 @@ button[type='button'].scroll-button:active {
   line-height: 112%;
   letter-spacing: 0.68px;
   text-align: center;
+  letter-spacing: -0.5px;
 }
 .block-title__description {
   font-family: "Roboto", sans-serif;
@@ -351,9 +354,9 @@ button[type='button'].scroll-button:active {
   width: 100%;
   padding: 20px 20px 40px 20px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  gap: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 35px;
   border-radius: 30px;
   background-color: white;
 }
@@ -370,9 +373,6 @@ button[type='button'].scroll-button:active {
   gap: 8px;
   flex: 1 0 0;
 }
-.block-tour-create .answers .item_basis {
-  flex-basis: 100%;
-}
 .block-tour-create .answers .item__form {
   padding: 10px;
   display: flex;
@@ -387,15 +387,16 @@ button[type='button'].scroll-button:active {
   width: 278px;
 }
 .block-tour-create .answers .item .form-buttons {
-  width: 100%;
+  width: 278px;
   height: 47px;
   display: flex;
-  align-items: space-around;
+  justify-content: space-between;
+  align-items: center;
 }
 .block-tour-create .answers .item .form-buttons input[type='submit'],
 .block-tour-create .answers .item .form-buttons input[type='reset'] {
   width: 134px;
-  padding: 15px 30px;
+  padding: 13px 30px;
   text-align: center;
   border-radius: 10px;
 }
@@ -448,9 +449,8 @@ button[type='button'].scroll-button:active {
 .block-tour-create .licentia-description {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 19px;
-  cursor: pointer;
+  align-items: flex-start;
+  gap: 10px;
 }
 .block-tour-create .licentia-description p {
   font-family: "Roboto", sans-serif;
@@ -461,6 +461,7 @@ button[type='button'].scroll-button:active {
   line-height: 142%;
   letter-spacing: -0.16px;
   color: #A6A6A6;
+  letter-spacing: 1.05px;
 }
 .block-tour-create .licentia-description p a {
   color: black;
@@ -468,6 +469,10 @@ button[type='button'].scroll-button:active {
 .block-tour-create .licentia-description p a:active {
   color: #286562;
   text-decoration: underline;
+}
+.block-tour-create svg {
+  width: 20px;
+  height: 20px;
 }
 .block-reviews {
   display: flex;
@@ -503,7 +508,7 @@ button[type='button'].scroll-button:active {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
-  letter-spacing: -0.5px;
+  letter-spacing: -0.25px;
 }
 .block-reviews .card__person {
   display: flex;
@@ -707,7 +712,7 @@ button[type='button'].scroll-button:active {
   font-weight: 400;
   line-height: 142%;
   color: white;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .block-story .information {
   width: 100%;
