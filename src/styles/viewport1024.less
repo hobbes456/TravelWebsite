@@ -279,7 +279,6 @@ button[type='button'].scroll-button:active {
 
 .block-of-tours {
     .content();
-    width: 1024px;
 
     & .menu {
         display: flex;
@@ -425,7 +424,6 @@ button[type='button'].scroll-button:active {
 
 .block-tour-create {
     .content();
-    width: 100%;
     padding: 0 53px;
 
     input,
@@ -667,17 +665,30 @@ button[type='button'].scroll-button:active {
     .gallery {
         padding: 0px 20px;
         display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        gap: 30px 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .row {
+        width: 984px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
     }
 
     .item {
+        width: 100%;
+        height: 301px;
         border-radius: 50px;
 
+        &__1024px {
+            display: none;
+        }
+
         &__photo-1 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-1.png');
             background-position: center;
             background-size: cover;
@@ -685,8 +696,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-2 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-2.png');
             background-position: center;
             background-size: cover;
@@ -694,8 +703,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-3 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-3.png');
             background-position: center;
             background-size: cover;
@@ -703,8 +710,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-5 {
-            width: 231px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-5.png');
             background-position: center;
             background-size: cover;
@@ -712,8 +717,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-6 {
-            width: 231px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-6.png');
             background-position: center;
             background-size: cover;
@@ -721,8 +724,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-7 {
-            width: 231px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
             background-position: center;
             background-size: cover;
@@ -730,8 +731,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-8 {
-            width: 231px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-8.png');
             background-position: center;
             background-size: cover;
@@ -739,8 +738,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-10 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-10.png');
             background-position: center;
             background-size: cover;
@@ -748,8 +745,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-11 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-11.png');
             background-position: center;
             background-size: cover;
@@ -757,8 +752,6 @@ button[type='button'].scroll-button:active {
         }
 
         &__photo-12 {
-            width: 314.66px;
-            height: 300px;
             background-image: url('../asset/travelphoto/travel\ photo-12.png');
             background-position: 50% 75%;
             background-size: cover;
@@ -769,9 +762,9 @@ button[type='button'].scroll-button:active {
 
 .block-story {
     .content();
-    width: 1170px;
 
     .story-cards {
+        padding: 0 53px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -781,7 +774,7 @@ button[type='button'].scroll-button:active {
     .card {
         display: flex;
         flex-direction: column;
-        width: 1170px;
+        width: 918px;
         height: 567px;
         padding: 60px;
         justify-content: space-between;
@@ -905,7 +898,7 @@ button[type='button'].scroll-button:active {
 }
 
 .footer {
-    width: 1920px;
+    width: 1024px;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -913,7 +906,7 @@ button[type='button'].scroll-button:active {
     background-color: @beige200;
 
     .our-contacts {
-        width: 1168px;
+        width: 918px;
         display: flex;
         justify-content: space-between;
         align-items: center;
