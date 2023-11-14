@@ -33,7 +33,7 @@ a {
 }
 .head-top {
   display: flex;
-  width: 100%;
+  width: 1920px;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@ a {
   top: 0;
   left: 0;
   display: none;
-  width: 100%;
+  width: 1920px;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -313,6 +313,7 @@ button[type='button'].scroll-button:active {
 }
 .block-of-tours .cards .card-tour:hover {
   transform: scale(1.2);
+  z-index: 1;
 }
 .block-title {
   display: flex;
@@ -397,6 +398,9 @@ button[type='button'].scroll-button:active {
 }
 .block-tour-create .answers .item__form_half-width {
   width: 500px;
+}
+.block-tour-create .answers .item textarea {
+  resize: none;
 }
 .block-tour-create .answers .item__form:hover,
 .block-tour-create .answers .item input:hover,
@@ -717,6 +721,7 @@ button[type='button'].scroll-button:active {
 }
 .block-story .card:hover {
   transform: scale(1.2);
+  z-index: 1;
 }
 .block-story .story {
   width: 554px;

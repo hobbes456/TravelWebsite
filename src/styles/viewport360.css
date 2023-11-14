@@ -34,7 +34,7 @@ a {
 .head-top {
   padding: 20px;
   display: flex;
-  width: 100%;
+  width: 360px;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -47,7 +47,7 @@ a {
   top: 0;
   left: 0;
   display: none;
-  width: 100%;
+  width: 360px;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -385,6 +385,9 @@ button[type='button'].scroll-button:active {
 }
 .block-tour-create .answers .item__form_half-width {
   width: 278px;
+}
+.block-tour-create .answers .item textarea {
+  resize: none;
 }
 .block-tour-create .answers .item .form-buttons {
   width: 278px;
@@ -745,6 +748,7 @@ button[type='button'].scroll-button:active {
   border-radius: 20px;
   background: url('../asset/footer/footer\ photo.jpg'), lightgray -117.363px 0px / 151.55% 100.781% no-repeat;
   background-position: 50% 80%;
+  background-size: 130px 130px;
 }
 .block-agitation .text {
   display: flex;

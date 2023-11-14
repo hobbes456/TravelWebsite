@@ -118,7 +118,7 @@ a {
 
 .head-top {
     display: flex;
-    width: 100%;
+    width: 1920px;
     height: 88px;
     justify-content: center;
     align-items: center;
@@ -133,7 +133,7 @@ a {
     top: 0;
     left: 0;
     display: none;
-    width: 100%;
+    width: 1920px;
     height: 88px;
     justify-content: center;
     align-items: center;
@@ -397,6 +397,7 @@ button[type='button'].scroll-button:active {
 
         .card-tour:hover {
             transform: scale(1.2);
+            z-index: 1;
         }
     }
 }
@@ -471,6 +472,10 @@ button[type='button'].scroll-button:active {
                 &_half-width {
                     width: 500px;
                 }
+            }
+
+            textarea {
+                resize: none;
             }
 
             &__form:hover,
@@ -821,6 +826,7 @@ button[type='button'].scroll-button:active {
 
     .card:hover {
         transform: scale(1.2);
+        z-index: 1;
     }
 
     .story {
