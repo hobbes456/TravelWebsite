@@ -46,6 +46,7 @@ a {
   top: 0;
   left: 0;
   display: none;
+  padding: 20px;
   width: 360px;
   height: 88px;
   justify-content: center;
