@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 * {
   padding: 0;
@@ -26,7 +26,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../asset/header/header-img.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -38,7 +38,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 214px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 .head-top_white {
   position: fixed;
@@ -366,7 +365,7 @@ button[type='button'].scroll-button:active {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 33px 30px;
+  gap: 35px 30px;
   border-radius: 50px;
   background-color: white;
 }
@@ -712,12 +711,18 @@ button[type='button'].scroll-button:active {
 }
 .block-story .card_photo1 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+  background-size: 1170px auto;
+  background-position: 60% 80%;
 }
 .block-story .card_photo2 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+  background-size: 1170px auto;
+  background-position: 60% 80%;
 }
 .block-story .card_photo3 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+  background-size: 1170px auto;
+  background-position: 60% 80%;
 }
 .block-story .card:hover {
   transform: scale(1.2);
@@ -760,7 +765,7 @@ button[type='button'].scroll-button:active {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .block-story .information .social-contacts {
   font-family: "Roboto", sans-serif;

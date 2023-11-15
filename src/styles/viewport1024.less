@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    // src: url(../asset/fonts/Roboto-Medium.ttf);
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    src: url(../asset/fonts/Roboto-Medium.ttf);
+    // src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 .h1-font() {
@@ -110,7 +110,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../asset/header/header-img.png');
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
+        url('../asset/header/header-img.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -123,8 +125,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 214px;
-    background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
 }
 
 .head-top_white {
@@ -444,7 +444,7 @@ button[type='button'].scroll-button:active {
         display: flex;
         flex-wrap: wrap;
         align-items: flex-start;
-        gap: 33px 20px;
+        gap: 35px 20px;
         border-radius: 50px;
         background-color: @white;
 
@@ -574,7 +574,7 @@ button[type='button'].scroll-button:active {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 19px;
+        gap: 10px;
         cursor: pointer;
 
         p {
@@ -681,7 +681,7 @@ button[type='button'].scroll-button:active {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 30px;
+        gap: 20px;
     }
 
     .item {
@@ -793,18 +793,24 @@ button[type='button'].scroll-button:active {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+            background-size: 918px auto;
+            background-position: 60% 80%;
         }
 
         &_photo2 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+            background-size: 918px auto;
+            background-position: 60% 80%;
         }
 
         &_photo3 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+            background-size: 918px auto;
+            background-position: 60% 80%;
         }
     }
 
@@ -839,7 +845,7 @@ button[type='button'].scroll-button:active {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
 
         .social-contacts {
             .p-normal-font();

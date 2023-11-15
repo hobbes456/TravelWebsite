@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 * {
   padding: 0;
@@ -26,7 +26,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../asset/header/header-img.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -39,7 +39,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 214px;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 .head-top_white {
   position: fixed;
@@ -134,10 +133,6 @@ a {
 .head-menu__navigation {
   display: none;
 }
-.head-menu a:active {
-  text-decoration: underline;
-  color: #EFA501;
-}
 .main button[type='button'] {
   outline: none;
   border: none;
@@ -223,10 +218,6 @@ button[type='button'].scroll-button:active {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
-}
-.block-of-tours .menu__navigation a:active {
-  color: #EFA501;
-  text-decoration: underline;
 }
 .block-of-tours .cards {
   padding: 0 21px;
@@ -330,6 +321,7 @@ button[type='button'].scroll-button:active {
   text-align: center;
   width: 100%;
   color: #A6A6A6;
+  letter-spacing: -0.5px;
 }
 .block-tour-create {
   display: flex;
@@ -464,14 +456,9 @@ button[type='button'].scroll-button:active {
   line-height: 142%;
   letter-spacing: -0.16px;
   color: #A6A6A6;
-  letter-spacing: 1.05px;
 }
 .block-tour-create .licentia-description p a {
   color: black;
-}
-.block-tour-create .licentia-description p a:active {
-  color: #286562;
-  text-decoration: underline;
 }
 .block-tour-create svg {
   width: 20px;
@@ -577,6 +564,9 @@ button[type='button'].scroll-button:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
+}
+.block-gallery .row:first-child {
   gap: 18px;
 }
 .block-gallery .item {
@@ -676,12 +666,18 @@ button[type='button'].scroll-button:active {
 }
 .block-story .card_photo1 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+  background-size: auto 455px;
+  background-position: 50% 80%;
 }
 .block-story .card_photo2 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+  background-size: auto 455px;
+  background-position: 50% 80%;
 }
 .block-story .card_photo3 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+  background-size: auto 455px;
+  background-position: 50% 80%;
 }
 .block-story .story {
   width: 263px;
@@ -721,7 +717,7 @@ button[type='button'].scroll-button:active {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .block-story .information .social-contacts {
   font-family: "Roboto", sans-serif;
@@ -740,7 +736,7 @@ button[type='button'].scroll-button:active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 35px;
 }
 .block-agitation .img {
   width: 130px;
@@ -779,10 +775,6 @@ button[type='button'].scroll-button:active {
 }
 .block-agitation .text p a {
   color: black;
-}
-.block-agitation .text p a:active {
-  color: #286562;
-  text-decoration: underline;
 }
 .footer {
   width: 100%;
@@ -824,8 +816,4 @@ button[type='button'].scroll-button:active {
   display: flex;
   align-items: center;
   gap: 5px;
-}
-.footer .contacts a:active {
-  color: #286562;
-  text-decoration: underline;
 }

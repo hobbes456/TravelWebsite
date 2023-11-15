@@ -14,8 +14,8 @@
 
 @font-face {
     font-family: 'Roboto';
-    // src: url(../asset/fonts/Roboto-Medium.ttf);
-    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    src: url(../asset/fonts/Roboto-Medium.ttf);
+    // src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 
 .mobile-h1-font() {
@@ -102,7 +102,9 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../asset/header/header-img.png');
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
+        url('../asset/header/header-img.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -116,8 +118,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 214px;
-    background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
 }
 
 .head-top_white {
@@ -215,10 +215,10 @@ a {
     //     text-decoration: underline;
     // }
 
-    a:active {
-        text-decoration: underline;
-        color: @orange200;
-    }
+    // a:active {
+    //     text-decoration: underline;
+    //     color: @orange200;
+    // }
 
 }
 
@@ -313,10 +313,10 @@ button[type='button'].scroll-button:active {
             //     text-decoration: underline;
             // }
 
-            a:active {
-                color: @orange200;
-                text-decoration: underline;
-            }
+            // a:active {
+            //     color: @orange200;
+            //     text-decoration: underline;
+            // }
         }
     }
 
@@ -430,6 +430,7 @@ button[type='button'].scroll-button:active {
         text-align: center;
         width: 100%;
         color: @grey300;
+        letter-spacing: -0.5px;
     }
 }
 
@@ -595,7 +596,6 @@ button[type='button'].scroll-button:active {
         p {
             .mobile-p-small-font();
             color: @grey300;
-            letter-spacing: 1.05px;
 
             a {
                 color: @black;
@@ -606,10 +606,10 @@ button[type='button'].scroll-button:active {
             //     text-decoration: underline;
             // }
 
-            a:active {
-                color: @green400;
-                text-decoration: underline;
-            }
+            // a:active {
+            //     color: @green400;
+            //     text-decoration: underline;
+            // }
         }
     }
 
@@ -706,6 +706,10 @@ button[type='button'].scroll-button:active {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 10px;
+    }
+
+    .row:first-child {
         gap: 18px;
     }
 
@@ -819,18 +823,24 @@ button[type='button'].scroll-button:active {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+            background-size: auto 455px;
+            background-position: 50% 80%;
         }
 
         &_photo2 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+            background-size: auto 455px;
+            background-position: 50% 80%;
         }
 
         &_photo3 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+            background-size: auto 455px;
+            background-position: 50% 80%;
         }
     }
 
@@ -864,7 +874,7 @@ button[type='button'].scroll-button:active {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
 
         .social-contacts {
             .mobile-p-normal-font();
@@ -890,7 +900,7 @@ button[type='button'].scroll-button:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 35px;
 
     .img {
         width: 130px;
@@ -927,10 +937,10 @@ button[type='button'].scroll-button:active {
             //     text-decoration: underline;
             // }
 
-            a:active {
-                color: @green400;
-                text-decoration: underline;
-            }
+            // a:active {
+            //     color: @green400;
+            //     text-decoration: underline;
+            // }
         }
     }
 }
@@ -974,9 +984,9 @@ button[type='button'].scroll-button:active {
         //     text-decoration: underline;
         // }
 
-        a:active {
-            color: @green400;
-            text-decoration: underline;
-        }
+        // a:active {
+        //     color: @green400;
+        //     text-decoration: underline;
+        // }
     }
 }
