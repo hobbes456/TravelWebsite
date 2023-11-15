@@ -437,6 +437,7 @@ button[type='button'].scroll-button:active {
         background: inherit;
     }
 
+
     & .answers {
         width: 100%;
         padding: 70px;
@@ -478,10 +479,15 @@ button[type='button'].scroll-button:active {
                 resize: none;
             }
 
+            select {
+                color: @grey300;
+            }
+
             &__form:hover,
             input:hover,
             textarea:hover,
-            select:hover {
+            select:hover,
+            option:hover {
                 cursor: pointer;
                 background-color: @beige200;
             }

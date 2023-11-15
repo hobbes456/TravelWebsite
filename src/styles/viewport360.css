@@ -381,6 +381,9 @@ button[type='button'].scroll-button:active {
 .block-tour-create .answers .item textarea {
   resize: none;
 }
+.block-tour-create .answers .item select {
+  color: #A6A6A6;
+}
 .block-tour-create .answers .item .form-buttons {
   width: 278px;
   height: 47px;

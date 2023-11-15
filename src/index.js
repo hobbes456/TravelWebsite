@@ -1,7 +1,8 @@
 import "./styles/style.css";
 
-let scrollButton = document.querySelector('.scroll-button');
+let scrollButton = document.querySelector(".scroll-button");
 let headTop = document.querySelector(".head-top_white");
+let select = document.querySelector("select");
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 450) {
@@ -20,4 +21,9 @@ window.addEventListener('scroll', () => {
 
 scrollButton.onclick = () => {
     window.scrollTo(0, 0);
+}
+
+select.onchange = () => {
+  select.style.color = "#000";
+  // ничего умнее не нашел
 }

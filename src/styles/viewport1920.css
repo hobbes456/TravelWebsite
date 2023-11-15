@@ -401,10 +401,14 @@ button[type='button'].scroll-button:active {
 .block-tour-create .answers .item textarea {
   resize: none;
 }
+.block-tour-create .answers .item select {
+  color: #A6A6A6;
+}
 .block-tour-create .answers .item__form:hover,
 .block-tour-create .answers .item input:hover,
 .block-tour-create .answers .item textarea:hover,
-.block-tour-create .answers .item select:hover {
+.block-tour-create .answers .item select:hover,
+.block-tour-create .answers .item option:hover {
   cursor: pointer;
   background-color: #F4F0E9;
 }
