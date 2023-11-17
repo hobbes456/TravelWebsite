@@ -510,6 +510,11 @@ button[type='button'].scroll-button:active {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+.block-tour-create .licentia-description label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 .block-tour-create .licentia-description p {
