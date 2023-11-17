@@ -46,6 +46,7 @@ a {
   mask-image: url('../asset/svg/YourTour.svg');
   -webkit-mask-image: url('../asset/svg/YourTour.svg');
   mask-size: 133px 22px;
+  -webkit-mask-size: 133px 22px;
   background-color: white;
 }
 .header .head-top_fixed {
@@ -417,6 +418,7 @@ button[type='button'].shown {
   height: 20px;
   background-color: black;
   mask-size: 20px 20px;
+  -webkit-mask-size: 20px 20px;
 }
 .block-tour-create .svg__radiobutton-yes {
   mask-image: url('../asset/svg/radiobutton-yes.svg');
@@ -855,6 +857,7 @@ button[type='button'].shown {
   height: 26px;
   background-color: #A6A6A6;
   mask-size: 26px 26px;
+  -webkit-mask-size: 26px 26px;
 }
 .footer .svg__instagramm {
   mask-image: url('../asset/svg/inst.svg');

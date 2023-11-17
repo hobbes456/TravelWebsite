@@ -461,6 +461,7 @@ button[type='button'].scroll-button:active {
   height: 26px;
   background-color: black;
   mask-size: 26px 26px;
+  -webkit-mask-size: 26px 26px;
 }
 .block-tour-create .svg__radiobutton-yes {
   mask-image: url('../asset/svg/radiobutton-yes.svg');
@@ -931,6 +932,7 @@ button[type='button'].scroll-button:active {
   height: 26px;
   background-color: #A6A6A6;
   mask-size: 26px 26px;
+  -webkit-mask-size: 26px 26px;
 }
 .footer .svg__instagramm {
   mask-image: url('../asset/svg/inst.svg');
