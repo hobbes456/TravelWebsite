@@ -44,6 +44,7 @@ a {
   width: 133px;
   height: 22px;
   mask-image: url('../asset/svg/YourTour.svg');
+  -webkit-mask-image: url('../asset/svg/YourTour.svg');
   mask-size: 133px 22px;
   background-color: white;
 }
@@ -251,6 +252,7 @@ button[type='button'].shown {
   height: 26px;
   background-color: white;
   mask-image: url('../asset/svg/arrow\ bt.svg');
+  -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
   background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png');
@@ -418,15 +420,19 @@ button[type='button'].shown {
 }
 .block-tour-create .svg__radiobutton-yes {
   mask-image: url('../asset/svg/radiobutton-yes.svg');
+  -webkit-mask-image: url('../asset/svg/radiobutton-yes.svg');
 }
 .block-tour-create .svg__radiobutton-no {
   mask-image: url('../asset/svg/radiobutton-no.svg');
+  -webkit-mask-image: url('../asset/svg/radiobutton-no.svg');
 }
 .block-tour-create .svg__square-radiobutton-yes {
   mask-image: url('../asset/svg/s-radiobutton-yes.svg');
+  -webkit-mask-image: url('../asset/svg/s-radiobutton-yes.svg');
 }
 .block-tour-create .svg__square-radiobutton-no {
   mask-image: url('../asset/svg/s-radiobutton-no.svg');
+  -webkit-mask-image: url('../asset/svg/s-radiobutton-no.svg');
 }
 .block-tour-create input[type='radio'],
 .block-tour-create input[type='checkbox'] {
@@ -689,6 +695,7 @@ button[type='button'].shown {
   height: 26px;
   background-color: white;
   mask-image: url('../asset/svg/arrow\ bt.svg');
+  -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-story .card_photo1 {
   background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
@@ -851,10 +858,13 @@ button[type='button'].shown {
 }
 .footer .svg__instagramm {
   mask-image: url('../asset/svg/inst.svg');
+  -webkit-mask-image: url('../asset/svg/inst.svg');
 }
 .footer .svg__facebook {
   mask-image: url('../asset/svg/fb.svg');
+  -webkit-mask-image: url('../asset/svg/fb.svg');
 }
 .footer .svg__vkontakte {
   mask-image: url('../asset/svg/vk.svg');
+  -webkit-mask-image: url('../asset/svg/vk.svg');
 }
