@@ -31,7 +31,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.head-top {
+.header .head-top {
   padding: 20px;
   display: flex;
   width: 360px;
@@ -40,14 +40,14 @@ a {
   align-items: center;
   gap: 214px;
 }
-.head-top .svg {
+.header .head-top .svg {
   width: 133px;
   height: 22px;
   mask-image: url('../asset/svg/YourTour.svg');
   mask-size: 133px 22px;
   background-color: white;
 }
-.head-top_fixed {
+.header .head-top_fixed {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -56,64 +56,13 @@ a {
   -webkit-backdrop-filter: blur(5.5px);
   background-color: rgba(255, 255, 255, 0.75);
 }
-.head-top_fixed .head-menu {
+.header .head-top_fixed .head-menu {
   color: black;
 }
-.head-top_fixed .svg {
+.header .head-top_fixed .svg {
   background-color: black;
 }
-.head-bottom {
-  display: flex;
-  height: 400px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-.head-bottom__title {
-  width: 100%;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 34px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 112%;
-  letter-spacing: 0.68px;
-  color: white;
-}
-.head-bottom__description {
-  width: 310px;
-  padding: 0 20px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142%;
-  color: white;
-}
-.head-bottom input[type='button'] {
-  outline: none;
-  border: none;
-  padding: 5px 20px;
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142%;
-  letter-spacing: -0.16px;
-  text-align: center;
-  border-radius: 10px;
-  background: white;
-}
-.head-bottom input[type='button']:active {
-  color: black;
-  background-color: #F8E6BE;
-}
-.head-menu {
+.header .head-menu {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 16px;
@@ -127,12 +76,59 @@ a {
   align-items: center;
   flex-shrink: 0;
 }
-.head-menu svg {
+.header .head-menu svg {
   width: 133px;
   height: 22px;
 }
-.head-menu__navigation {
+.header .head-menu__navigation {
   display: none;
+}
+.header .head-bottom {
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.header .head-bottom__title {
+  width: 100%;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 112%;
+  letter-spacing: 0.68px;
+  color: white;
+}
+.header .head-bottom__description {
+  width: 310px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  color: white;
+}
+.header .head-bottom input[type='button'] {
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  letter-spacing: -0.16px;
+  text-align: center;
+  border-radius: 10px;
+  background: white;
 }
 .main button[type='button'] {
   outline: none;
@@ -153,14 +149,6 @@ button[type='button'].scroll-button {
 }
 button[type='button'].shown {
   display: none;
-}
-button[type='button'].scroll-button:active {
-  border: 2px solid #EFA501;
-  border-radius: 50%;
-}
-.main button[type='button']:active {
-  background-color: #EFA501;
-  border-radius: 50%;
 }
 .main .button-with-arrow button[type='button'] {
   position: relative;
@@ -423,10 +411,10 @@ button[type='button'].scroll-button:active {
 .block-tour-create .svg__radiobutton-no,
 .block-tour-create .svg__square-radiobutton-yes,
 .block-tour-create .svg__square-radiobutton-no {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   background-color: black;
-  mask-size: 24px 24px;
+  mask-size: 20px 20px;
 }
 .block-tour-create .svg__radiobutton-yes {
   mask-image: url('../asset/svg/radiobutton-yes.svg');
@@ -495,10 +483,6 @@ button[type='button'].scroll-button:active {
 }
 .block-tour-create .licentia-description p a {
   color: black;
-}
-.block-tour-create svg {
-  width: 20px;
-  height: 20px;
 }
 .block-reviews {
   display: flex;

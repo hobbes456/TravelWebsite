@@ -31,7 +31,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.head-top {
+.header .head-top {
   display: flex;
   width: 1920px;
   height: 88px;
@@ -39,13 +39,13 @@ a {
   align-items: center;
   gap: 214px;
 }
-.head-top .svg {
+.header .head-top .svg {
   width: 181.84px;
   height: 30.24px;
   mask-image: url('../asset/svg/YourTour.svg');
   background-color: white;
 }
-.head-top_fixed {
+.header .head-top_fixed {
   position: fixed;
   z-index: 100;
   top: 0;
@@ -54,13 +54,40 @@ a {
   -webkit-backdrop-filter: blur(5.5px);
   background-color: rgba(255, 255, 255, 0.75);
 }
-.head-top_fixed .head-menu {
+.header .head-top_fixed .head-menu {
   color: black;
 }
-.head-top_fixed .svg {
+.header .head-top_fixed .svg {
   background-color: black;
 }
-.head-bottom {
+.header .head-menu {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  color: white;
+  display: flex;
+  width: 1168px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.header .head-menu__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.header .head-menu a:hover,
+.header .head-menu a:active {
+  text-decoration: underline;
+}
+.header .head-menu a:active {
+  color: #EFA501;
+}
+.header .head-bottom {
   display: flex;
   height: 743px;
   flex-direction: column;
@@ -68,7 +95,7 @@ a {
   align-items: center;
   gap: 50px;
 }
-.head-bottom__title {
+.header .head-bottom__title {
   width: 768px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -80,7 +107,7 @@ a {
   letter-spacing: 1.92px;
   color: white;
 }
-.head-bottom__description {
+.header .head-bottom__description {
   width: 562px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -91,7 +118,7 @@ a {
   line-height: 142%;
   color: white;
 }
-.head-bottom input[type='button'] {
+.header .head-bottom input[type='button'] {
   outline: none;
   border: none;
   padding: 5px 20px;
@@ -107,40 +134,13 @@ a {
   cursor: pointer;
   background: white;
 }
-.head-bottom input[type='button']:hover {
+.header .head-bottom input[type='button']:hover {
   color: white;
   background-color: #EFA501;
 }
-.head-bottom input[type='button']:active {
+.header .head-bottom input[type='button']:active {
   color: black;
   background-color: #F8E6BE;
-}
-.head-menu {
-  font-family: "Roboto", sans-serif;
-  color: black;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 142%;
-  color: white;
-  display: flex;
-  width: 1168px;
-  justify-content: space-between;
-  align-items: center;
-  flex-shrink: 0;
-}
-.head-menu__navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-.head-menu a:hover,
-.head-menu a:active {
-  text-decoration: underline;
-}
-.head-menu a:active {
-  color: #EFA501;
 }
 .main button[type='button'] {
   outline: none;
