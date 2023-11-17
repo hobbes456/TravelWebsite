@@ -125,19 +125,20 @@ a {
     justify-content: center;
     align-items: center;
     gap: 214px;
+
+    .svg {
+        width: 181.84px;
+        height: 30.24px;
+        mask-image: url('../asset/svg/YourTour.svg');
+        background-color: @white;
+    }
 }
 
-.head-top_white {
+.head-top_fixed {
     position: fixed;
     z-index: 100;
     top: 0;
     left: 0;
-    display: none;
-    width: 1920px;
-    height: 88px;
-    justify-content: center;
-    align-items: center;
-    gap: 214px;
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background-color: rgba(255, 255, 255, 0.75);
@@ -145,10 +146,10 @@ a {
     .head-menu {
         color: @black;
     }
-}
 
-.head-top_white.shown-head {
-    display: flex;
+    .svg {
+        background-color: @black;
+    }
 }
 
 .head-bottom {
