@@ -352,6 +352,13 @@ button[type='button'].scroll-button:active {
                 color: @white;
             }
 
+            .svg {
+                width: 24px;
+                height: 26px;
+                background-color: @white;
+                mask-image: url('../asset/svg/arrow\ bt.svg');
+            }
+
             &:nth-child(1) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
@@ -549,6 +556,29 @@ button[type='button'].scroll-button:active {
                 }
             }
         }
+    }
+
+    .svg__radiobutton-yes,
+    .svg__radiobutton-no,
+    .svg__square-radiobutton-yes,
+    .svg__square-radiobutton-no {
+        width: 24px;
+        height: 24px;
+        background-color: @black;
+        mask-size: 24px 24px;
+    }
+
+    .svg__radiobutton-yes {
+        mask-image: url('../asset/svg/radiobutton-yes.svg');
+    }
+    .svg__radiobutton-no {
+        mask-image: url('../asset/svg/radiobutton-no.svg');
+    }
+    .svg__square-radiobutton-yes {
+        mask-image: url('../asset/svg/s-radiobutton-yes.svg');
+    }
+    .svg__square-radiobutton-no {
+        mask-image: url('../asset/svg/s-radiobutton-no.svg');
     }
 
     input[type='radio'],
@@ -823,6 +853,13 @@ button[type='button'].scroll-button:active {
         border-radius: 20px;
         // transition: all 300ms ease;
         // cursor: pointer;
+
+        .svg {
+            width: 24px;
+            height: 26px;
+            background-color: @white;
+            mask-image: url('../asset/svg/arrow\ bt.svg');
+        }
 
         &_photo1 {
             background:
