@@ -1,7 +1,9 @@
 import "./styles/style.css";
 
 let headTop = document.querySelector(".head-top");
-let select = document.querySelector("select");
+let select = document.getElementById("path");
+let dateTo = document.getElementById("date-to");
+let dateFrom = document.getElementById("date-from");
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 450) {
@@ -14,4 +16,12 @@ window.addEventListener('scroll', () => {
 select.onchange = () => {
   select.style.color = "#000";
   // ничего умнее не нашел
+}
+
+dateTo.onchange = () => {
+  dateTo.style.color = "#000";
+}
+
+dateFrom.onchange = () => {
+  dateFrom.style.color = "#000";
 }

@@ -374,6 +374,10 @@ a {
 .block-tour-create .answers .item select {
   color: #A6A6A6;
 }
+.block-tour-create .answers .item input[type="date"] {
+  color: #A6A6A6;
+  text-transform: uppercase;
+}
 .block-tour-create .answers .item .form-buttons {
   width: 278px;
   height: 47px;

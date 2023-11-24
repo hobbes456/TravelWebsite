@@ -462,13 +462,10 @@ a {
 
             &__form {
                 padding: 20px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                align-self: stretch;
                 border: 1px solid @beige200;
                 border-radius: 10px;
                 background: @beige100;
+                transition: all 300ms ease;
 
                 &_half-width {
                     width: 500px;
@@ -483,19 +480,12 @@ a {
                 color: @grey300;
             }
 
-            &__form,
-            input,
-            textarea,
-            select,
-            option {
-                transition: all 300ms ease;
+            input[type="date"] {
+                color: @grey300;
+                text-transform: uppercase;
             }
 
-            &__form:hover,
-            input:hover,
-            textarea:hover,
-            select:hover,
-            option:hover {
+            &__form:hover {
                 cursor: pointer;
                 background-color: @beige200;
             }
