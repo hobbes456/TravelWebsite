@@ -12,55 +12,52 @@
 @beige100: #F9F7F4;
 @beige200: #F4F0E9;
 
+@headAndFootHeight: 88px;
+
 @font-face {
     font-family: 'Roboto';
     src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 
 .mobile-h1-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 34px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 112%;
     letter-spacing: 0.68px;
 }
 
 .mobile-h3-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
 }
 
 .mobile-p-big-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 142%
 }
 
 .mobile-p-normal-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     line-height: 142%
 }
 
 .mobile-p-small-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     line-height: 142%;
     letter-spacing: -0.16px;
 }
@@ -85,6 +82,7 @@ html {
 }
 
 .main {
+    font-family: "Roboto", sans-serif;
     width: 360px;
     display: flex;
     flex-direction: column;
@@ -116,7 +114,7 @@ a {
         padding: 20px;
         display: flex;
         width: 360px;
-        height: 88px;
+        height: @headAndFootHeight;
         justify-content: center;
         align-items: center;
         gap: 214px;
@@ -131,7 +129,7 @@ a {
         padding: 20px;
         display: flex;
         width: 360px;
-        height: 88px;
+        height: @headAndFootHeight;
         justify-content: center;
         align-items: center;
         gap: 214px;
@@ -266,8 +264,15 @@ a {
             align-items: center;
             gap: 10px;
 
-            & a {
+            a {
                 .mobile-p-big-font();
+            }
+
+            a:active {
+                color: @orange200;
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 6px;
             }
         }
     }
@@ -886,7 +891,7 @@ a {
 
 .footer {
     width: 100%;
-    height: 88px;
+    height: @headAndFootHeight;
     display: flex;
     justify-content: center;
     align-items: center;

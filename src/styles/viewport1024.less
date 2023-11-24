@@ -12,63 +12,59 @@
 @beige100: #F9F7F4;
 @beige200: #F4F0E9;
 
+@headAndFootHeight: 88px;
+
 @font-face {
     font-family: 'Roboto';
     src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 
 .h1-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 96px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 109%;
     letter-spacing: 1.92px;
 }
 
 .h2-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 59px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 124%;
 }
 
 .h3-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 35px;
-    font-style: normal;
-    font-weight: 500;
+    // font-style: normal;
+    // font-weight: 500;
     line-height: 122%
 }
 
 .p-big-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 23px;
-    font-style: normal;
-    font-weight: 700;
+    // font-style: normal;
+    // font-weight: 700;
     line-height: 122%
 }
 
 .p-normal-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     line-height: 142%
 }
 
 .p-small-font() {
-    font-family: "Roboto", sans-serif;
     color: @black;
     font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
+    // font-style: normal;
+    // font-weight: 400;
     line-height: 142%;
     letter-spacing: -0.17px;
 }
@@ -90,11 +86,12 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 88px;
+    scroll-padding-top: @headAndFootHeight;
     overflow-x: hidden;
 }
 
 .main {
+    font-family: "Roboto", sans-serif;
     width: 1024px;
     display: flex;
     flex-direction: column;
@@ -125,7 +122,7 @@ a {
     .head-top {
         display: flex;
         width: 1024px;
-        height: 88px;
+        height: @headAndFootHeight;
         justify-content: center;
         align-items: center;
         gap: 214px;
@@ -139,7 +136,7 @@ a {
         left: 0;
         display: flex;
         width: 1024px;
-        height: 88px;
+        height: @headAndFootHeight;
         justify-content: center;
         align-items: center;
         gap: 214px;
@@ -185,9 +182,10 @@ a {
             align-items: center;
             gap: 30px;
 
-            a:hover,
-            a:active {
+            a:hover {
                 text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 6px;
             }
         
             a:active {
@@ -294,13 +292,14 @@ a {
             align-items: flex-start;
             gap: 30px;
 
-            & a {
+            a {
                 .p-big-font();
             }
 
-            a:hover,
-            a:active {
+            a:hover {
                 text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 10px;
             }
 
             a:active {
@@ -482,6 +481,7 @@ a {
                 border-radius: 10px;
                 background: @beige100;
                 transition: all 300ms ease;
+                cursor: pointer;
 
                 &_half-width {
                     width: 389px;
@@ -502,7 +502,6 @@ a {
             }
 
             &__form:hover {
-                cursor: pointer;
                 background-color: @beige200;
             }
 
@@ -638,8 +637,7 @@ a {
                 color: @black;
             }
 
-            a:hover,
-            a:active {
+            a:hover {
                 text-decoration: underline;
             }
 
@@ -915,9 +913,9 @@ a {
             align-items: center;
             gap: 35px;
 
-            a:hover,
-            a:active {
+            a:hover {
                 text-decoration: underline;
+                text-underline-offset: 6px;
             }
 
             a:active {
@@ -958,8 +956,7 @@ a {
                 color: @black;
             }
 
-            a:hover,
-            a:active {
+            a:hover {
                 text-decoration: underline;
             }
 
@@ -972,7 +969,7 @@ a {
 
 .footer {
     width: 1024px;
-    height: 88px;
+    height: @headAndFootHeight;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1002,9 +999,9 @@ a {
             gap: 10px;
         }
 
-        a:hover,
-        a:active {
+        a:hover {
             text-decoration: underline;
+            text-underline-offset: 6px;
         }
 
         a:active {
