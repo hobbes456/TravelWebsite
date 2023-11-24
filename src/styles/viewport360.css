@@ -45,9 +45,17 @@ a {
 }
 .header .head-top_fixed {
   position: fixed;
-  z-index: 100;
+  visibility: hidden;
+  z-index: -1;
   top: 0;
   left: 0;
+  padding: 20px;
+  display: flex;
+  width: 360px;
+  height: 88px;
+  justify-content: center;
+  align-items: center;
+  gap: 214px;
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
   background-color: rgba(255, 255, 255, 0.75);
@@ -57,6 +65,10 @@ a {
 }
 .header .head-top_fixed .head-menu .svg {
   background-color: black;
+}
+.header .shown {
+  visibility: visible;
+  z-index: 100;
 }
 .header .head-menu {
   font-family: "Roboto", sans-serif;

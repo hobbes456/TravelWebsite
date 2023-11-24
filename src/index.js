@@ -1,15 +1,15 @@
 import "./styles/style.css";
 
-let headTop = document.querySelector(".head-top");
+let headTopFixed = document.querySelector(".head-top_fixed");
 let select = document.getElementById("path");
 let dateTo = document.getElementById("date-to");
 let dateFrom = document.getElementById("date-from");
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 450) {
-      headTop.classList.add("head-top_fixed");
+      headTopFixed.classList.add("shown");
     } else {
-      headTop.classList.remove("head-top_fixed");
+      headTopFixed.classList.remove("shown");
     }
 });
 
