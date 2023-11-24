@@ -80,6 +80,10 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .main {
     width: 360px;
     display: flex;
@@ -116,16 +120,6 @@ a {
         justify-content: center;
         align-items: center;
         gap: 214px;
-    
-        .svg {
-            width: 133px;
-            height: 22px;
-            mask-image: url('../asset/svg/YourTour.svg');
-            -webkit-mask-image: url('../asset/svg/YourTour.svg');
-            mask-size: 133px 22px;
-            -webkit-mask-size: 133px 22px;
-            background-color: @white;
-        }
     }
 
     .head-top_fixed {
@@ -139,19 +133,16 @@ a {
     
         .head-menu {
             color: @black;
+            
+            .svg {
+                background-color: @black;
+            }
         }
     
-        .svg {
-            background-color: @black;
-        }
     }
 
     .head-menu {
-        svg {
-            width: 133px;
-            height: 22px;
-        }
-    
+        
         .mobile-p-normal-font();
         color: @white;
         display: flex;
@@ -159,9 +150,23 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
-    
+
+        .svg {
+            width: 133px;
+            height: 22px;
+            mask-image: url('../asset/svg/YourTour.svg');
+            -webkit-mask-image: url('../asset/svg/YourTour.svg');
+            mask-size: 133px 22px;
+            -webkit-mask-size: 133px 22px;
+            background-color: @white;
+        }
+        
         &__navigation {
             display: none;
+        }
+
+        .telefon:active {
+            opacity: 50%;
         }
     }
 
@@ -197,6 +202,11 @@ a {
             border-radius: 10px;
             background: @white;
         }
+
+        input[type='button']:active {
+            color: @black;
+            background-color: @orange100;
+        }
     }
 }
 
@@ -204,23 +214,7 @@ a {
     outline: none;
     border: none;
     background-color: transparent;
-}
-
-button[type='button'].scroll-button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    position: fixed;
-    display: none;
-    align-self: center;
-    z-index: 1;
-    right: 25px;
-    bottom: 25px;
-    transform: rotate(-90deg);
-}
-
-button[type='button'].shown {
-    display: none;
+    transition: all 150ms ease;
 }
 
 .main .button-with-arrow button[type='button'] {

@@ -88,6 +88,12 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 88px;
+    overflow-x: hidden;
+}
+
 .main {
     width: 1024px;
     display: flex;
@@ -123,14 +129,6 @@ a {
         justify-content: center;
         align-items: center;
         gap: 214px;
-    
-        .svg {
-            width: 181.84px;
-            height: 30.24px;
-            mask-image: url('../asset/svg/YourTour.svg');
-            -webkit-mask-image: url('../asset/svg/YourTour.svg');
-            background-color: @white;
-        }
     }
     
     .head-top_fixed {
@@ -144,11 +142,12 @@ a {
         
         .head-menu {
             color: @black;
+
+            .svg {
+                background-color: @black;
+            }
         }
         
-        .svg {
-            background-color: @black;
-        }
     }
 
     .head-menu {
@@ -159,21 +158,33 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
+
+        .svg {
+            width: 181.84px;
+            height: 30.24px;
+            mask-image: url('../asset/svg/YourTour.svg');
+            -webkit-mask-image: url('../asset/svg/YourTour.svg');
+            background-color: @white;
+        }
     
         &__navigation {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 30px;
+
+            a:hover,
+            a:active {
+                text-decoration: underline;
+            }
+        
+            a:active {
+                color: @orange200;
+            }
         }
-    
-        a:hover,
-        a:active {
-            text-decoration: underline;
-        }
-    
-        a:active {
-            color: @orange200;
+
+        .telefon:active {
+            opacity: 50%;
         }
     }
     
@@ -208,6 +219,7 @@ a {
             border-radius: 10px;
             cursor: pointer;
             background: @white;
+            transition: all 300ms ease;
         }
     
         input[type='button']:hover {
@@ -226,33 +238,7 @@ a {
     outline: none;
     border: none;
     background-color: transparent;
-}
-
-button[type='button'].scroll-button {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    position: fixed;
-    display: none;
-    align-self: center;
-    z-index: 1;
-    right: 50px;
-    bottom: 50px;
-    transform: rotate(-90deg);
-    cursor: pointer;
-}
-
-button[type='button'].shown {
-    display: inline-flex;
-}
-
-button[type='button'].scroll-button:hover {
-    border: 2px solid @green400;
-    border-radius: 50%;
-}
-
-button[type='button'].scroll-button:active {
-    border: 2px solid @orange200;
+    transition: all 150ms ease;
 }
 
 .main button[type='button']:hover {
@@ -354,7 +340,7 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-1.png');
                 background-position: center;
-                background-size: cover;
+                background-size: 100% auto;
                 background-repeat: no-repeat;
             }
 
@@ -363,7 +349,7 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-2.png');
                 background-position: center;
-                background-size: cover;
+                background-size: auto 100%;
                 background-repeat: no-repeat;
             }
 
@@ -372,7 +358,7 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-3.png');
                 background-position: center;
-                background-size: cover;
+                background-size: auto 100%;
                 background-repeat: no-repeat;
             }
 
@@ -381,7 +367,7 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-4.png');
                 background-position: center;
-                background-size: cover;
+                background-size: 100% auto;
                 background-repeat: no-repeat;
             }
 
@@ -390,7 +376,7 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-5.jpg');
                 background-position: center;
-                background-size: cover;
+                background-size: auto 100%;
                 background-repeat: no-repeat;
             }
 
@@ -399,13 +385,19 @@ button[type='button'].scroll-button:active {
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
                     url('../asset/cardstour/card\ tour\ photo-6.png');
                 background-position: center;
-                background-size: cover;
+                background-size: auto 100%;
                 background-repeat: no-repeat;
             }
         }
 
         .card-tour:hover {
-            transform: scale(1.05);
+            background-size: auto 120%;
+            z-index: 1;
+        }
+
+        .card-tour:nth-child(1):hover,
+        .card-tour:nth-child(4):hover {
+            background-size: 120% auto;
             z-index: 1;
         }
     }
@@ -489,6 +481,14 @@ button[type='button'].scroll-button:active {
 
             select {
                 color: @grey300;
+            }
+
+            &__form,
+            input,
+            textarea,
+            select,
+            option {
+                transition: all 300ms ease;
             }
 
             &__form:hover,
@@ -847,7 +847,7 @@ button[type='button'].scroll-button:active {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
-            background-size: 918px auto;
+            background-size: 100% auto;
             background-position: 60% 80%;
         }
 
@@ -855,7 +855,7 @@ button[type='button'].scroll-button:active {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
-            background-size: 918px auto;
+            background-size: 100% auto;
             background-position: 60% 80%;
         }
 
@@ -863,13 +863,13 @@ button[type='button'].scroll-button:active {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
                 url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
-            background-size: 918px auto;
+            background-size: 100% auto;
             background-position: 60% 80%;
         }
     }
 
     .card:hover {
-        transform: scale(1.05);
+        background-size: 120% auto;
         z-index: 1;
     }
 

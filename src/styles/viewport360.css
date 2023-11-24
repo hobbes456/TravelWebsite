@@ -7,6 +7,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  overflow-x: hidden;
+}
 .main {
   width: 360px;
   display: flex;
@@ -40,15 +43,6 @@ a {
   align-items: center;
   gap: 214px;
 }
-.header .head-top .svg {
-  width: 133px;
-  height: 22px;
-  mask-image: url('../asset/svg/YourTour.svg');
-  -webkit-mask-image: url('../asset/svg/YourTour.svg');
-  mask-size: 133px 22px;
-  -webkit-mask-size: 133px 22px;
-  background-color: white;
-}
 .header .head-top_fixed {
   position: fixed;
   z-index: 100;
@@ -61,7 +55,7 @@ a {
 .header .head-top_fixed .head-menu {
   color: black;
 }
-.header .head-top_fixed .svg {
+.header .head-top_fixed .head-menu .svg {
   background-color: black;
 }
 .header .head-menu {
@@ -78,12 +72,20 @@ a {
   align-items: center;
   flex-shrink: 0;
 }
-.header .head-menu svg {
+.header .head-menu .svg {
   width: 133px;
   height: 22px;
+  mask-image: url('../asset/svg/YourTour.svg');
+  -webkit-mask-image: url('../asset/svg/YourTour.svg');
+  mask-size: 133px 22px;
+  -webkit-mask-size: 133px 22px;
+  background-color: white;
 }
 .header .head-menu__navigation {
   display: none;
+}
+.header .head-menu .telefon:active {
+  opacity: 50%;
 }
 .header .head-bottom {
   display: flex;
@@ -132,25 +134,15 @@ a {
   border-radius: 10px;
   background: white;
 }
+.header .head-bottom input[type='button']:active {
+  color: black;
+  background-color: #F8E6BE;
+}
 .main button[type='button'] {
   outline: none;
   border: none;
   background-color: transparent;
-}
-button[type='button'].scroll-button {
-  outline: none;
-  border: none;
-  background-color: transparent;
-  position: fixed;
-  display: none;
-  align-self: center;
-  z-index: 1;
-  right: 25px;
-  bottom: 25px;
-  transform: rotate(-90deg);
-}
-button[type='button'].shown {
-  display: none;
+  transition: all 150ms ease;
 }
 .main .button-with-arrow button[type='button'] {
   position: relative;
