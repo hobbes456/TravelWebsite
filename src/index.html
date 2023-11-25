@@ -53,7 +53,6 @@
             </div>
             <div class="cards">
                 <div class="card-tour">
-                    <div class="image_1"></div>
                     <h3 class="card-tour__title">Путешествие в горы</h3>
                     <p class="card-tour__price">от 80 000 руб</p>
                     <div class="button-with-arrow">
@@ -116,18 +115,18 @@
             </div>
         </section>
         <section class="block-tour-create" id="block-tour-create">
-            <div class="block-title">
-                <h2 class="block-title__title">Собери свой тур</h2>
-                <p class="block-title__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
+            <div class="block-top">
+                <h2 class="block-top__title">Собери свой тур</h2>
+                <p class="block-top__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
             </div>
             <form class="answers" action="#" method="post">
                 <div class="item">
                     <label for="name">Имя</label>
-                    <input class="item__form item__form_half-width" type="text" id="name" name="name" placeholder="Введите Ваше имя" required>
+                    <input class="item__form half-width" type="text" id="name" name="name" placeholder="Введите Ваше имя" required>
                 </div>
                 <div class="item">
                     <label for="path">Направление</label>
-                    <select class="item__form item__form_half-width" name="path" id="path" required>
+                    <select class="item__form half-width" name="path" id="path" required>
                         <option value="" selected hidden disabled>Куда хотите ехать</option>
                         <option value="Москва">Москва</option>
                         <option value="Санкт-Петербург">Санкт-Петербург</option>
@@ -141,25 +140,25 @@
                 </div>
                 <div class="item">
                     <label for="email">Email</label>
-                    <input class="item__form item__form_half-width" type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    <input class="item__form half-width" type="email" id="email" name="email" placeholder="example@mail.ru" required>
                 </div>
                 <div class="item">
                     <label for="tel">Телефон</label>
-                    <input class="item__form item__form_half-width" type="tel" id="tel" name="tel" pattern="[+]{1}[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _" required>
+                    <input class="item__form half-width" type="tel" id="tel" name="tel" pattern="[+]{1}[0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _" required>
                 </div>
                 <div class="item">
                     <label for="date-from">Дата от</label>
-                    <input class="item__form item__form_half-width" type="date" id="date-from" name="date-from" min="2010-01-01" max="2030-12-31" value="ДД-ММ-ГГГГ" required>
+                    <input class="item__form half-width" type="date" id="date-from" name="date-from" min="2010-01-01" max="2030-12-31" value="ДД-ММ-ГГГГ" required>
                 </div>
                 <div class="item">
                     <label for="date-to">Дата до</label>
-                    <input class="item__form item__form_half-width" type="date" id="date-to" name="date-to" min="2010-01-01" max="2030-12-31" value="ДД-ММ-ГГГГ" required>
+                    <input class="item__form half-width" type="date" id="date-to" name="date-to" min="2010-01-01" max="2030-12-31" value="ДД-ММ-ГГГГ" required>
                 </div>
-                <div class="item item_basis">
+                <div class="item item-basis">
                     <label for="comment">Комментарий</label>
                     <textarea class="item__form" id="comment" name="comment" rows="5"></textarea>
                 </div>
-                <div class="item item_basis">
+                <div class="item item-basis">
                     <label>Вам есть 18 лет?</label>
                     <div class="radio-buttons">
                         <div>
@@ -188,7 +187,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="item item_basis">
+                <div class="item item-basis">
                     <div class="licentia-description">
                         <input type="checkbox" name="liсentia" id="liсentia" required>
                         <label for="liсentia">
@@ -202,7 +201,7 @@
                         <p>Нажимая кнопку, я принимаю условия <a href="#">Лицензионного договора</a></p>
                     </div>
                 </div>
-                <div class="item item_basis">
+                <div class="item item-basis">
                     <div class="form-buttons">
                         <input type="submit" value="Найти тур">
                         <input type="reset" value="Сбросить">
@@ -211,9 +210,9 @@
             </form>
         </section>
         <section class="block-reviews" id="block-reviews">
-            <div class="block-title">
-                <h2 class="block-title__title">Отзывы наших <br> путешественников</h2>
-                <p class="block-title__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
+            <div class="block-top">
+                <h2 class="block-top__title">Отзывы наших <br> путешественников</h2>
+                <p class="block-top__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
                 </p>
             </div>
             <div class="reviews">
@@ -240,37 +239,37 @@
             </div>
         </section>
         <section class="block-gallery">
-            <div class="block-title">
-                <h2 class="block-title__title">Фотографии путешествий</h2>
-                <p class="block-title__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
+            <div class="block-top">
+                <h2 class="block-top__title">Фотографии путешествий</h2>
+                <p class="block-top__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
                 </p>
             </div>
             <div class="gallery">
                 <div class="row">
                     <div class="item item__photo-1"></div>
                     <div class="item item__photo-2"></div>
-                    <div class="item item__photo-3 item__360px"></div>
-                    <div class="item item__photo-4 item__1024px"></div>
+                    <div class="item item__photo-3 item-hidden-2"></div>
+                    <div class="item item__photo-4 item-hidden-1"></div>
                 </div>
                 <div class="row">
                     <div class="item item__photo-5"></div>
                     <div class="item item__photo-6"></div>
                     <div class="item item__photo-7"></div>
-                    <div class="item item__photo-8 item__360px"></div>
-                    <div class="item item__photo-9 item__1024px"></div>
+                    <div class="item item__photo-8 item-hidden-2"></div>
+                    <div class="item item__photo-9 item-hidden-1"></div>
                 </div>
                 <div class="row">
                     <div class="item item__photo-10"></div>
                     <div class="item item__photo-11"></div>
-                    <div class="item item__photo-12 item__360px"></div>
-                    <div class="item item__photo-13 item__1024px"></div>
+                    <div class="item item__photo-12 item-hidden-2"></div>
+                    <div class="item item__photo-13 item-hidden-1"></div>
                 </div>
             </div>
         </section>
         <section class="block-story" id="block-story">
-            <div class="block-title">
-                <h2 class="block-title__title">Истории путешествий</h2>
-                <p class="block-title__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
+            <div class="block-top">
+                <h2 class="block-top__title">Истории путешествий</h2>
+                <p class="block-top__description">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров
                 </p>
             </div>
             <div class="story-cards">

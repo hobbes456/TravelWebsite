@@ -13,6 +13,8 @@
 @beige200: #F4F0E9;
 
 @headAndFootHeight: 88px;
+@screenWeightTransitionDesktop: 1918px;
+@screenWeightTransitionMobile: 1px;
 
 @font-face {
     font-family: 'Roboto-Medium';
@@ -108,7 +110,7 @@ html {
 }
 
 .main {
-    width: 1920px;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,7 +139,7 @@ a {
 
     .head-top {
         display: flex;
-        width: 1920px;
+        width: 100%;
         height: @headAndFootHeight;
         justify-content: center;
         align-items: center;
@@ -147,12 +149,12 @@ a {
     .head-top_fixed {
         position: fixed;
         visibility: hidden;
+        z-index: -1;
         top: 0;
         left: 0;
         display: flex;
-        width: 1920px;
+        width: 100%;
         height: @headAndFootHeight;
-        z-index: -1;
         justify-content: center;
         align-items: center;
         gap: 214px;
@@ -184,6 +186,10 @@ a {
         align-items: center;
         flex-shrink: 0;
 
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 910px;
+        }
+
         .svg {
             width: 181.84px;
             height: 30.24px;
@@ -197,6 +203,10 @@ a {
             justify-content: center;
             align-items: center;
             gap: 50px;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                    gap: 30px;
+                }
             
             a:hover {
                 text-decoration: underline;
@@ -227,6 +237,10 @@ a {
             text-align: center;
             .h1-font();
             color: @white;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 914px;
+            }
         }
     
         &__description {
@@ -234,6 +248,10 @@ a {
             text-align: center;
             .p-normal-font();
             color: @white;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 422px;
+            }
         }
     
         input[type='button'] {
@@ -291,7 +309,7 @@ a {
 
 .block-of-tours {
     .content();
-    width: 1170px;
+    max-width: 1170px;
 
     & .menu {
         display: flex;
@@ -327,8 +345,14 @@ a {
 
     & .cards {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+            gap: 18px;
+        }
 
         & .card-tour {
             width: 370px;
@@ -340,6 +364,10 @@ a {
             border-radius: 50px;
             cursor: pointer;
             transition: all 300ms ease;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 450px;
+            }
             
             
             &__title {
@@ -425,12 +453,11 @@ a {
         .card-tour:nth-child(1):hover,
         .card-tour:nth-child(4):hover {
             background-size: 120% auto;
-            z-index: 1;
         }
     }
 }
 
-.block-title {
+.block-top {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,7 +479,6 @@ a {
 
 .block-tour-create {
     .content();
-    width: 1170px;
 
     input,
     textarea,
@@ -466,26 +492,28 @@ a {
     }
 
     & .answers {
-        width: 100%;
+        width: 1170px;
         padding: 70px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: flex-start;
         align-items: flex-start;
         gap: 35px 30px;
         border-radius: 50px;
         background-color: @white;
 
-        & .item {
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+            padding: 60px;
+            gap: 35px 20px;
+        }
+
+        .item {
             .p-normal-font();
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             gap: 8px;
-            flex: 1 0 0;
-
-            &_basis {
-                flex-basis: 100%;
-            }
 
             &__form {
                 padding: 20px;
@@ -494,9 +522,17 @@ a {
                 background: @beige100;
                 transition: all 300ms ease;
                 cursor: pointer;
+            }
 
-                &_half-width {
-                    width: 500px;
+            &__form:hover {
+                background-color: @beige200;
+            }
+
+            .half-width {
+                width: 500px;
+
+                @media screen and (max-width: @screenWeightTransitionDesktop) {
+                    width: 389px;
                 }
             }
 
@@ -513,9 +549,6 @@ a {
                 text-transform: uppercase;
             }
 
-            &__form:hover {
-                background-color: @beige200;
-            }
 
             .form-buttons {
                 width: 500px;
@@ -557,6 +590,10 @@ a {
                     background-color: @grey100;
                 }
             }
+        }
+
+        .item-basis {
+            flex-basis: 100%;
         }
     }
 
@@ -634,6 +671,10 @@ a {
         align-items: center;
         gap: 19px;
 
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            gap: 10px;
+        }
+
         label {
             display: flex;
             justify-content: center;
@@ -665,9 +706,14 @@ a {
 
     .reviews {
         display: flex;
-        width: 1170px;
+        max-width: 1170px;
         align-items: flex-start;
         gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+            gap: 18px;
+        }
     }
 
     .card {
@@ -681,6 +727,10 @@ a {
         align-self: stretch;
         border-radius: 50px;
         background-color: @beige200;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 450px;
+        }
 
         p {
             .p-big-font();
@@ -731,20 +781,30 @@ a {
     .content();
 
     .gallery {
-        padding: 0px 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 20px;
+        }
     }
 
     .row {
-        width: 1860px;
+        width: 1920px;
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 984px;
+            padding: 0;
+            gap: 20px;
+        }
     }
 
     .item {
@@ -843,17 +903,27 @@ a {
             background-repeat: no-repeat;
         }
     }
+
+    @media screen and (max-width: @screenWeightTransitionDesktop) {
+        .item-hidden-1 {
+            display: none;
+        }
+    }
 }
 
 .block-story {
     .content();
-    width: 1170px;
+    max-width: 1170px;
 
     .story-cards {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 50px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+        }
     }
 
     .card {
@@ -868,6 +938,10 @@ a {
         border-radius: 50px;
         transition: all 300ms ease;
         cursor: pointer;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+        }
 
         .svg {
             width: 24px;
@@ -997,7 +1071,7 @@ a {
 }
 
 .footer {
-    width: 1920px;
+    width: 100%;
     height: @headAndFootHeight;
     display: flex;
     justify-content: center;
@@ -1009,6 +1083,10 @@ a {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+        }
 
         p {
             .p-normal-font();
