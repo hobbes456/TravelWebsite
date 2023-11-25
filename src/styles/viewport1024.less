@@ -15,58 +15,75 @@
 @headAndFootHeight: 88px;
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-Medium';
     src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../asset/fonts/Roboto-Regular.ttf);
+}
+
 .h1-font() {
+    font-family: "Roboto-Medium", sans-serif;
     color: @black;
     font-size: 96px;
-    // font-style: normal;
-    // font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     line-height: 109%;
     letter-spacing: 1.92px;
+    word-wrap: break-word;
 }
 
 .h2-font() {
+    font-family: "Roboto-Medium", sans-serif;
     color: @black;
     font-size: 59px;
-    // font-style: normal;
-    // font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     line-height: 124%;
+    word-wrap: break-word;
 }
 
 .h3-font() {
+    font-family: "Roboto-Medium", sans-serif;
     color: @black;
     font-size: 35px;
-    // font-style: normal;
-    // font-weight: 500;
-    line-height: 122%
+    font-style: normal;
+    font-weight: 500;
+    line-height: 122%;
+    word-wrap: break-word;
 }
 
 .p-big-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 23px;
-    // font-style: normal;
-    // font-weight: 700;
-    line-height: 122%
+    font-style: normal;
+    font-weight: 700;
+    line-height: 122%;
+    word-wrap: break-word;
 }
 
 .p-normal-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 20px;
-    // font-style: normal;
-    // font-weight: 400;
-    line-height: 142%
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142%;
+    word-wrap: break-word;
 }
 
 .p-small-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 17px;
-    // font-style: normal;
-    // font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
     line-height: 142%;
     letter-spacing: -0.17px;
+    word-wrap: break-word;
 }
 
 .content() {
@@ -91,7 +108,6 @@ html {
 }
 
 .main {
-    font-family: "Roboto", sans-serif;
     width: 1024px;
     display: flex;
     flex-direction: column;
@@ -672,7 +688,7 @@ a {
 
         p {
             .p-big-font();
-            letter-spacing: -0.5px;
+            text-align: left;
         }
     }
 

@@ -1,6 +1,10 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Roboto-Medium';
   src: url(../asset/fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url(../asset/fonts/Roboto-Regular.ttf);
 }
 * {
   padding: 0;
@@ -72,8 +76,11 @@ a {
   z-index: 100;
 }
 .header .head-menu {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: white;
   display: flex;
@@ -108,8 +115,11 @@ a {
 .header .head-bottom__title {
   width: 100%;
   text-align: center;
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
   color: white;
@@ -118,8 +128,11 @@ a {
   width: 310px;
   padding: 0 20px;
   text-align: center;
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: white;
 }
@@ -127,8 +140,11 @@ a {
   outline: none;
   border: none;
   padding: 5px 20px;
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
   text-align: center;
@@ -150,8 +166,11 @@ a {
   top: 7px;
   left: -20px;
   padding: 7px 20px;
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 142%;
   color: white;
   display: inline-flex;
@@ -173,8 +192,11 @@ a {
   gap: 30px;
 }
 .block-of-tours .menu__title {
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
   letter-spacing: -0.5px;
@@ -190,8 +212,11 @@ a {
   gap: 10px;
 }
 .block-of-tours .menu__navigation a {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 142%;
 }
 .block-of-tours .menu__navigation a:active {
@@ -218,16 +243,22 @@ a {
 }
 .block-of-tours .cards .card-tour__title {
   margin-bottom: 13px;
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
   color: white;
 }
 .block-of-tours .cards .card-tour__price {
   margin-bottom: auto;
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
   color: white;
@@ -283,16 +314,22 @@ a {
   gap: 20px;
 }
 .block-title__title {
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
   text-align: center;
   letter-spacing: -0.5px;
 }
 .block-title__description {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   text-align: center;
   width: 100%;
@@ -329,8 +366,11 @@ a {
   background-color: white;
 }
 .block-tour-create .answers .item {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   display: flex;
   flex-direction: column;
@@ -459,8 +499,11 @@ a {
   align-items: center;
 }
 .block-tour-create .licentia-description p {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
   color: #A6A6A6;
@@ -496,10 +539,13 @@ a {
   background-color: #F4F0E9;
 }
 .block-reviews .card p {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 142%;
-  letter-spacing: -0.25px;
+  text-align: left;
 }
 .block-reviews .card__person {
   display: flex;
@@ -515,14 +561,20 @@ a {
   flex: 1 0 0;
 }
 .block-reviews .card__person .name_big {
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
 }
 .block-reviews .card__person .name_description {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
   color: #A6A6A6;
@@ -685,23 +737,32 @@ a {
   width: 263px;
 }
 .block-story .story__title {
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
   color: white;
   margin-bottom: 20px;
 }
 .block-story .story__description {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: white;
   margin-bottom: 25px;
 }
 .block-story .story ul {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: white;
   margin-left: 20px;
@@ -713,8 +774,11 @@ a {
   align-items: flex-end;
 }
 .block-story .information .social-contacts {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: white;
   display: none;
@@ -744,15 +808,21 @@ a {
   gap: 20px;
 }
 .block-agitation .text__title {
+  font-family: "Roboto-Medium", sans-serif;
   color: black;
   font-size: 23px;
+  font-style: normal;
+  font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
   text-align: center;
 }
 .block-agitation .text p {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   text-align: center;
   color: #A6A6A6;
@@ -777,8 +847,11 @@ a {
   gap: 7px;
 }
 .footer .our-contacts p {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   color: #A6A6A6;
 }
@@ -788,8 +861,11 @@ a {
   gap: 15px;
 }
 .footer .contacts a {
+  font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 142%;
   display: flex;
   align-items: center;

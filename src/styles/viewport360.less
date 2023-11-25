@@ -15,49 +15,59 @@
 @headAndFootHeight: 88px;
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto-Medium';
     src: url(../asset/fonts/Roboto-Medium.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../asset/fonts/Roboto-Regular.ttf);
+}
+
 .mobile-h1-font() {
+    font-family: "Roboto-Medium", sans-serif;
     color: @black;
     font-size: 34px;
-    // font-style: normal;
-    // font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     line-height: 112%;
     letter-spacing: 0.68px;
 }
 
 .mobile-h3-font() {
+    font-family: "Roboto-Medium", sans-serif;
     color: @black;
     font-size: 23px;
-    // font-style: normal;
-    // font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
 }
 
 .mobile-p-big-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 16px;
-    // font-style: normal;
-    // font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
     line-height: 142%
 }
 
 .mobile-p-normal-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 16px;
-    // font-style: normal;
-    // font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
     line-height: 142%
 }
 
 .mobile-p-small-font() {
+    font-family: "Roboto-Regular", sans-serif;
     color: @black;
     font-size: 16px;
-    // font-style: normal;
-    // font-weight: 400;
+    font-style: normal;
+    font-weight: 400;
     line-height: 142%;
     letter-spacing: -0.16px;
 }
@@ -606,7 +616,7 @@ a {
 
         p {
             .mobile-p-big-font();
-            letter-spacing: -0.25px;
+            text-align: left;
         }
     }
 
