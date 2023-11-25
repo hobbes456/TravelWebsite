@@ -1,1 +1,2 @@
-@import url('viewport1920.css');
+@import url('vDesktop.css') screen and (min-width: 1024px);
+@import url('vMobile.css') screen and (max-width: 1022px);

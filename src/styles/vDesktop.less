@@ -13,6 +13,7 @@
 @beige200: #F4F0E9;
 
 @headAndFootHeight: 88px;
+@screenWeightTransitionDesktop: 1918px;
 
 @font-face {
     font-family: 'Roboto-Medium';
@@ -143,7 +144,7 @@ a {
         align-items: center;
         gap: 214px;
     }
-    
+
     .head-top_fixed {
         position: fixed;
         visibility: hidden;
@@ -159,7 +160,7 @@ a {
         backdrop-filter: blur(5.5px);
         -webkit-backdrop-filter: blur(5.5px);
         background-color: rgba(255, 255, 255, 0.75);
-        
+    
         .head-menu {
             color: @black;
 
@@ -167,7 +168,7 @@ a {
                 background-color: @black;
             }
         }
-        
+    
     }
 
     .shown {
@@ -179,10 +180,14 @@ a {
         .p-normal-font();
         color: @white;
         display: flex;
-        width: 910px;
+        width: 1168px;
         justify-content: space-between;
         align-items: center;
         flex-shrink: 0;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 910px;
+        }
 
         .svg {
             width: 181.84px;
@@ -196,8 +201,12 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 30px;
+            gap: 50px;
 
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                gap: 30px;
+            }
+            
             a:hover {
                 text-decoration: underline;
                 text-decoration-thickness: 1px;
@@ -213,7 +222,7 @@ a {
             opacity: 50%;
         }
     }
-    
+
     .head-bottom {
         display: flex;
         height: 743px;
@@ -223,17 +232,25 @@ a {
         gap: 50px;
     
         &__title {
-            width: 914px;
+            width: 768px;
             text-align: center;
             .h1-font();
             color: @white;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 914px;
+            }
         }
     
         &__description {
-            width: 422px;
+            width: 562px;
             text-align: center;
             .p-normal-font();
             color: @white;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 422px;
+            }
         }
     
         input[type='button'] {
@@ -291,8 +308,9 @@ a {
 
 .block-of-tours {
     .content();
+    max-width: 1170px;
 
-    & .menu {
+    .menu {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -324,25 +342,33 @@ a {
         }
     }
 
-    & .cards {
+    .cards {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0 53px;
-        gap: 18px;
+        gap: 30px;
 
-        & .card-tour {
-            width: 450px;
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+            gap: 18px;
+        }
+
+        .card-tour {
+            width: 370px;
             height: 531px;
             padding: 50px;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             border-radius: 50px;
-            transition: all 300ms ease;
-            // flex: 1 0 0;
             cursor: pointer;
+            transition: all 300ms ease;
 
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 450px;
+            }
+            
+            
             &__title {
                 margin-bottom: 16px;
                 .h3-font();
@@ -354,7 +380,7 @@ a {
                 .p-small-font();
                 color: @white;
             }
-
+            
             .svg {
                 width: 24px;
                 height: 26px;
@@ -380,7 +406,7 @@ a {
                 background-size: auto 100%;
                 background-repeat: no-repeat;
             }
-
+            
             &:nth-child(3) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
@@ -389,7 +415,7 @@ a {
                 background-size: auto 100%;
                 background-repeat: no-repeat;
             }
-
+            
             &:nth-child(4) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
@@ -417,12 +443,12 @@ a {
                 background-repeat: no-repeat;
             }
         }
-
+        
         .card-tour:hover {
             background-size: auto 120%;
             z-index: 1;
         }
-
+        
         .card-tour:nth-child(1):hover,
         .card-tour:nth-child(4):hover {
             background-size: 120% auto;
@@ -465,15 +491,21 @@ a {
     }
 
     .answers {
-        width: 918px;
-        padding: 60px;
+        width: 1170px;
+        padding: 70px;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        gap: 35px 20px;
+        gap: 35px 30px;
         border-radius: 50px;
         background-color: @white;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+            padding: 60px;
+            gap: 35px 20px;
+        }
 
         .item {
             .p-normal-font();
@@ -484,7 +516,6 @@ a {
 
             &__form {
                 padding: 20px;
-                // width: 100%;
                 border: 1px solid @beige200;
                 border-radius: 10px;
                 background: @beige100;
@@ -495,9 +526,13 @@ a {
             &__form:hover {
                 background-color: @beige200;
             }
-            
+
             .half-width {
-                width: 389px;
+                width: 500px;
+
+                @media screen and (max-width: @screenWeightTransitionDesktop) {
+                    width: 389px;
+                }
             }
 
             textarea {
@@ -512,6 +547,7 @@ a {
                 color: @grey300;
                 text-transform: uppercase;
             }
+
 
             .form-buttons {
                 width: 500px;
@@ -632,8 +668,12 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
-        
+        gap: 19px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            gap: 10px;
+        }
+
         label {
             display: flex;
             justify-content: center;
@@ -665,13 +705,18 @@ a {
 
     .reviews {
         display: flex;
-        padding: 0 53px;
+        max-width: 1170px;
         align-items: flex-start;
-        gap: 18px;
+        gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+            gap: 18px;
+        }
     }
 
     .card {
-        width: 450px;
+        width: 100%;
         display: flex;
         padding: 40px;
         flex-direction: column;
@@ -681,6 +726,10 @@ a {
         align-self: stretch;
         border-radius: 50px;
         background-color: @beige200;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 450px;
+        }
 
         p {
             .p-big-font();
@@ -731,30 +780,36 @@ a {
     .content();
 
     .gallery {
-        padding: 0 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 20px;
+        }
     }
 
     .row {
-        width: 984px;
+        width: 1920px;
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;
+        gap: 30px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 984px;
+            padding: 0;
+            gap: 20px;
+        }
     }
 
     .item {
         width: 100%;
         height: 301px;
         border-radius: 50px;
-
-        &__1024px {
-            display: none;
-        }
 
         &__photo-1 {
             background-image: url('../asset/travelphoto/travel\ photo-1.png');
@@ -772,6 +827,13 @@ a {
 
         &__photo-3 {
             background-image: url('../asset/travelphoto/travel\ photo-3.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__photo-4 {
+            background-image: url('../asset/travelphoto/travel\ photo-4.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -805,6 +867,13 @@ a {
             background-repeat: no-repeat;
         }
 
+        &__photo-9 {
+            background-image: url('../asset/travelphoto/travel\ photo-9.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         &__photo-10 {
             background-image: url('../asset/travelphoto/travel\ photo-10.png');
             background-position: center;
@@ -825,24 +894,41 @@ a {
             background-size: cover;
             background-repeat: no-repeat;
         }
+
+        &__photo-13 {
+            background-image: url('../asset/travelphoto/travel\ photo-13.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media screen and (max-width: @screenWeightTransitionDesktop) {
+        .item-hidden-1 {
+            display: none;
+        }
     }
 }
 
 .block-story {
     .content();
+    max-width: 1170px;
 
     .story-cards {
-        padding: 0 53px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 50px;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            padding: 0 53px;
+        }
     }
 
     .card {
         display: flex;
         flex-direction: column;
-        width: 918px;
+        width: 1170px;
         height: 567px;
         padding: 60px;
         justify-content: space-between;
@@ -851,6 +937,10 @@ a {
         border-radius: 50px;
         transition: all 300ms ease;
         cursor: pointer;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+        }
 
         .svg {
             width: 24px;
@@ -988,10 +1078,14 @@ a {
     background-color: @beige200;
 
     .our-contacts {
-        width: 918px;
+        width: 1168px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media screen and (max-width: @screenWeightTransitionDesktop) {
+            width: 918px;
+        }
 
         p {
             .p-normal-font();
@@ -1020,7 +1114,7 @@ a {
             color: @green400;
         }
     }
-    
+
     .svg {
         width: 26px;
         height: 26px;

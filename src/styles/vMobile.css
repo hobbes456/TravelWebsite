@@ -15,8 +15,7 @@ html {
   overflow-x: hidden;
 }
 .main {
-  font-family: "Roboto", sans-serif;
-  width: 360px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +41,7 @@ a {
 .header .head-top {
   padding: 20px;
   display: flex;
-  width: 360px;
+  width: 100%;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -56,7 +55,7 @@ a {
   left: 0;
   padding: 20px;
   display: flex;
-  width: 360px;
+  width: 100%;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -99,7 +98,21 @@ a {
   background-color: white;
 }
 .header .head-menu__navigation {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 650px) {
+  .header .head-menu__navigation {
+    display: none;
+  }
+}
+.header .head-menu__navigation a:active {
+  color: #EFA501;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
 }
 .header .head-menu .telefon:active {
   opacity: 50%;
@@ -159,7 +172,6 @@ a {
   outline: none;
   border: none;
   background-color: transparent;
-  transition: all 150ms ease;
 }
 .main .button-with-arrow button[type='button'] {
   position: relative;
@@ -223,7 +235,7 @@ a {
   color: #EFA501;
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
 }
 .block-of-tours .cards {
   padding: 0 21px;
@@ -322,7 +334,6 @@ a {
   line-height: 112%;
   letter-spacing: 0.68px;
   text-align: center;
-  letter-spacing: -0.5px;
 }
 .block-top__description {
   font-family: "Roboto-Regular", sans-serif;
@@ -334,7 +345,6 @@ a {
   text-align: center;
   width: 100%;
   color: #A6A6A6;
-  letter-spacing: -0.5px;
 }
 .block-tour-create {
   display: flex;
@@ -387,9 +397,6 @@ a {
   border: 1px solid #F4F0E9;
   border-radius: 10px;
   background: #F9F7F4;
-}
-.block-tour-create .answers .item__form_half-width {
-  width: 278px;
 }
 .block-tour-create .answers .item textarea {
   resize: none;
@@ -596,9 +603,9 @@ a {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  padding: 0px 21px;
 }
 .block-gallery .gallery {
-  padding: 0px 21px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -607,7 +614,6 @@ a {
 }
 .block-gallery .row {
   width: 318px;
-  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -620,10 +626,6 @@ a {
   width: 100%;
   height: 110px;
   border-radius: 20px;
-}
-.block-gallery .item__360px,
-.block-gallery .item__1024px {
-  display: none;
 }
 .block-gallery .item__photo-1 {
   background-image: url('../asset/travelphoto/travel\ photo-1.png');
@@ -684,6 +686,10 @@ a {
   background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.block-gallery .item-hidden-1,
+.block-gallery .item-hidden-2 {
+  display: none;
 }
 .block-story {
   display: flex;
