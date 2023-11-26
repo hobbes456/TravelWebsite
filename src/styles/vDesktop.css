@@ -35,7 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png');
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png'), lightgray;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -267,7 +267,13 @@ a {
   text-underline-offset: 10px;
 }
 .block-of-tours .menu__navigation a:active {
+  opacity: 50%;
+}
+.block-of-tours .menu__navigation .valid {
   color: #EFA501;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }
 .block-of-tours .cards {
   display: flex;
@@ -328,37 +334,37 @@ a {
   -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png');
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(2) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(3) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(4) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png');
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(5) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(6) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png');
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
