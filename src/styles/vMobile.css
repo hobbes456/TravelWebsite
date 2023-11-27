@@ -603,7 +603,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  padding: 0px 21px;
 }
 .block-gallery .gallery {
   display: flex;
@@ -613,11 +612,19 @@ a {
   gap: 18px;
 }
 .block-gallery .row {
-  width: 318px;
-  display: flex;
-  justify-content: space-between;
+  width: 100vw;
+  padding: 0 21px;
+  display: grid;
+  justify-items: center;
   align-items: center;
   gap: 10px;
+}
+.block-gallery .row:first-child,
+.block-gallery .row:last-child {
+  grid-template-columns: repeat(2, 1fr);
+}
+.block-gallery .row:nth-child(2) {
+  grid-template-columns: repeat(3, 1fr);
 }
 .block-gallery .row:first-child {
   gap: 18px;
