@@ -14,6 +14,7 @@
 
 @headAndFootHeight: 88px;
 @screenWeightTransitionMobile: 650px;
+@galleryTransition: 460px;
 
 @font-face {
     font-family: 'Roboto-Medium';
@@ -89,6 +90,8 @@
 }
 
 html {
+    scroll-behavior: smooth;
+    scroll-padding-top: @headAndFootHeight;
     overflow-x: hidden;
 }
 
@@ -655,10 +658,14 @@ a {
 
             &_1 {
                 background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background-position: 50% 20%;
+                background-size: cover;
             }
 
             &_2 {
                 background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background-position: 50% 10%;
+                background-size: cover;
             }
         }
     }
@@ -683,18 +690,29 @@ a {
         align-items: center;
         gap: 10px;
 
+        &:first-child {
+            gap: 18px;
+        }
+
         &:first-child,
         &:last-child {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
         }
 
         &:nth-child(2) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
         }
-    }
 
-    .row:first-child {
-        gap: 18px;
+        @media screen and (max-width: @galleryTransition){
+            &:first-child,
+            &:last-child {
+                grid-template-columns: repeat(2, 1fr);
+            }   
+
+            &:nth-child(2) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
     }
 
     .item {
@@ -773,9 +791,14 @@ a {
         }
     }
 
-    .item-hidden-1,
-    .item-hidden-2 {
+    .item-hidden-1 {
         display: none;
+    }
+
+    @media  screen and (max-width: @galleryTransition) {
+        .item-hidden-2 {
+            display: none;
+        }
     }
 }
 

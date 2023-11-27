@@ -12,6 +12,8 @@
   box-sizing: border-box;
 }
 html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
   overflow-x: hidden;
 }
 .main {
@@ -593,9 +595,13 @@ a {
 }
 .block-reviews .card__person .logo_1 {
   background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background-position: 50% 20%;
+  background-size: cover;
 }
 .block-reviews .card__person .logo_2 {
   background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background-position: 50% 10%;
+  background-size: cover;
 }
 .block-gallery {
   display: flex;
@@ -619,15 +625,24 @@ a {
   align-items: center;
   gap: 10px;
 }
-.block-gallery .row:first-child,
-.block-gallery .row:last-child {
-  grid-template-columns: repeat(2, 1fr);
-}
-.block-gallery .row:nth-child(2) {
-  grid-template-columns: repeat(3, 1fr);
-}
 .block-gallery .row:first-child {
   gap: 18px;
+}
+.block-gallery .row:first-child,
+.block-gallery .row:last-child {
+  grid-template-columns: repeat(3, 1fr);
+}
+.block-gallery .row:nth-child(2) {
+  grid-template-columns: repeat(4, 1fr);
+}
+@media screen and (max-width: 460px) {
+  .block-gallery .row:first-child,
+  .block-gallery .row:last-child {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .block-gallery .row:nth-child(2) {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .block-gallery .item {
   width: 100%;
@@ -694,9 +709,13 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.block-gallery .item-hidden-1,
-.block-gallery .item-hidden-2 {
+.block-gallery .item-hidden-1 {
   display: none;
+}
+@media screen and (max-width: 460px) {
+  .block-gallery .item-hidden-2 {
+    display: none;
+  }
 }
 .block-story {
   display: flex;
