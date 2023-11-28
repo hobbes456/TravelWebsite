@@ -35,7 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png'), lightgray;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -334,37 +334,37 @@ a {
   -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png'), #d3d3d3;
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(2) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png'), #d3d3d3;
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(3) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png'), #d3d3d3;
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(4) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png'), #d3d3d3;
   background-position: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(5) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg'), #d3d3d3;
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(6) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png'), #d3d3d3;
   background-position: center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -701,12 +701,12 @@ a {
   border-radius: 100px;
 }
 .block-reviews .card__person .logo_1 {
-  background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-1.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
   background-position: 50% 20%;
   background-size: cover;
 }
 .block-reviews .card__person .logo_2 {
-  background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-2.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -764,42 +764,49 @@ a {
   border-radius: 50px;
 }
 .block-gallery .item__photo-1 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-2 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-3 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-3.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-4 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-4.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-5 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-6 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-6.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-7 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
   background-position: center;
   background-size: cover;
@@ -812,32 +819,37 @@ a {
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-9 {
-  background-image: url('../asset/travelphoto/travel\ photo-9.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-13.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-10 {
-  background-image: url('../asset/travelphoto/travel\ photo-10.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-9.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-11 {
-  background-image: url('../asset/travelphoto/travel\ photo-11.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-10.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-12 {
-  background-image: url('../asset/travelphoto/travel\ photo-12.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-11.png');
   background-position: 50% 75%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-13 {
-  background-image: url('../asset/travelphoto/travel\ photo-13.png');
-  background-position: center;
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-12.png');
+  background-position: 50% 90%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -891,17 +903,17 @@ a {
   -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-story .card_photo1 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: 100% auto;
   background-position: 60% 80%;
 }
 .block-story .card_photo2 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: 100% auto;
   background-position: 60% 80%;
 }
 .block-story .card_photo3 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: 100% auto;
   background-position: 60% 80%;
 }
@@ -980,7 +992,7 @@ a {
   width: 370px;
   height: 370px;
   border-radius: 50px;
-  background: url('../asset/footer/footer\ photo.jpg'), lightgray -117.363px 0px / 151.55% 100.781% no-repeat;
+  background: url('../asset/footer/footer\ photo.jpg'), #d3d3d3 -117.363px 0px / 151.55% 100.781% no-repeat;
 }
 .block-agitation .text {
   display: flex;

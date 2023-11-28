@@ -35,7 +35,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png'), lightgray;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -83,6 +83,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
   display: flex;
   width: 100%;
@@ -137,6 +138,7 @@ a {
   font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
+  word-wrap: break-word;
   color: white;
 }
 .header .head-bottom__description {
@@ -149,6 +151,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
 }
 .header .head-bottom input[type='button'] {
@@ -162,6 +165,7 @@ a {
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
+  word-wrap: break-word;
   text-align: center;
   border-radius: 10px;
   background: white;
@@ -186,6 +190,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
   display: inline-flex;
   align-items: center;
@@ -213,6 +218,7 @@ a {
   font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
+  word-wrap: break-word;
   letter-spacing: -0.5px;
 }
 .block-of-tours .menu__navigation {
@@ -232,6 +238,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
+  word-wrap: break-word;
 }
 .block-of-tours .menu__navigation .valid {
   color: #EFA501;
@@ -264,6 +271,7 @@ a {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
+  word-wrap: break-word;
   color: white;
 }
 .block-of-tours .cards .card-tour__price {
@@ -275,6 +283,7 @@ a {
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
+  word-wrap: break-word;
   color: white;
 }
 .block-of-tours .cards .card-tour .svg {
@@ -285,37 +294,37 @@ a {
   -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-of-tours .cards .card-tour:nth-child(1) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(2) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(3) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(4) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(5) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-of-tours .cards .card-tour:nth-child(6) {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png');
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png'), #d3d3d3;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -335,6 +344,7 @@ a {
   font-weight: 700;
   line-height: 112%;
   letter-spacing: 0.68px;
+  word-wrap: break-word;
   text-align: center;
 }
 .block-top__description {
@@ -344,6 +354,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   text-align: center;
   width: 100%;
   color: #A6A6A6;
@@ -384,6 +395,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -515,6 +527,7 @@ a {
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
+  word-wrap: break-word;
   color: #A6A6A6;
 }
 .block-tour-create .licentia-description p a {
@@ -554,6 +567,7 @@ a {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
+  word-wrap: break-word;
   text-align: left;
 }
 .block-reviews .card__person {
@@ -577,6 +591,7 @@ a {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
+  word-wrap: break-word;
 }
 .block-reviews .card__person .name_description {
   font-family: "Roboto-Regular", sans-serif;
@@ -586,6 +601,7 @@ a {
   font-weight: 400;
   line-height: 142%;
   letter-spacing: -0.16px;
+  word-wrap: break-word;
   color: #A6A6A6;
 }
 .block-reviews .card__person .logo {
@@ -594,12 +610,12 @@ a {
   border-radius: 100px;
 }
 .block-reviews .card__person .logo_1 {
-  background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-1.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
   background-position: 50% 20%;
   background-size: cover;
 }
 .block-reviews .card__person .logo_2 {
-  background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-2.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -650,62 +666,93 @@ a {
   border-radius: 20px;
 }
 .block-gallery .item__photo-1 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-1.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-2 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-2.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-3 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-3.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.block-gallery .item__photo-4 {
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-4.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .block-gallery .item__photo-5 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-5.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-6 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-6.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-7 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-8 {
+  background: #d3d3d3;
   background-image: url('../asset/travelphoto/travel\ photo-8.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+.block-gallery .item__photo-9 {
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-13.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .block-gallery .item__photo-10 {
-  background-image: url('../asset/travelphoto/travel\ photo-10.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-9.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-11 {
-  background-image: url('../asset/travelphoto/travel\ photo-11.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-10.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .block-gallery .item__photo-12 {
-  background-image: url('../asset/travelphoto/travel\ photo-12.png');
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-11.png');
   background-position: 50% 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.block-gallery .item__photo-13 {
+  background: #d3d3d3;
+  background-image: url('../asset/travelphoto/travel\ photo-12.png');
+  background-position: 50% 90%;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -751,17 +798,17 @@ a {
   -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
 }
 .block-story .card_photo1 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: auto 455px;
   background-position: 50% 80%;
 }
 .block-story .card_photo2 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: auto 455px;
   background-position: 50% 80%;
 }
 .block-story .card_photo3 {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg'), #d3d3d3 50% / cover no-repeat;
   background-size: auto 455px;
   background-position: 50% 80%;
 }
@@ -776,6 +823,7 @@ a {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
+  word-wrap: break-word;
   color: white;
   margin-bottom: 20px;
 }
@@ -786,6 +834,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
   margin-bottom: 25px;
 }
@@ -796,6 +845,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
   margin-left: 20px;
 }
@@ -812,6 +862,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: white;
   display: none;
   align-items: center;
@@ -828,7 +879,7 @@ a {
   width: 130px;
   height: 130px;
   border-radius: 20px;
-  background: url('../asset/footer/footer\ photo.jpg'), lightgray -117.363px 0px / 151.55% 100.781% no-repeat;
+  background: url('../asset/footer/footer\ photo.jpg'), #d3d3d3 -117.363px 0px / 151.55% 100.781% no-repeat;
   background-position: 50% 80%;
   background-size: 130px 130px;
 }
@@ -847,6 +898,7 @@ a {
   font-weight: 700;
   line-height: 120%;
   letter-spacing: 0.92px;
+  word-wrap: break-word;
   text-align: center;
 }
 .block-agitation .text p {
@@ -856,6 +908,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   text-align: center;
   color: #A6A6A6;
 }
@@ -885,6 +938,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   color: #A6A6A6;
 }
 .footer .contacts {
@@ -899,6 +953,7 @@ a {
   font-style: normal;
   font-weight: 400;
   line-height: 142%;
+  word-wrap: break-word;
   display: flex;
   align-items: center;
   gap: 5px;

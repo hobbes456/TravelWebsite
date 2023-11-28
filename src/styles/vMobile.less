@@ -12,6 +12,8 @@
 @beige100: #F9F7F4;
 @beige200: #F4F0E9;
 
+@lightgrey: #d3d3d3;
+
 @headAndFootHeight: 88px;
 @screenWeightTransitionMobile: 650px;
 @galleryTransition: 460px;
@@ -34,6 +36,7 @@
     font-weight: 700;
     line-height: 112%;
     letter-spacing: 0.68px;
+    word-wrap: break-word;
 }
 
 .mobile-h3-font() {
@@ -44,6 +47,7 @@
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 0.92px;
+    word-wrap: break-word;
 }
 
 .mobile-p-big-font() {
@@ -52,7 +56,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 142%
+    line-height: 142%;
+    word-wrap: break-word;
 }
 
 .mobile-p-normal-font() {
@@ -61,7 +66,8 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 142%
+    line-height: 142%;
+    word-wrap: break-word;
 }
 
 .mobile-p-small-font() {
@@ -72,6 +78,7 @@
     font-weight: 400;
     line-height: 142%;
     letter-spacing: -0.16px;
+    word-wrap: break-word;
 }
 
 .content() {
@@ -119,7 +126,7 @@ a {
     background: 
         linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
         url('../asset/header/header-img.png'),
-        lightgray;
+        @lightgrey;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -340,7 +347,8 @@ a {
             &:nth-child(1) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-1.png');
+                    url('../asset/cardstour/card\ tour\ photo-1.png'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -349,7 +357,8 @@ a {
             &:nth-child(2) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-2.png');
+                    url('../asset/cardstour/card\ tour\ photo-2.png'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -358,7 +367,8 @@ a {
             &:nth-child(3) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-3.png');
+                    url('../asset/cardstour/card\ tour\ photo-3.png'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -367,7 +377,8 @@ a {
             &:nth-child(4) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-4.png');
+                    url('../asset/cardstour/card\ tour\ photo-4.png'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -376,7 +387,8 @@ a {
             &:nth-child(5) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-5.jpg');
+                    url('../asset/cardstour/card\ tour\ photo-5.jpg'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -385,7 +397,8 @@ a {
             &:nth-child(6) {
                 background:
                     linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%),
-                    url('../asset/cardstour/card\ tour\ photo-6.png');
+                    url('../asset/cardstour/card\ tour\ photo-6.png'),
+                    @lightgrey;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -657,13 +670,13 @@ a {
             border-radius: 100px;
 
             &_1 {
-                background: url('../asset/avatars/review\ photo-1.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background: url('../asset/avatars/review\ photo-1.jpg'), @lightgrey -21.313px 0px / 149.953% 100% no-repeat;
                 background-position: 50% 20%;
                 background-size: cover;
             }
 
             &_2 {
-                background: url('../asset/avatars/review\ photo-2.jpg'), lightgray -21.313px 0px / 149.953% 100% no-repeat;
+                background: url('../asset/avatars/review\ photo-2.jpg'), @lightgrey -21.313px 0px / 149.953% 100% no-repeat;
                 background-position: 50% 10%;
                 background-size: cover;
             }
@@ -721,6 +734,7 @@ a {
         border-radius: 20px;
 
         &__photo-1 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-1.png');
             background-position: center;
             background-size: cover;
@@ -728,6 +742,7 @@ a {
         }
 
         &__photo-2 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-2.png');
             background-position: center;
             background-size: cover;
@@ -735,13 +750,23 @@ a {
         }
 
         &__photo-3 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-3.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
+        &__photo-4 {
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-4.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         &__photo-5 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-5.png');
             background-position: center;
             background-size: cover;
@@ -749,6 +774,7 @@ a {
         }
 
         &__photo-6 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-6.png');
             background-position: center;
             background-size: cover;
@@ -756,6 +782,7 @@ a {
         }
 
         &__photo-7 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-7.jpg');
             background-position: center;
             background-size: cover;
@@ -763,29 +790,49 @@ a {
         }
 
         &__photo-8 {
+            background: @lightgrey;
             background-image: url('../asset/travelphoto/travel\ photo-8.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
+        &__photo-9 {
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-13.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
         &__photo-10 {
-            background-image: url('../asset/travelphoto/travel\ photo-10.png');
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-9.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         &__photo-11 {
-            background-image: url('../asset/travelphoto/travel\ photo-11.png');
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-10.png');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         &__photo-12 {
-            background-image: url('../asset/travelphoto/travel\ photo-12.png');
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-11.png');
             background-position: 50% 75%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &__photo-13 {
+            background: @lightgrey;
+            background-image: url('../asset/travelphoto/travel\ photo-12.png');
+            background-position: 50% 90%;
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -836,7 +883,7 @@ a {
         &_photo1 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
-                url('../asset/storycards/story\ photo-1.jpg'), lightgray 50% / cover no-repeat;
+                url('../asset/storycards/story\ photo-1.jpg'), @lightgrey 50% / cover no-repeat;
             background-size: auto 455px;
             background-position: 50% 80%;
         }
@@ -844,7 +891,7 @@ a {
         &_photo2 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
-                url('../asset/storycards/story\ photo-2.jpg'), lightgray 50% / cover no-repeat;
+                url('../asset/storycards/story\ photo-2.jpg'), @lightgrey 50% / cover no-repeat;
             background-size: auto 455px;
             background-position: 50% 80%;
         }
@@ -852,7 +899,7 @@ a {
         &_photo3 {
             background:
                 linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0.01%, rgba(0, 0, 0, 0.20) 100%),
-                url('../asset/storycards/story\ photo-3.jpg'), lightgray 50% / cover no-repeat;
+                url('../asset/storycards/story\ photo-3.jpg'), @lightgrey 50% / cover no-repeat;
             background-size: auto 455px;
             background-position: 50% 80%;
         }
@@ -907,7 +954,7 @@ a {
         width: 130px;
         height: 130px;
         border-radius: 20px;
-        background: url('../asset/footer/footer\ photo.jpg'), lightgray -117.363px 0px / 151.55% 100.781% no-repeat;
+        background: url('../asset/footer/footer\ photo.jpg'), @lightgrey -117.363px 0px / 151.55% 100.781% no-repeat;
         background-position: 50% 80%;
         background-size: 130px 130px;
     }
