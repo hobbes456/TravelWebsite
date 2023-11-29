@@ -526,95 +526,99 @@ button[type='button'] {
             padding: 60px;
             gap: 35px 20px;
         }
+    }
+    
+    .item {
+        .p-normal-font();
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
 
-        .item {
-            .p-normal-font();
+        &__form {
+            padding: 20px;
+            border: 1px solid @beige200;
+            border-radius: 10px;
+            background: @beige100;
+            transition: all 300ms ease;
+            cursor: pointer;
+        }
+
+        &__form:hover {
+            background-color: @beige200;
+        }
+
+        .half-width {
+            width: 500px;
+
+            @media screen and (max-width: @screenWeightTransitionDesktop) {
+                width: 389px;
+            }
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        select {
+            color: @grey300;
+        }
+
+        input[type="date"] {
+            font-size: 22px;;
+            color: @grey300;
+            text-transform: uppercase;
+        }
+
+        .black, input[type="date"].black {
+            color: @black;
+        }
+
+        .form-buttons {
+            width: 500px;
             display: flex;
-            flex-direction: column;
             align-items: flex-start;
-            gap: 8px;
+            gap: 30px;
 
-            &__form {
-                padding: 20px;
-                border: 1px solid @beige200;
+            input[type='submit'],
+            input[type='reset'] {
+                padding: 15px 30px;
+                text-align: center;
                 border-radius: 10px;
-                background: @beige100;
                 transition: all 300ms ease;
                 cursor: pointer;
             }
 
-            &__form:hover {
-                background-color: @beige200;
+            input[type='submit'] {
+                color: @white;
+                background-color: @green400;
             }
 
-            .half-width {
-                width: 500px;
-
-                @media screen and (max-width: @screenWeightTransitionDesktop) {
-                    width: 389px;
-                }
+            input[type='submit']:hover {
+                background-color: @green300;
             }
 
-            textarea {
-                resize: none;
+            input[type='submit']:active {
+                background-color: @green200;
             }
 
-            select {
-                color: @grey300;
+            input[type='reset'] {
+                color: @green400;
+                background-color: @green100;
             }
 
-            input[type="date"] {
-                font-size: 22px;;
-                color: @grey300;
-                text-transform: uppercase;
+            input[type='reset']:hover {
+                background-color: @grey200;
             }
 
-            .form-buttons {
-                width: 500px;
-                display: flex;
-                align-items: flex-start;
-                gap: 30px;
-
-                input[type='submit'],
-                input[type='reset'] {
-                    padding: 15px 30px;
-                    text-align: center;
-                    border-radius: 10px;
-                    transition: all 300ms ease;
-                    cursor: pointer;
-                }
-
-                input[type='submit'] {
-                    color: @white;
-                    background-color: @green400;
-                }
-
-                input[type='submit']:hover {
-                    background-color: @green300;
-                }
-
-                input[type='submit']:active {
-                    background-color: @green200;
-                }
-
-                input[type='reset'] {
-                    color: @green400;
-                    background-color: @green100;
-                }
-
-                input[type='reset']:hover {
-                    background-color: @grey200;
-                }
-
-                input[type='reset']:active {
-                    background-color: @grey100;
-                }
+            input[type='reset']:active {
+                background-color: @grey100;
             }
         }
+    }
 
-        .item-basis {
-            flex-basis: 100%;
-        }
+    .item-basis {
+        flex-basis: 100%;
     }
 
     .svg__radiobutton-yes,

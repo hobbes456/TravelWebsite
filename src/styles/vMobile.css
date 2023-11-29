@@ -390,7 +390,7 @@ button[type='button'] {
   border-radius: 30px;
   background-color: white;
 }
-.block-tour-create .answers .item {
+.block-tour-create .item {
   font-family: "Roboto-Regular", sans-serif;
   color: black;
   font-size: 16px;
@@ -404,7 +404,7 @@ button[type='button'] {
   gap: 8px;
   flex: 1 0 0;
 }
-.block-tour-create .answers .item__form {
+.block-tour-create .item__form {
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -414,42 +414,46 @@ button[type='button'] {
   border-radius: 10px;
   background: #F9F7F4;
 }
-.block-tour-create .answers .item textarea {
+.block-tour-create .item textarea {
   resize: none;
 }
-.block-tour-create .answers .item select {
+.block-tour-create .item select {
   color: #A6A6A6;
 }
-.block-tour-create .answers .item input[type="date"] {
+.block-tour-create .item input[type="date"] {
   color: #A6A6A6;
   text-transform: uppercase;
 }
-.block-tour-create .answers .item .form-buttons {
+.block-tour-create .item .black,
+.block-tour-create .item input[type="date"].black {
+  color: black;
+}
+.block-tour-create .item .form-buttons {
   width: 278px;
   height: 47px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.block-tour-create .answers .item .form-buttons input[type='submit'],
-.block-tour-create .answers .item .form-buttons input[type='reset'] {
+.block-tour-create .item .form-buttons input[type='submit'],
+.block-tour-create .item .form-buttons input[type='reset'] {
   width: 134px;
   padding: 13px 30px;
   text-align: center;
   border-radius: 10px;
 }
-.block-tour-create .answers .item .form-buttons input[type='submit'] {
+.block-tour-create .item .form-buttons input[type='submit'] {
   color: white;
   background-color: #286562;
 }
-.block-tour-create .answers .item .form-buttons input[type='submit']:active {
+.block-tour-create .item .form-buttons input[type='submit']:active {
   background-color: #627F7E;
 }
-.block-tour-create .answers .item .form-buttons input[type='reset'] {
+.block-tour-create .item .form-buttons input[type='reset'] {
   color: #286562;
   background-color: #E0F0E5;
 }
-.block-tour-create .answers .item .form-buttons input[type='reset']:active {
+.block-tour-create .item .form-buttons input[type='reset']:active {
   background-color: #F1F3F2;
 }
 .block-tour-create .svg__radiobutton-yes,
