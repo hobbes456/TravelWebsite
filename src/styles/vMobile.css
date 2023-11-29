@@ -16,6 +16,16 @@ html {
   scroll-padding-top: 88px;
   overflow-x: hidden;
 }
+a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+button[type='button'] {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
 .main {
   width: 100vw;
   display: flex;
@@ -24,11 +34,6 @@ html {
   align-items: center;
   gap: 75px;
   background-color: #F9F7F4;
-}
-a {
-  color: inherit;
-  font-size: inherit;
-  text-decoration: none;
 }
 .header {
   width: 100%;
@@ -174,12 +179,7 @@ a {
   color: black;
   background-color: #F8E6BE;
 }
-.main button[type='button'] {
-  outline: none;
-  border: none;
-  background-color: transparent;
-}
-.main .button-with-arrow button[type='button'] {
+.button-with-arrow button[type='button'] {
   position: relative;
   top: 7px;
   left: -20px;

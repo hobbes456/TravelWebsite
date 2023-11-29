@@ -97,6 +97,16 @@
     gap: 100px;
 }
 
+.hover-active-button() {
+    button[type='button'] {
+        background-color: @green400;
+        border-radius: 50px;
+    }
+
+    button[type='button']:active {
+        background-color: @orange200;
+    }
+}
 
 * {
     padding: 0;
@@ -110,6 +120,21 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+button[type='button'] {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    transition: all 150ms ease;
+}
+
+
+
 .main {
     width: 100vw;
     display: flex;
@@ -118,12 +143,6 @@ html {
     align-items: center;
     gap: 135px;
     background-color: @beige100;
-}
-
-a {
-    color: inherit;
-    font-size: inherit;
-    text-decoration: none;
 }
 
 .header {
@@ -279,23 +298,7 @@ a {
     }
 }
 
-.main button[type='button'] {
-    outline: none;
-    border: none;
-    background-color: transparent;
-    transition: all 150ms ease;
-}
-
-.main button[type='button']:hover {
-    background-color: @green400;
-    border-radius: 50px;
-}
-
-.main button[type='button']:active {
-    background-color: @orange200;
-}
-
-.main .button-with-arrow button[type='button'] {
+.button-with-arrow button[type='button'] {
     position: relative;
     top: 7px;
     left: -20px;
@@ -462,6 +465,8 @@ a {
         .card-tour:hover {
             background-size: auto 120%;
             z-index: 1;
+
+            .hover-active-button();
         }
         
         .card-tour:nth-child(1):hover,
@@ -559,10 +564,10 @@ a {
             }
 
             input[type="date"] {
+                font-size: 22px;;
                 color: @grey300;
                 text-transform: uppercase;
             }
-
 
             .form-buttons {
                 width: 500px;
@@ -1028,6 +1033,8 @@ a {
     .card:hover {
         background-size: 120% auto;
         z-index: 1;
+
+        .hover-active-button();
     }
 
     .story {

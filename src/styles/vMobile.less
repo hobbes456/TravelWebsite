@@ -102,6 +102,18 @@ html {
     overflow-x: hidden;
 }
 
+a {
+    color: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+button[type='button'] {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
 .main {
     width: 100vw;
     display: flex;
@@ -110,12 +122,6 @@ html {
     align-items: center;
     gap: 75px;
     background-color: @beige100;
-}
-
-a {
-    color: inherit;
-    font-size: inherit;
-    text-decoration: none;
 }
 
 .header {
@@ -252,13 +258,7 @@ a {
     }
 }
 
-.main button[type='button'] {
-    outline: none;
-    border: none;
-    background-color: transparent;
-}
-
-.main .button-with-arrow button[type='button'] {
+.button-with-arrow button[type='button'] {
     position: relative;
     top: 7px;
     left: -20px;
