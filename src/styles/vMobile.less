@@ -436,13 +436,10 @@ button[type='button'] {
     input,
     textarea,
     select {
+        .mobile-p-normal-font();
         width: 100%;
         outline: none;
-        font-family: inherit;
-        font-size: inherit;
-        color: inherit;
         border: none;
-        background: inherit;
     }
 
     .answers {
@@ -451,7 +448,7 @@ button[type='button'] {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 30px;
+        gap: 31px;
         border-radius: 30px;
         background-color: @white;
 
@@ -462,11 +459,11 @@ button[type='button'] {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 10px;
+        gap: 8px;
         flex: 1 0 0;
 
         &__form {
-            padding: 11px;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;

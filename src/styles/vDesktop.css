@@ -426,7 +426,6 @@ button[type='button'] {
   width: 100%;
   outline: none;
   border: none;
-  background: inherit;
 }
 .block-tour-create .answers {
   width: 1170px;

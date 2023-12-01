@@ -373,13 +373,16 @@ button[type='button'] {
 .block-tour-create input,
 .block-tour-create textarea,
 .block-tour-create select {
+  font-family: "Roboto-Regular", sans-serif;
+  color: black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142%;
+  word-wrap: break-word;
   width: 100%;
   outline: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
   border: none;
-  background: inherit;
 }
 .block-tour-create .answers {
   width: 100%;
@@ -387,7 +390,7 @@ button[type='button'] {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 30px;
+  gap: 31px;
   border-radius: 30px;
   background-color: white;
 }
@@ -402,11 +405,11 @@ button[type='button'] {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 10px;
+  gap: 8px;
   flex: 1 0 0;
 }
 .block-tour-create .item__form {
-  padding: 11px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
