@@ -1,14 +1,14 @@
 import "./styles/style.css";
 import IMask from "imask";
 
-let headTopFixed = document.querySelector(".head-top_fixed");
-let menuNavigation = document.querySelector(".menu__navigation");
+const headTopFixed = document.querySelector(".head-top_fixed");
+const menuNavigation = document.querySelector(".menu__navigation");
 
-let select = document.getElementById("path");
-let telefon = document.getElementById("tel");
-let dateTo = document.getElementById("date-to");
-let dateFrom = document.getElementById("date-from");
-let resetBtn = document.getElementById("reset-btn");
+const select = document.getElementById("path");
+const telefon = document.getElementById("tel");
+const dateTo = document.getElementById("date-to");
+const dateFrom = document.getElementById("date-from");
+const resetBtn = document.getElementById("reset-btn");
 
 
 window.addEventListener("scroll", () => {
