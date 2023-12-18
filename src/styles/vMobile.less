@@ -90,6 +90,12 @@
     gap: 50px;
 }
 
+.svg26x26() {
+    width: 26px;
+    height: 26px;
+    -webkit-mask-size: 26px 26px;
+    mask-size: 26px 26px;
+}
 
 * {
     padding: 0;
@@ -159,8 +165,8 @@ button[type='button'] {
         top: 0;
         left: 0;
         .header();
-        backdrop-filter: blur(5.5px);
         -webkit-backdrop-filter: blur(5.5px);
+        backdrop-filter: blur(5.5px);
         background-color: rgba(255, 255, 255, 0.75);
     
         .head-menu {
@@ -189,10 +195,10 @@ button[type='button'] {
         .svg {
             width: 133px;
             height: 22px;
-            mask-image: url('../asset/svg/YourTour.svg');
             -webkit-mask-image: url('../asset/svg/YourTour.svg');
-            mask-size: 133px 22px;
+            mask-image: url('../asset/svg/YourTour.svg');
             -webkit-mask-size: 133px 22px;
+            mask-size: 133px 22px;
             background-color: @white;
         }
         
@@ -341,8 +347,8 @@ button[type='button'] {
                 width: 24px;
                 height: 26px;
                 background-color: @white;
-                mask-image: url('../asset/svg/arrow\ bt.svg');
                 -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
+                mask-image: url('../asset/svg/arrow\ bt.svg');
             }
 
             &:nth-child(1) {
@@ -455,6 +461,7 @@ button[type='button'] {
     }
 
     .item {
+        position: relative;
         .mobile-p-normal-font();
         display: flex;
         flex-direction: column;
@@ -480,6 +487,9 @@ button[type='button'] {
 
         select {
             color: @grey300;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
         }
 
         input[type="date"] {
@@ -525,6 +535,17 @@ button[type='button'] {
                 background-color: @grey100;
             }
         }
+
+        .svg__select-arrow {
+            .svg26x26();
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: @black;
+            pointer-events: none;
+            -webkit-mask-image: url('../asset/svg/ic-dropdown.svg');
+            mask-image: url('../asset/svg/ic-dropdown.svg');
+        }
     }
 
     .svg__radiobutton-yes,
@@ -534,25 +555,25 @@ button[type='button'] {
         width: 20px;
         height: 20px;
         background-color: @black;
-        mask-size: 20px 20px;
         -webkit-mask-size: 20px 20px;
+        mask-size: 20px 20px;
     }
 
     .svg__radiobutton-yes {
-        mask-image: url('../asset/svg/radiobutton-yes.svg');
         -webkit-mask-image: url('../asset/svg/radiobutton-yes.svg');
+        mask-image: url('../asset/svg/radiobutton-yes.svg');
     }
     .svg__radiobutton-no {
-        mask-image: url('../asset/svg/radiobutton-no.svg');
         -webkit-mask-image: url('../asset/svg/radiobutton-no.svg');
+        mask-image: url('../asset/svg/radiobutton-no.svg');
     }
     .svg__square-radiobutton-yes {
-        mask-image: url('../asset/svg/s-radiobutton-yes.svg');
         -webkit-mask-image: url('../asset/svg/s-radiobutton-yes.svg');
+        mask-image: url('../asset/svg/s-radiobutton-yes.svg');
     }
     .svg__square-radiobutton-no {
-        mask-image: url('../asset/svg/s-radiobutton-no.svg');
         -webkit-mask-image: url('../asset/svg/s-radiobutton-no.svg');
+        mask-image: url('../asset/svg/s-radiobutton-no.svg');
     }
 
     input[type='radio'],
@@ -883,8 +904,8 @@ button[type='button'] {
             width: 24px;
             height: 26px;
             background-color: @white;
-            mask-image: url('../asset/svg/arrow\ bt.svg');
             -webkit-mask-image: url('../asset/svg/arrow\ bt.svg');
+            mask-image: url('../asset/svg/arrow\ bt.svg');
         }
 
         &_photo1 {
@@ -1026,11 +1047,8 @@ button[type='button'] {
     }
 
     .svg {
-        width: 26px;
-        height: 26px;
+        .svg26x26();
         background-color: @grey300;
-        mask-size: 26px 26px;
-        -webkit-mask-size: 26px 26px;
 
         &__instagramm {
             mask-image: url('../asset/svg/inst.svg'); 
