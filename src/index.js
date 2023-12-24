@@ -1,11 +1,11 @@
 import "./styles/style.css";
 import IMask from "imask";
 
-const headTopFixed = document.querySelector(".head-top_fixed");
-const menuNavigation = document.querySelector(".menu__navigation");
+const fixedHeader = document.querySelector(".hidden");
+const menuNavigation = document.querySelector(".tours-menu > .navigation");
 
 const select = document.getElementById("path");
-const telefon = document.getElementById("tel");
+const telefon = document.getElementById("telefon");
 const dateTo = document.getElementById("date-to");
 const dateFrom = document.getElementById("date-from");
 const resetBtn = document.getElementById("reset-btn");
@@ -13,9 +13,9 @@ const resetBtn = document.getElementById("reset-btn");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 450) {
-        headTopFixed.classList.add("shown");
+        fixedHeader.classList.add("shown");
     } else {
-        headTopFixed.classList.remove("shown");
+        fixedHeader.classList.remove("shown");
     }
 });
 
