@@ -701,7 +701,7 @@ input[type="checkbox"]:not(:checked) ~ label .no {
 @media screen and (max-width: 750px) {
   .gallery {
     grid-template-areas: "A A A D D D" "E E H H I I" "J J J K K K";
-    gap: 10px;
+    gap: 18px;
   }
   .gallery .hidden-2 {
     display: none;
