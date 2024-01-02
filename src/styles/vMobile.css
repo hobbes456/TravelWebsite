@@ -47,7 +47,7 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png') #d3d3d3 no-repeat 50% / cover;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 40%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url('../asset/header/header-img.png') #d3d3d3 no-repeat 50% / cover;
 }
 .header-top {
   width: 100%;
@@ -100,8 +100,8 @@ select {
 .shown {
   opacity: 1;
   z-index: 2;
-  -webkit-backdrop-filter: blur(5.5px);
-  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
   background-color: rgba(255, 255, 255, 0.75);
 }
 .shown .header-menu {
@@ -128,7 +128,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 112%;
-  letter-spacing: 0.2px;
   word-wrap: break-word;
   color: white;
 }
@@ -185,7 +184,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 112%;
-  letter-spacing: 0.2px;
   word-wrap: break-word;
   text-align: center;
 }
@@ -206,7 +204,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
-  letter-spacing: -0.4px;
   word-wrap: break-word;
 }
 .tours-menu .valid {
@@ -249,7 +246,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0.35px;
   word-wrap: break-word;
   color: white;
 }
@@ -273,22 +269,22 @@ select {
   height: inherit;
 }
 .card:nth-child(1) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-1.png') #d3d3d3 center / cover no-repeat;
 }
 .card:nth-child(2) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-2.png') #d3d3d3 center / cover no-repeat;
 }
 .card:nth-child(3) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-3.png') #d3d3d3 center / cover no-repeat;
 }
 .card:nth-child(4) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-4.png') #d3d3d3 center / cover no-repeat;
 }
 .card:nth-child(5) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-5.jpg') #d3d3d3 center / cover no-repeat;
 }
 .card:nth-child(6) .bg-image {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png') #d3d3d3 center / cover no-repeat;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.5) 100%), url('../asset/cardstour/card\ tour\ photo-6.png') #d3d3d3 center / cover no-repeat;
 }
 .button-with-arrow {
   position: relative;
@@ -302,7 +298,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
-  letter-spacing: -0.4px;
   word-wrap: break-word;
   color: white;
   padding: 7px 20px;
@@ -334,7 +329,6 @@ select {
   font-style: normal;
   font-weight: 700;
   line-height: 112%;
-  letter-spacing: 0.2px;
   word-wrap: break-word;
   text-align: center;
 }
@@ -580,7 +574,6 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   font-style: normal;
   font-weight: 700;
   line-height: 142%;
-  letter-spacing: -0.4px;
   word-wrap: break-word;
   line-height: 1.44;
   display: flex;
@@ -606,7 +599,6 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0.35px;
   word-wrap: break-word;
   text-align: left;
 }
@@ -631,12 +623,12 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   border-radius: 100px;
 }
 .person .image-1 {
-  background: url('../asset/avatars/review\ photo-1.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-1.jpg'), #d3d3d3 -21px 0px / 150% 100% no-repeat;
   background-position: 50% 20%;
   background-size: cover;
 }
 .person .image-2 {
-  background: url('../asset/avatars/review\ photo-2.jpg'), #d3d3d3 -21.313px 0px / 149.953% 100% no-repeat;
+  background: url('../asset/avatars/review\ photo-2.jpg'), #d3d3d3 -21px 0px / 150% 100% no-repeat;
   background-position: 50% 10%;
   background-size: cover;
 }
@@ -737,7 +729,6 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0.35px;
   word-wrap: break-word;
   color: white;
   margin-bottom: 20px;
@@ -791,13 +782,13 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   }
 }
 .story:nth-child(1) .bg-image {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg') #d3d3d3 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-1.jpg') #d3d3d3 50% / cover no-repeat;
 }
 .story:nth-child(2) .bg-image {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg') #d3d3d3 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-2.jpg') #d3d3d3 50% / cover no-repeat;
 }
 .story:nth-child(3) .bg-image {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg') #d3d3d3 50% / cover no-repeat;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0) 1%, rgba(0, 0, 0, 0.2) 100%), url('../asset/storycards/story\ photo-3.jpg') #d3d3d3 50% / cover no-repeat;
 }
 .agitation {
   display: flex;
@@ -809,7 +800,7 @@ input[type="checkbox"]:not(:checked) ~ label .no {
 .agitation .beautiful-view {
   width: 130px;
   height: 130px;
-  background: url('../asset/footer/footer\ photo.jpg'), #d3d3d3 -117.363px 0px / 151.55% 100.781% no-repeat;
+  background: url('../asset/footer/footer\ photo.jpg'), #d3d3d3 -117px 0px / 152% 101% no-repeat;
   background-position: 50% 80%;
   background-size: 130px 130px;
   border-radius: 20px;
@@ -828,7 +819,6 @@ input[type="checkbox"]:not(:checked) ~ label .no {
   font-style: normal;
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: 0.35px;
   word-wrap: break-word;
   text-align: center;
 }
