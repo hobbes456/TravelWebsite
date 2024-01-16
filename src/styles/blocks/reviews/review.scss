@@ -1,0 +1,83 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    padding: 30px 40px;
+
+    border-radius: 50px;
+
+    @media screen and (max-width: $switcherMode) {
+        padding: 20px;
+
+        border-radius: 20px;
+    }
+
+    &_bg-color_beinge200 {
+        background-color: $beige200;
+    }
+
+    &__text {
+        @media screen and (max-width: $switcherMode) {
+            line-height: 1.44;
+        }
+    }
+
+    &__person {
+        display: grid;
+        grid-template-areas: "A C" "B C";
+    }
+
+    &__person_margin {
+        margin-top: 70px;
+        margin-bottom: 10px;
+
+        @media screen and (max-width: $switcherMode){
+            margin-top: 58px;
+            margin-bottom: 0;
+        }
+    }
+    
+    &__name {
+        grid-area: A;
+        width: 100%;
+    }
+    
+    &__tour {
+        grid-area: B;
+        width: 100%;
+    }
+    
+    &__tour_margin {
+        margin-top: 8px;
+    }
+
+    &__avatar {
+        grid-area: C;
+        width: 75px;
+        height: 75px;
+        
+        border-radius: 100px;
+    }
+
+    &__avatar_margin {
+        margin-left: auto;
+
+        @media screen and (max-width: $switcherMode){
+            margin-top: -17px;
+        }
+    }
+
+    &__avatar_image_1 {
+        background: url('../asset/avatars/review\ photo-1.jpg'), $lightgrey -21px 0px / 150% 100% no-repeat;
+        background-position: 50% 20%;
+        background-size: cover;
+    }
+
+    &__avatar_image_2 {
+        background: url('../asset/avatars/review\ photo-2.jpg'), $lightgrey -21px 0px / 150% 100% no-repeat;
+        background-position: 50% 10%;
+        background-size: cover;
+    }
+}

@@ -1,0 +1,45 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 135px;
+    width: 100vw;
+    
+    @media screen and (max-width: $switcherMode) {
+        gap: 75px;
+    }
+
+    &_bg-color_beinge100 {
+        background-color: $beige100;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        width: 100%;
+        max-width: 1270px;
+        padding: 0 50px;
+
+        @media screen and (max-width: $switcherMode) {
+            padding: 0 21px;
+            gap: 50px;
+        }
+    }
+    
+    &__content_edit {
+        gap: 106px;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 50px;
+        }
+    }
+
+    &__content_margin-top {
+        @media screen and (max-width: $switcherMode) {
+            margin-top: 22px;
+        }
+    }
+}

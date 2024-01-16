@@ -1,0 +1,17 @@
+.stories {
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        width: 100%;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 20px;
+        }
+    }
+}
+
+@import "../tours/card";
+@import "../tours/button-with-arrow";

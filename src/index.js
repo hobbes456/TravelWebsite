@@ -1,8 +1,10 @@
-import "./styles/style.css";
+import "./styles/style.scss";
 import IMask from "imask";
 
-const fixedHeader = document.querySelector(".hidden");
-const menuNavigation = document.querySelector(".tours-menu > .navigation");
+const fixedHeader = document.querySelector(".top-header_fixed");
+const menuNavigation = document.querySelector(
+  ".tours__menu > .tours__navigation"
+);
 
 const select = document.getElementById("path");
 const telefon = document.getElementById("telefon");
@@ -13,37 +15,37 @@ const resetBtn = document.getElementById("reset-btn");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 450) {
-        fixedHeader.classList.add("shown");
+        fixedHeader.classList.add("top-header_shown");
     } else {
-        fixedHeader.classList.remove("shown");
+        fixedHeader.classList.remove("top-header_shown");
     }
 });
 
 menuNavigation.addEventListener("click", (e) => {
     if (e.target.tagName === "A") {
         for (let a of menuNavigation.children) {
-        a.classList.remove("valid");
+        a.classList.remove("tours__link_valid");
         }
-        e.target.classList.add("valid");
+        e.target.classList.add("tours__link_valid");
     }
 });
 
 select.addEventListener("change", () => {
-    select.classList.add("black");
+    select.classList.remove("text_grey_300");
 })
 
 dateTo.addEventListener("change", () => {
-    dateTo.classList.add("black");
+    dateTo.classList.remove("text_grey_300");
 })
 
 dateFrom.addEventListener("change", () => {
-    dateFrom.classList.add("black");
+    dateFrom.classList.remove("text_grey_300");
 })
 
 resetBtn.addEventListener("click", () => {
-    select.classList.remove("black");
-    dateTo.classList.remove("black");
-    dateFrom.classList.remove("black");
+    select.classList.add("text_grey_300");
+    dateTo.classList.add("text_grey_300");
+    dateFrom.classList.add("text_grey_300");
 });
 
 const maskOptions = {

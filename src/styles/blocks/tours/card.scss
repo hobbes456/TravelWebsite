@@ -1,0 +1,208 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: 50px;
+
+    cursor: pointer;
+
+    @media screen and (max-width: $switcherMode) {
+        border-radius: 20px;
+    }
+    
+    &_relative {
+        position: relative;
+    }
+    
+    &_size_small {
+        max-width: 370px;
+        height: 531px;
+        padding: 50px;
+        
+        @media screen and (max-width: $viewport1124) {
+            max-width: none;
+        }
+
+        @media screen and (max-width: $switcherMode){
+            height: 318px;
+            padding: 25px;
+        }
+    }
+
+    &_size_big {
+        justify-content: column;
+        align-items: flex-start;
+        gap: 22px;
+        width: 100%;
+        max-width: 1170px;
+        height: 567px;
+        padding: 60px;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 8px;
+            height: 455px;
+            padding: 30px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: inherit;
+        max-width: inherit;
+        height: inherit;
+
+        transition: transform 300ms ease;
+    
+        @media screen and (max-width: $viewport1124) {
+            max-width: none;
+        }
+    }
+
+    &__image_photo_1 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-1.png') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_2 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-2.png') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_3 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-3.png') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_4 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-4.png') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_5 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-5.jpg') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_6 {
+        background: 
+        linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%),
+        url('../asset/cardstour/card\ tour\ photo-6.png') $lightgrey center/cover no-repeat;
+    }
+
+    &__image_photo_7 {
+        background:
+        linear-gradient(270deg, rgba(0, 0, 0, 0.00) 1%, rgba(0, 0, 0, 0.20) 100%),
+        url('../asset/storycards/story\ photo-1.jpg') $lightgrey 50%/cover no-repeat;
+    }
+
+    &__image_photo_8 {
+        background:
+        linear-gradient(270deg, rgba(0, 0, 0, 0.00) 1%, rgba(0, 0, 0, 0.20) 100%),
+        url('../asset/storycards/story\ photo-2.jpg') $lightgrey 50%/cover no-repeat;
+    }
+
+    &__image_photo_9 {
+        background:
+        linear-gradient(270deg, rgba(0, 0, 0, 0.00) 1%, rgba(0, 0, 0, 0.20) 100%),
+        url('../asset/storycards/story\ photo-3.jpg') $lightgrey 50%/cover no-repeat;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        z-index: 2;
+
+        @media screen and (max-width: $switcherMode) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__list {
+        padding-left: 30px;
+        z-index: 2;
+
+        @media screen and (max-width: $switcherMode) {
+            padding-top: 15px;
+            padding-left: 23px;
+        }
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 554px;
+
+        z-index: 1;
+    }
+
+    &__price {
+        margin-bottom: auto;
+        z-index: 2;
+    }
+
+    &__button {
+        border-radius: 50px;
+
+        transition: background-color 150ms ease-in-out;
+    }
+
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        padding-right: 10px;
+        z-index: 1;
+    }
+
+    &__information_margin-top {
+        margin-top: auto;
+    }
+
+    &__links {
+        display: flex;
+        gap: 30px;
+        padding-top: 20px;
+
+        @media screen and (max-width: $switcherMode) {
+            display: none;
+        }
+    }
+
+    &__link {
+        transition: color 150ms ease-out;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+    
+    &__link:active {
+        color: $orange200;
+    }
+}
+
+.card:hover {
+    .card__image {
+        transform: scale(1.2);
+    }
+
+    .card__button {
+        background-color: $green400;
+
+        &:active {
+            background-color: $orange200;
+        }
+    }
+
+}

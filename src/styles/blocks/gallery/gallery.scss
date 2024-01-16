@@ -1,0 +1,40 @@
+.gallery {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 30px;
+
+    @media screen and (max-width: $viewport1124) {
+        padding: 0 20px;
+    }
+
+    &__screens {
+        display: grid;
+        grid-template-areas: 
+        "A A A A A B B B B B C C C C C D D D D D"
+        "E E E E F F F F G G G G H H H H I I I I"
+        "J J J J J K K K K K L L L L L M M M M M";
+        gap: 30px;
+        width: 100%;
+
+        @media screen and (max-width: $viewport1124) {
+            grid-template-areas: 
+                "A A A A C C C C D D D D"
+                "E E E F F F H H H I I I"
+                "J J J J K K K K L L L L";
+            gap: 30px 20px;
+        }
+
+        @media screen and (max-width: 750px){
+             grid-template-areas:
+            "A A A D D D"
+            "E E H H I I"
+            "J J J K K K";
+        }
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 20px;
+        }
+    }
+}
+
+@import "./screen";
