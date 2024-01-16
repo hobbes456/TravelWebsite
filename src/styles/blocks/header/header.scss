@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    background: 
+        linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 40%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%),
+        url('../asset/header/header-img.png') $lightgrey no-repeat 50%/cover;
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        height: 743px;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 40px;
+            height: 400px;
+        }
+    }
+
+    &__title {
+        width: 768px;
+
+        @media screen and (max-width: $viewport1124) {
+            width: 914px;
+        }
+
+        @media screen and (max-width: $switcherMode) {
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+
+    &__subtitle {
+        width: 562px;
+
+        @media screen and (max-width: $viewport1124) {
+            width: 422px;
+        }
+
+        @media screen and (max-width: $switcherMode) {
+            width: 310px;
+            padding: 0 20px;
+        }
+    }
+
+    &__button {
+        transition: 
+            color 150ms ease-in-out,
+            background-color 150ms ease-in-out;
+    }
+
+    &__button:hover {
+        color: $white;
+        background-color: $orange200;
+    }
+
+    &__button:active {
+        color: $black;
+        background-color: $orange100;
+    }
+}
+
+@import "./top-header";
+@import "./logo";

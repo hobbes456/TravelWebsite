@@ -1,0 +1,19 @@
+.button {
+    border-radius: 10px;
+
+    &_size_small {
+        padding: 5px 20px;
+    }
+
+    &_size_big {
+        padding: 15px 30px;
+
+        @media screen and (max-width: $switcherMode) {
+            padding: 13px 28px;
+        }
+    }
+
+    &_bg-color_white {
+        background-color: $white;
+    }
+}

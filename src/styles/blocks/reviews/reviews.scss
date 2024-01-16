@@ -1,0 +1,20 @@
+.reviews {
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        @media screen and (max-width: $viewport1124) {
+            gap: 18px;
+        }
+
+        @media screen and (max-width: $switcherMode) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@import "./review";

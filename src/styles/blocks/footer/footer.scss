@@ -1,0 +1,60 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: $header-and-footer-height;
+
+    &_bg-color_beinge_200 {
+        background-color: $beige200;
+    }
+
+    @media screen and (max-width: $switcherMode){
+        padding: 21px;
+    }
+    
+    &__information {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 1282px;
+        padding: 0 57px;
+
+        @media screen and (max-width: $switcherMode){
+            flex-direction: column;
+            gap: 7px;
+        }
+    }
+    
+    &__links {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        @media screen and (max-width: $switcherMode){
+            gap: 7px;
+        }
+    }
+    
+    &__link {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        
+        transition: color 150ms ease-in-out;
+
+        @media screen and (max-width: $switcherMode){
+            gap: 5px;
+        }
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    &__link:active {
+        color: $green400;
+    }
+}

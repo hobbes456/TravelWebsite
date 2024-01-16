@@ -1,0 +1,15 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width: $switcherMode) {
+        gap: 18px;
+    }
+
+    &__subtitle {
+        width: 418px;
+    }
+}

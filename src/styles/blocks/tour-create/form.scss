@@ -1,0 +1,129 @@
+.form {
+    display: grid;
+    grid-template-areas: 
+        "A B"
+        "C D"
+        "E F"
+        "G G"
+        "H H"
+        "I I"
+        "J J";
+    gap: 31px 30px;
+    width: 100%;
+    padding: 70px;
+
+    border-radius: 50px;
+
+    @media screen and (max-width: $viewport1124) {
+        gap: 31px 20px;
+        padding: 60px;
+    }
+
+    @media screen and (max-width: $switcherMode) {
+        gap: 29px;
+        padding: 15px 20px;
+
+        border-radius: 30px;
+    }
+
+    @media screen and (max-width: 500px) {
+        grid-template-areas: "A" "B" "C" "D" "E" "F" "G" "H" "I" "J";
+    }
+
+    &_bg-color_white {
+        background-color: $white;
+    }
+
+    &__item:nth-child(1) {
+        grid-area: A;
+    }
+    &__item:nth-child(2) {
+        grid-area: B;
+    }
+    &__item:nth-child(3) {
+        grid-area: C;
+    }
+    &__item:nth-child(4) {
+        grid-area: D;
+    }
+    &__item:nth-child(5) {
+        grid-area: E;
+    }
+    &__item:nth-child(6) {
+        grid-area: F;
+    }
+    &__item:nth-child(7) {
+        grid-area: G;
+    }
+    &__item:nth-child(8) {
+        grid-area: H;
+    }
+    &__item:nth-child(9) {
+        grid-area: I;
+    }
+    &__item:nth-child(10) {
+        grid-area: J;
+    }
+
+    &__radio {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__licentia {
+        display: flex;
+        gap: 18px;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 8px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 500px;
+
+        @media screen and (max-width: $switcherMode) {
+            gap: 10px;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        margin-top: 5px;
+
+        @media screen and (max-width: $switcherMode) {
+            max-width: 185px;
+            height: 100%;
+        }
+
+        transition: 
+            color 300ms ease-in-out,
+            background-color 300ms ease-in-out;
+    }
+
+    &__submit {
+        background-color: $green400;
+    }
+    &__submit:hover {
+        background-color: $green300;
+    }
+    &__submit:active {
+        background-color: $green200;
+    }
+
+    &__reset {
+        background-color: $green100;
+    }
+    &__reset:hover {
+        background-color: $grey200;
+    }
+    &__reset:active {
+        background-color: $grey100;
+    }
+}

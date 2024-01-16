@@ -1,0 +1,45 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+    &_relative {
+        position: relative;
+    }
+
+    &__field {
+        width: 100%;
+        padding: 20px;
+
+        border: 1px solid $beige200;
+        border-radius: 10px;
+
+        transition: background-color 300ms ease;
+
+        @media screen and (max-width: $switcherMode) {
+            padding: 10px;
+        }
+    }
+    
+    &__field_bg-color_beinge100 {
+        background-color: $beige100;
+    }
+    
+    &__field:hover {
+        background-color: $beige200;
+    }
+
+    &__arrow_absolute {
+        position: absolute;
+        right: 22px;
+        bottom: 20px;
+
+        pointer-events: none;
+
+        @media screen and (max-width: $switcherMode) {
+            right: 10px;
+            bottom: 8px;
+        }
+    }
+}
