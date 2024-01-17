@@ -120,7 +120,7 @@
 
     &__title {
         margin-bottom: 16px;
-        z-index: 2;
+        z-index: 1;
 
         @media screen and (max-width: $switcherMode) {
             margin-bottom: 13px;
@@ -129,7 +129,7 @@
 
     &__list {
         padding-left: 30px;
-        z-index: 2;
+        z-index: 1;
 
         @media screen and (max-width: $switcherMode) {
             padding-top: 15px;
@@ -146,7 +146,7 @@
 
     &__price {
         margin-bottom: auto;
-        z-index: 2;
+        z-index: 1;
     }
 
     &__button {
