@@ -40,15 +40,19 @@
             text-underline-offset: 4px;
         }
     }
-
+    
     &__link:active {
         opacity: 50%;
     }
-
+    
     &__link_valid {
         text-decoration: underline;
         text-decoration-thickness: 2px;
         text-underline-offset: 10px;
+        
+        @media screen and (max-width: $switcherMode) {
+            text-underline-offset: 4px;
+        }
         
         color: $orange200;
     }
