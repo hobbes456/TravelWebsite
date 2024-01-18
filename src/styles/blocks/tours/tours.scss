@@ -60,7 +60,7 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 100%);
+        grid-template-rows: repeat(2, 1fr);
         justify-items: center;
         align-items: center;
         gap: 30px;
@@ -68,13 +68,13 @@
 
         @media screen and (max-width: $viewport1124) {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 100%);
+            grid-template-rows: repeat(3, 1fr);
             gap: 18px;
         }
 
         @media screen and (max-width: 500px) {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 100%);
+            grid-template-rows: repeat(6, 1fr);
         }
     }
 }
