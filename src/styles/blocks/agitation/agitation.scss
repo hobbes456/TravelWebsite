@@ -14,15 +14,13 @@
         height: 370px;
 
         background: 
-            url('../asset/footer/footer\ photo.jpg'), $lightgrey -117px 0px / 152% 101% no-repeat;
+            url('../asset/footer/footer-photo.jpg'), $lightgrey -117px 0px / 152% 101% no-repeat;
         border-radius: 50px;
 
         @media screen and (max-width: $switcherMode) {
             width: 130px;
             height: 130px;
 
-            background: 
-            url('../asset/footer/footer\ photo.jpg'), $lightgrey -117px 0px / 152% 101% no-repeat;
             background-position: 50% 80%;
             background-size: 130px 130px;
             border-radius: 20px;
