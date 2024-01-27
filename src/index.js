@@ -51,14 +51,3 @@ const maskOptions = {
 }
 
 IMask(telefon, maskOptions);
-
-const imageUrlLoader = () => {
-    let imgs = Array.from(document.querySelectorAll("img"));
-    imgs = imgs.map(item =>item.src.slice(item.baseURI.length + 6));
-
-    for (let img of imgs) {
-        import(`./asset/${img}`);
-    }
-};
-
-imageUrlLoader();
