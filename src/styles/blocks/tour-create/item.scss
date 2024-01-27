@@ -1,12 +1,10 @@
 .item {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
-
-    &_relative {
-        position: relative;
-    }
 
     &__field {
         width: 100%;

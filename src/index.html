@@ -13,11 +13,14 @@
 <body>
     <div class="main main_bg-color_beinge100">
         <header class="header">
+            <div class="header__image header__image_position">
+                <img src="./asset/header/header-img.png" alt="header_image">
+            </div>
             <div class="top-header">
                 <div class="top-header__body">
                     <div class="logo">
                         <a class="logo__link" href="#">
-                            <svg class="logo__img" width="182" height="32" viewBox="0 0 182 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg class="logo__image" width="182" height="32" viewBox="0 0 182 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.476 0.879883L13.902 14.0679L20.412 0.879883H27.93L17.304 20.5359V30.6999H10.458V20.4519L0 0.879883H7.476Z" fill="white" />
                                 <path d="M36.8041 31.1199C34.2841 31.1199 32.1421 30.5879 30.3781 29.5239C28.6421 28.4599 27.3121 27.0599 26.3881 25.3239C25.4641 23.5879 25.0021 21.7119 25.0021 19.6959C25.0021 17.6519 25.4641 15.7619 26.3881 14.0259C27.3121 12.2899 28.6561 10.8899 30.4201 9.82588C32.1841 8.76188 34.3121 8.22988 36.8041 8.22988C39.2961 8.22988 41.4241 8.76188 43.1881 9.82588C44.9521 10.8899 46.2961 12.2899 47.2201 14.0259C48.1441 15.7619 48.6061 17.6519 48.6061 19.6959C48.6061 21.7119 48.1441 23.5879 47.2201 25.3239C46.2961 27.0599 44.9521 28.4599 43.1881 29.5239C41.4241 30.5879 39.2961 31.1199 36.8041 31.1199ZM31.8901 19.6959C31.8901 21.4039 32.3521 22.7899 33.2761 23.8539C34.2281 24.9179 35.4041 25.4499 36.8041 25.4499C38.1761 25.4499 39.3241 24.9179 40.2481 23.8539C41.2001 22.7899 41.6761 21.4039 41.6761 19.6959C41.6761 17.9879 41.2001 16.6019 40.2481 15.5379C39.3241 14.4739 38.1761 13.9419 36.8041 13.9419C35.4041 13.9419 34.2281 14.4739 33.2761 15.5379C32.3521 16.6019 31.8901 17.9879 31.8901 19.6959Z" fill="white" />
                                 <path d="M51.7289 22.7619V8.64988H58.4489V21.2919C58.4489 24.0639 59.4709 25.4499 61.5149 25.4499C62.4109 25.4499 63.2789 25.2119 64.1189 24.7359C64.9589 24.2319 65.7009 23.4059 66.3449 22.2579V8.64988H73.0649V23.2239C73.0649 23.8959 73.1629 24.3719 73.3589 24.6519C73.5829 24.9319 73.9609 25.0859 74.4929 25.1139V30.6999C73.8489 30.8119 73.3029 30.8959 72.8549 30.9519C72.4069 31.0079 72.0009 31.0359 71.6369 31.0359C69.2289 31.0359 67.8569 30.0979 67.5209 28.2219L67.3949 26.8779C66.3869 28.3339 65.1269 29.4119 63.6149 30.1119C62.1309 30.7839 60.4649 31.1199 58.6169 31.1199C56.3769 31.1199 54.6689 30.4059 53.4929 28.9779C52.3169 27.5499 51.7289 25.4779 51.7289 22.7619Z" fill="white" />
@@ -85,7 +88,7 @@
                 <button class="header__button button button_size_small button_bg-color_white text_small text_center" type="button">Найти тур</button>
             </div>
         </header>
-        <section class="tours main__content main__content_edit" id="tours">
+        <section class="tours main__content" id="tours">
             <div class="tours__menu">
                 <h2 class="text_h2 text_center">Выбери свой тур</h2>
                 <nav class="tours__navigation">
@@ -96,9 +99,11 @@
                     <a class="tours__link text_big" href="#cycling">Велопрогулки</a>
                 </nav>
             </div>
-            <div class="tours__cards">
+            <div class="tours__cards tours__cards_margin">
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-1.png" alt="tour_image_1">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -109,7 +114,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-2.png" alt="tour_image_2">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -120,7 +127,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-3.png" alt="tour_image_3">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -131,7 +140,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-4.png" alt="tour_image_4">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -142,7 +153,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-5.jpg" alt="tour_image_5">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -153,7 +166,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_small">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/cardstour/card-tour-photo-6.png" alt="tour_image_6">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Путешествие в горы</h3>
                     <p class="card__price text_small text_white">от 80 000 руб</p>
                     <div class="button-with-arrow button-with-arrow_relative">
@@ -171,14 +186,14 @@
                 <p class="title__subtitle text_normal text_grey_300 text_center">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
             </div>
             <form class="form form_bg-color_white" action="#" method="post">
-                <div class="form__item item ">
+                <div class="form__item item">
                     <label class="item__name text_normal" for="name">Имя</label>
                     <input class="item__field item__field_bg-color_beinge100 text_normal" type="text" id="name" name="name" placeholder="Введите Ваше имя" required>
                 </div>
-                <div class="form__item item item_relative">
+                <div class="form__item item">
                     <label class="item__name text_normal" for="path">Направление</label>
                     <select class="item__field item__field_bg-color_beinge100 text_normal text_grey_300 select" type="text" id="path" name="path" required>
-                        <option class="item__option" value="" selected hidden disabled>Куда хотите ехать</option>
+                        <option class="item__option" value="" hidden>Куда хотите ехать</option>
                         <option class="item__option" value="Москва">Москва</option>
                         <option class="item__option" value="Санкт-Петербург">Санкт-Петербург</option>
                         <option class="item__option" value="Тверь">Тверь</option>
@@ -237,55 +252,65 @@
                 </div>
                 <div class="form__item">
                     <div class="form__buttons">
-                        <button class="button button_size_big form__button form__submit text_normal text_center text_white" type="submit">Найти тур</button>
-                        <button class="button button_size_big form__button form__reset text_normal text_center text_green_400" type="reset" id="reset-btn">Сбросить</button>
+                        <button class="button button_size_big form__button form__button_margin form__submit text_normal text_center text_white" type="submit">Найти тур</button>
+                        <button class="button button_size_big form__button form__button_margin form__reset text_normal text_center text_green_400" type="reset" id="reset-btn">Сбросить</button>
                     </div>
                 </div>
             </form>
         </section>
-        <section class="reviews main__content main__content_edit main__content_margin-top" id="reviews">
+        <section class="reviews reviews_margin main__content" id="reviews">
             <div class="title">
                 <h2 class="title__title text_h2 text_center">Отзывы наших <br> путешественников</h2>
                 <p class="title__subtitle text_normal text_grey_300 text_center">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
             </div>
             <div class="reviews__content">
-                <div class="review review_bg-color_beinge200">
+                <div class="review review_margin review_bg-color_beinge200">
                     <p class="review__text text_big">Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение модели развития.</p>
                     <div class="review__person review__person_margin">
                         <h3 class="review__name review__name_margin text_h3">Мария</h3>
                         <p class="review__tour review__tour_margin text_small text_grey_300">Тур: Вдали от дома</p>
-                        <div class="review__avatar review__avatar_margin review__avatar_image_1"></div>
+                        <div class="review__avatar review__avatar_margin">
+                            <img src="./asset/avatars/review-photo-1.jpg" alt="avatar_image_1">
+                        </div>
                     </div>
                 </div>
-                <div class="review review_bg-color_beinge200">
+                <div class="review review_margin review_bg-color_beinge200">
                     <p class="review__text text_big">Равным образом постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям. <br> <br> Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</br>
                     <div class="review__person review__person_margin">
                         <h3 class="review__name text_h3">Павел</h3>
                         <p class="review__tour review__tour_margin text_small text_grey_300">Тур: Путешествие в горы</p>
-                        <div class="review__avatar review__avatar_margin review__avatar_image_2"></div>
+                        <div class="review__avatar review__avatar_margin">
+                            <img src="./asset/avatars/review-photo-2.jpg" alt="avatar_image_2">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="gallery main__content">
+        <section class="gallery gallery_margin main__content">
             <div class="title">
                 <h2 class="title__title text_h2 text_center">Фотографии путешествий</h2>
                 <p class="title__subtitle text_normal text_grey_300 text_center">Идейные соображения высшего порядка,<br> а также рамки и место обучения кадров</p>
             </div>
             <div class="gallery__screens">
-                <div class="screen"></div>
-                <div class="screen screen_hidden_1"></div>
-                <div class="screen screen_hidden_2"></div>
-                <div class="screen"></div>
-                <div class="screen"></div>
-                <div class="screen screen_hidden_2"></div>
-                <div class="screen screen_hidden_1"></div>
-                <div class="screen"></div>
-                <div class="screen"></div>
-                <div class="screen"></div>
-                <div class="screen"></div>
-                <div class="screen screen_hidden_2"></div>
-                <div class="screen screen_hidden_1"></div>
+                <div class="gallery__row">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-1.png" alt="gallery_image_1">
+                    <img class="gallery__image gallery__image_hidden_1124px" src="./asset/travelphoto/travel-photo-2.png" alt="gallery_image_2">
+                    <img class="gallery__image gallery__image_hidden_750px" src="./asset/travelphoto/travel-photo-3.png" alt="gallery_image_3">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-4.png" alt="gallery_image_4">
+                </div>
+                <div class="gallery__row">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-5.png" alt="gallery_image_5">
+                    <img class="gallery__image gallery__image_hidden_750px" src="./asset/travelphoto/travel-photo-6.png" alt="gallery_image_6">
+                    <img class="gallery__image  gallery__image_hidden_1124px" src="./asset/travelphoto/travel-photo-7.jpg" alt="gallery_image_7">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-8.png" alt="gallery_image_8">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-13.png" alt="gallery_image_9">
+                </div>
+                <div class="gallery__row">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-9.png" alt="gallery_image_10">
+                    <img class="gallery__image" src="./asset/travelphoto/travel-photo-10.png" alt="gallery_image_11">
+                    <img class="gallery__image gallery__image_hidden_750px" src="./asset/travelphoto/travel-photo-11.png" alt="gallery_image_12">
+                    <img class="gallery__image gallery__image_hidden_1124px" src="./asset/travelphoto/travel-photo-12.png" alt="gallery_image_13">
+                </div>
             </div>
         </section>
         <section class="stories main__content" id="stories">
@@ -295,7 +320,9 @@
             </div>
             <div class="stories__cards">
                 <div class="card card_relative card_size_big">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/storycards/story-photo-1.jpg" alt="story_image_1">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Автостопом в Стамбул</h3>
                     <p class="card__text text_normal text_white">
                         Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу
@@ -325,7 +352,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_big">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/storycards/story-photo-2.jpg" alt="story_image_2">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Автостопом в Стамбул</h3>
                     <p class="card__text text_normal text_white">
                         Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
@@ -348,7 +377,9 @@
                     </div>
                 </div>
                 <div class="card card_relative card_size_big">
-                    <div class="card__image"></div>
+                    <div class="card__image">
+                        <img src="asset/storycards/story-photo-3.jpg" alt="story_image_3">
+                    </div>
                     <h3 class="card__title text_h3 text_white">Автостопом в Стамбул</h3>
                     <p class="card__text text_normal text_white">
                         Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании новых предложений:
@@ -373,16 +404,16 @@
                 </div>
             </div>
         </section>
-        <section class="agitation">
-            <div class="agitation__image"></div>
-            <div class="agitation__content">
+        <section class="agitation agitation_margin">
+            <img class="agitation__image" src="./asset/footer/footer-photo.jpg" alt="agitation_image">
+            <div class="agitation__content agitation__content_margin">
                 <h3 class="agitation__title text_h3 text_center_mobile">Пора в путешествие <br> вместе с нами!</h3>
                 <p class="agitation__text text_normal text_grey_300 text_center_mobile">Напиши на почту и узнай подробности <br> на
                     <a class="agitation__link text_black" href="mailto:yourtour@gmail.com">yourtour@gmail.com</a>
                 </p>
             </div>
         </section>
-        <footer class="footer footer_bg-color_beinge_200">
+        <footer class="footer footer_margin footer_bg-color_beinge_200">
             <div class="footer__information">
                 <p class="footer__text text_normal text_grey_300">Наши социальные сети</p>
                 <div class="footer__links">

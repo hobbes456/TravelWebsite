@@ -3,26 +3,27 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-
+    
     @media screen and (max-width: $switcherMode) {
         flex-direction: column;
-        gap: 35px;
+    }
+    
+    &_margin {
+        @media screen and (max-width: $switcherMode) {
+            margin-top: 5px;
+        }
     }
 
     &__image {
         width: 370px;
         height: 370px;
 
-        background: 
-            url('../asset/footer/footer-photo.jpg'), $lightgrey -117px 0px / 152% 101% no-repeat;
         border-radius: 50px;
 
         @media screen and (max-width: $switcherMode) {
             width: 130px;
             height: 130px;
 
-            background-position: 50% 80%;
-            background-size: 130px 130px;
             border-radius: 20px;
         }
     }
@@ -31,11 +32,15 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
         gap: 20px;
 
         @media screen and (max-width: $switcherMode) {
             align-items: center;
+        }
+
+        &_margin {
+            margin-bottom: 5px;
+            margin-right: 2px;
         }
     }
 

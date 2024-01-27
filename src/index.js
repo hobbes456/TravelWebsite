@@ -2,9 +2,7 @@ import "./styles/style.scss";
 import IMask from "imask";
 
 const fixedHeader = document.querySelector(".top-header_fixed");
-const menuNavigation = document.querySelector(
-  ".tours__menu > .tours__navigation"
-);
+const menuNavigation = document.querySelector(".tours__menu > .tours__navigation");
 
 const select = document.getElementById("path");
 const telefon = document.getElementById("telefon");
@@ -53,3 +51,14 @@ const maskOptions = {
 }
 
 IMask(telefon, maskOptions);
+
+const imageUrlLoader = () => {
+    let imgs = Array.from(document.querySelectorAll("img"));
+    imgs = imgs.map(item =>item.src.slice(item.baseURI.length + 6));
+
+    for (let img of imgs) {
+        import(`./asset/${img}`);
+    }
+};
+
+imageUrlLoader();

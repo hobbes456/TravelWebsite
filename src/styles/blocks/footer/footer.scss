@@ -1,16 +1,24 @@
-.footer {
+.footer {    
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: $header-and-footer-height;
-
+    
     &_bg-color_beinge_200 {
         background-color: $beige200;
     }
 
-    @media screen and (max-width: $switcherMode){
-        padding: 21px;
+    @media screen and (max-width: $switcherMode) {
+        padding: 21px;      
+    }
+    
+    &_margin {
+        margin-top: -2px;
+
+        @media screen and (max-width: $switcherMode) {
+            margin-top: 0;  
+        }
     }
     
     &__information {

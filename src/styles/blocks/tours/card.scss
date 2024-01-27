@@ -58,10 +58,32 @@
         height: inherit;
 
         transition: transform 300ms ease;
-    
+        
         @media screen and (max-width: $viewport1124) {
             max-width: none;
         }
+
+        & > img {
+            width: 100%;
+            height: 100%;
+            
+            background-color: $lightgrey;
+
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    
+    &__image::before {
+        position: absolute;
+        
+        width: inherit;
+        max-width: inherit;
+        height: inherit;
+        
+        background: linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%);
+
+        content: "";
     }
 
     &__title {

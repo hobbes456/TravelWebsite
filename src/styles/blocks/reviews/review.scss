@@ -13,6 +13,14 @@
 
         border-radius: 20px;
     }
+    
+    &_margin {
+        margin-top: 6px;
+
+        @media screen and (max-width: $switcherMode) {
+            margin-top: 0;
+        }
+    }
 
     &_bg-color_beinge200 {
         background-color: $beige200;
@@ -35,7 +43,7 @@
 
         @media screen and (max-width: $switcherMode){
             margin-top: 58px;
-            margin-bottom: 0;
+            margin-bottom: -5px;
         }
     }
     
@@ -55,10 +63,6 @@
 
     &__avatar {
         grid-area: C;
-        width: 75px;
-        height: 75px;
-        
-        border-radius: 100px;
     }
 
     &__avatar_margin {
@@ -69,15 +73,13 @@
         }
     }
 
-    &__avatar_image_1 {
-        background: url('../asset/avatars/review-photo-1.jpg'), $lightgrey -21px 0px / 150% 100% no-repeat;
-        background-position: 50% 20%;
-        background-size: cover;
-    }
+    & img {
+        width: 75px;
+        height: 75px;
 
-    &__avatar_image_2 {
-        background: url('../asset/avatars/review-photo-2.jpg'), $lightgrey -21px 0px / 150% 100% no-repeat;
-        background-position: 50% 10%;
-        background-size: cover;
+        border-radius: 100px;
+
+        object-fit: cover;
+        object-position: 50% 12%;
     }
 }

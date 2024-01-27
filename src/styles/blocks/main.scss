@@ -28,18 +28,4 @@
             gap: 50px;
         }
     }
-    
-    &__content_edit {
-        gap: 106px;
-
-        @media screen and (max-width: $switcherMode) {
-            gap: 50px;
-        }
-    }
-
-    &__content_margin-top {
-        @media screen and (max-width: $switcherMode) {
-            margin-top: 22px;
-        }
-    }
 }
