@@ -5,7 +5,7 @@
     align-items: center;
     gap: 30px;
 
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         gap: 18px;
     }
 

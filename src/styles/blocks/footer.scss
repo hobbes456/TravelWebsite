@@ -9,14 +9,14 @@
         background-color: $beige200;
     }
 
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         padding: 21px;      
     }
     
     &_margin {
         margin-top: -2px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             margin-top: 0;  
         }
     }
@@ -29,7 +29,7 @@
         max-width: 1282px;
         padding: 0 57px;
 
-        @media screen and (max-width: $switcherMode){
+        @include _769 {
             flex-direction: column;
             gap: 7px;
         }
@@ -40,7 +40,7 @@
         align-items: center;
         gap: 25px;
 
-        @media screen and (max-width: $switcherMode){
+        @include _769 {
             gap: 7px;
         }
     }
@@ -49,17 +49,20 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        
-        transition: color 150ms ease-in-out;
 
-        @media screen and (max-width: $switcherMode){
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        text-decoration-color: transparent;
+        
+        transition: text-decoration-color 150ms ease-in-out;
+
+        @include _769 {
             gap: 5px;
         }
     }
 
     &__link:hover {
-        text-decoration: underline;
-        text-underline-offset: 6px;
+        text-decoration-color: inherit;
     }
 
     &__link:active {

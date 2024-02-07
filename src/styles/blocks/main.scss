@@ -1,11 +1,12 @@
 .main {
-    display: flex;
+    display: none;
+    
     flex-direction: column;
     align-items: center;
     gap: 135px;
     width: 100vw;
     
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         gap: 75px;
     }
 
@@ -23,7 +24,7 @@
         max-width: 1270px;
         padding: 0 50px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             padding: 0 21px;
             gap: 50px;
         }

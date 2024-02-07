@@ -2,7 +2,7 @@
     &_h1 {
         @include h1-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-h1-font;
         }
     }
@@ -10,7 +10,7 @@
     &_h2 {
         @include h2-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-h1-font;
         }
     }
@@ -18,7 +18,7 @@
     &_h3 {
         @include h3-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-h3-font;
         }
     }
@@ -26,7 +26,7 @@
     &_big {
         @include p-big-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-p-big-font;
         }
     }
@@ -34,7 +34,7 @@
     &_normal {
         @include p-normal-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-p-normal-font;
         }
     }
@@ -42,7 +42,7 @@
     &_small {
         @include p-small-font;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             @include mobile-p-small-font;
         }
     }
@@ -85,13 +85,13 @@
     }
 
     &_center_mobile {
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             text-align: center;
         }
     }
 
     &_width {
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             width: 340px;
         }
     }

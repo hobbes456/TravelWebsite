@@ -42,7 +42,7 @@
         max-width: 1282px;
         padding: 0 57px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             padding: 20px;
         }
     }
@@ -53,7 +53,7 @@
         align-items: center;
         gap: 50px;
 
-        @media screen and (max-width: $viewport1124) {
+        @include _1124 {
             gap: 30px;
         }
 
@@ -63,13 +63,16 @@
     }
 
     &__link {
-        transition: color 150ms ease-in-out;
-    }
-
-    &__link:hover {
         text-decoration: underline;
+        text-decoration-color: transparent;
         text-decoration-thickness: 1px;
         text-underline-offset: 6px;
+        
+        transition: text-decoration-color 150ms ease-in-out;
+    }
+    
+    &__link:hover {
+        text-decoration-color: inherit;
     }
 
     &__link:active {

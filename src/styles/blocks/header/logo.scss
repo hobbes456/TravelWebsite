@@ -1,6 +1,6 @@
 .logo {
     &__image {
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             width: 133px;
             height: 25px;
         }

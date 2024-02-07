@@ -14,11 +14,11 @@
         
         cursor: pointer;
     
-        @media screen and (max-width: $viewport1124) {
+        @include _1124 {
             padding-left: 40px;
         }
     
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             padding-left: 30px;
             padding-top: 12px;
         }
@@ -40,7 +40,7 @@
 
         background: url("../asset/svg/radiobutton-no.svg") 0 0 no-repeat;
         
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             width: 20px;
             height: 20px;
             
@@ -51,7 +51,7 @@
     &__input[type=radio]:checked + label:before {
         background: url("../asset/svg/radiobutton-yes.svg") 0 0 no-repeat;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             width: 20px;
             height: 20px;
             

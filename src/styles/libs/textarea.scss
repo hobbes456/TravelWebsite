@@ -1,7 +1,7 @@
 .textarea {
     resize: none;
 
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         height: 130px;
     }
 }

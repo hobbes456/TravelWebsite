@@ -1,0 +1,29 @@
+@mixin _1124 {
+    @media screen and (max-width: $viewport1124) {
+        @content;
+    }
+}
+
+@mixin _900 {
+    @media screen and (max-width: $viewport900) {
+        @content;
+    }
+}
+
+@mixin _769 {
+    @media screen and (max-width: $viewport769) {
+        @content;
+    }
+}
+
+@mixin _750 {
+    @media screen and (max-width: $viewport750) {
+        @content;
+    }
+}
+
+@mixin _500 {
+    @media screen and (max-width: $viewport500) {
+        @content;
+    }
+}

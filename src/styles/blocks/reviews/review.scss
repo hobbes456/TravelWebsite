@@ -8,7 +8,7 @@
 
     border-radius: 50px;
 
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         padding: 20px;
 
         border-radius: 20px;
@@ -17,7 +17,7 @@
     &_margin {
         margin-top: 6px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             margin-top: 0;
         }
     }
@@ -27,7 +27,7 @@
     }
 
     &__text {
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             line-height: 1.44;
         }
     }
@@ -41,7 +41,7 @@
         margin-top: 70px;
         margin-bottom: 10px;
 
-        @media screen and (max-width: $switcherMode){
+        @include _769 {
             margin-top: 58px;
             margin-bottom: -5px;
         }
@@ -68,7 +68,7 @@
     &__avatar_margin {
         margin-left: auto;
 
-        @media screen and (max-width: $switcherMode){
+        @include _769 {
             margin-top: -17px;
         }
     }

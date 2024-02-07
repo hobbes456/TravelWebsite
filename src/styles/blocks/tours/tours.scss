@@ -6,7 +6,7 @@
         align-items: center;
         gap: 35px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             gap: 30px;
         }
     }
@@ -15,7 +15,7 @@
         display: flex;
         gap: 30px;
 
-        @media screen and (max-width: $switcherMode){
+        @include _769 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,35 +26,32 @@
     }
 
     &__link {
+        text-decoration: underline;
+        text-decoration-color: transparent;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 10px;
+
         transition: 
-            color 150ms ease-in-out,
+            text-decoration-color 150ms ease-in-out,
             opacity 150ms ease-in-out;
+        
+        @include _769 {
+            text-underline-offset: 4px;
+        }
     }
 
     &__link:hover {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 10px;
-        
-        @media screen and (max-width: $switcherMode) {
-            text-underline-offset: 4px;
-        }
+        text-decoration-color: inherit;  
     }
     
     &__link:active {
         opacity: 50%;
     }
     
-    &__link_valid {
-        text-decoration: underline;
-        text-decoration-thickness: 2px;
-        text-underline-offset: 10px;
-        
-        @media screen and (max-width: $switcherMode) {
-            text-underline-offset: 4px;
-        }
-        
+    &__link_valid {        
         color: $orange200;
+
+        text-decoration-color: inherit;
     }
 
     &__cards {
@@ -66,13 +63,13 @@
         gap: 30px;
         width: 100%;
 
-        @media screen and (max-width: $viewport1124) {
+        @include _1124 {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 18px;
         }
 
-        @media screen and (max-width: 500px) {
+        @include _500 {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 1fr);
         }
@@ -81,7 +78,7 @@
     &__cards_margin {
         margin-top: 6px;
         
-        @media screen and (max-width: 500px) {
+        @include _500 {
             margin-top: 0;
         }
     }

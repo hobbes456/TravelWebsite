@@ -7,11 +7,11 @@
         gap: 50px;
         width: 100%;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             gap: 20px;
         }
     }
 }
 
-@import "../tours/card";
-@import "../tours/button-with-arrow";
+@import "./tours/card";
+@import "./tours/button-with-arrow";

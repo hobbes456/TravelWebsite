@@ -10,7 +10,6 @@ const dateTo = document.getElementById("date-to");
 const dateFrom = document.getElementById("date-from");
 const resetBtn = document.getElementById("reset-btn");
 
-
 window.addEventListener("scroll", () => {
     if (window.scrollY > 450) {
         fixedHeader.classList.add("top-header_shown");

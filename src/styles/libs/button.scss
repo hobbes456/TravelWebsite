@@ -8,7 +8,7 @@
     &_size_big {
         padding: 15px 30px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             padding: 13px 28px;
         }
     }

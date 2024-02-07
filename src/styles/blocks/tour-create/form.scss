@@ -14,19 +14,19 @@
 
     border-radius: 50px;
 
-    @media screen and (max-width: $viewport1124) {
+    @include _1124 {
         gap: 31px 20px;
         padding: 60px;
     }
 
-    @media screen and (max-width: $switcherMode) {
+    @include _769 {
         gap: 29px;
         padding: 15px 20px;
 
         border-radius: 30px;
     }
 
-    @media screen and (max-width: 500px) {
+    @include _500 {
         grid-template-areas: "A" "B" "C" "D" "E" "F" "G" "H" "I" "J";
     }
 
@@ -75,7 +75,7 @@
         display: flex;
         gap: 18px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             gap: 8px;
         }
     }
@@ -87,7 +87,7 @@
         gap: 30px;
         width: 500px;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             gap: 10px;
             width: 100%;
         }
@@ -96,7 +96,7 @@
     &__button {
         width: 100%;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             max-width: 185px;
             height: 100%;
         }

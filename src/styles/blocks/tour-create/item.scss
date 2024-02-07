@@ -15,7 +15,7 @@
 
         transition: background-color 300ms ease;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             padding: 10px;
         }
     }
@@ -35,7 +35,7 @@
 
         pointer-events: none;
 
-        @media screen and (max-width: $switcherMode) {
+        @include _769 {
             right: 10px;
             bottom: 8px;
         }
