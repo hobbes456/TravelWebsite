@@ -1,9 +1,12 @@
 .card {
+    position: relative;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 100%;
     overflow: hidden;
+
+    color: $white;
 
     border-radius: 50px;
 
@@ -11,41 +14,6 @@
 
     @include _769 {
         border-radius: 20px;
-    }
-    
-    &_relative {
-        position: relative;
-    }
-    
-    &_size_small {
-        max-width: 370px;
-        height: 531px;
-        padding: 50px;
-        
-        @include _1124 {
-            max-width: none;
-        }
-
-        @include _769 {
-            height: 318px;
-            padding: 25px;
-        }
-    }
-
-    &_size_big {
-        justify-content: column;
-        align-items: flex-start;
-        gap: 22px;
-        width: 100%;
-        max-width: 1170px;
-        height: 567px;
-        padding: 60px;
-
-        @include _769 {
-            gap: 8px;
-            height: 455px;
-            padding: 30px;
-        }
     }
 
     &__image {
@@ -72,26 +40,38 @@
             object-fit: cover;
             object-position: center;
         }
+
+        &::before {
+            position: absolute;
+            
+            width: inherit;
+            max-width: inherit;
+            height: inherit;
+            
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%);
+    
+            content: "";
+        }
     }
     
-    &__image::before {
-        position: absolute;
-        
-        width: inherit;
-        max-width: inherit;
-        height: inherit;
-        
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48%, rgba(0, 0, 0, 0.50) 100%);
-
-        content: "";
-    }
-
     &__title {
         margin-bottom: 16px;
         z-index: 1;
 
+        @include h3-font;
+        
         @include _769 {
             margin-bottom: 13px;
+
+            @include mobile-h3-font;
+        }
+    }
+
+    &__text {
+        @include p-normal-font;
+
+        @include _769 {
+            @include mobile-p-normal-font;
         }
     }
 
@@ -115,6 +95,12 @@
     &__price {
         margin-bottom: auto;
         z-index: 1;
+
+        @include p-small-font;
+
+        @include _769 {
+            @include mobile-p-small-font;
+        }
     }
 
     &__button {
@@ -124,16 +110,14 @@
     }
 
     &__information {
+        margin-top: auto;
+
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: 100%;
         padding-right: 10px;
         z-index: 1;
-    }
-
-    &__information_margin-top {
-        margin-top: auto;
     }
 
     &__links {
@@ -147,32 +131,26 @@
     }
 
     &__link {
-        text-decoration: underline;
-        text-underline-offset: 6px;
-        text-decoration-color: transparent;
+        @include p-normal-font;
 
-        transition: text-decoration-color 150ms ease-out;
+        @include _769 {
+            @include mobile-p-normal-font;
+        }
+
+        @include _link-underline (6px, 1px, $orange200);
     }
 
-    &__link:hover {
-        text-decoration-color: inherit;
-    }
+    &:hover {
+        .card__image {
+            transform: scale(1.2);
+        }
     
-    &__link:active {
-        color: $orange200;
-    }
-}
-
-.card:hover {
-    .card__image {
-        transform: scale(1.2);
-    }
-
-    .card__button {
-        background-color: $green400;
-
-        &:active {
-            background-color: $orange200;
+        .card__button {
+            background-color: $green400;
+    
+            &:active {
+                background-color: $orange200;
+            }
         }
     }
 }

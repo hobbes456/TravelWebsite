@@ -1,12 +1,18 @@
 .button-with-arrow {
-    &_relative {
-        position: relative;
-        top: 7px;
-        left: -20px;
-        z-index: 1;
+    position: relative;
+    top: 7px;
+    left: -20px;
+    z-index: 1;
+
+    color: $white;
+
+    @include p-big-font;
+
+    @include _769 {
+        @include mobile-p-big-font;
     }
 
-    &__button {
+    & > button {
         display: flex;
         justify-content: flex-start;
         align-items: center;

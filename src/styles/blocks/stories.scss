@@ -1,4 +1,12 @@
 .stories {
+    @include _content;
+
+    @include _769 {
+        > div > h2 {
+            width: 320px;
+        }
+    }
+
     &__cards {
         display: flex;
         flex-direction: column;
@@ -9,6 +17,22 @@
 
         @include _769 {
             gap: 20px;
+        }
+    }
+
+    &__card {
+        justify-content: column;
+        align-items: flex-start;
+        gap: 22px;
+        width: 100%;
+        max-width: 1170px;
+        height: 567px;
+        padding: 60px;
+
+        @include _769 {
+            gap: 8px;
+            height: 455px;
+            padding: 30px;
         }
     }
 }

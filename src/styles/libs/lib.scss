@@ -1,12 +1,4 @@
-@import "./colors";
 @import "./variables";
-@import "./media-mixin";
-@import "./html-format";
 @import "./fonts-styles";
-@import "./text";
-@import "./button";
-@import "./select";
-@import "./textarea";
-@import "./input";
-@import "./radio";
-@import "./checkbox";
+@import "./mixins";
+@import "./html-format";

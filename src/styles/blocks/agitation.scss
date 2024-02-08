@@ -5,16 +5,12 @@
     gap: 30px;
     
     @include _769 {
+        margin-top: 5px;
+
         flex-direction: column;
     }
-    
-    &_margin {
-        @include _769 {
-            margin-top: 5px;
-        }
-    }
 
-    &__image {
+    img {
         width: 370px;
         height: 370px;
 
@@ -29,6 +25,9 @@
     }
 
     &__content {
+        margin-bottom: 5px;
+        margin-right: 2px;
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -37,25 +36,33 @@
         @include _769 {
             align-items: center;
         }
+    }
 
-        &_margin {
-            margin-bottom: 5px;
-            margin-right: 2px;
+    &__title {
+        @include h3-font;
+
+        @include _769 {
+            text-align: center;
+
+            @include mobile-h3-font;
         }
     }
 
-    &__link {
-        text-decoration: underline;
-        text-decoration-color: transparent;
+    &__text {
+        color: $grey300;
 
-        transition: text-decoration-color 150ms ease-in-out;
-    }
+        @include p-normal-font;
 
-    &__link:hover {
-        text-decoration-color: inherit;
-    }
+        @include _769 {
+            text-align: center;
 
-    &__link:active {
-        color: $green400;
+            @include mobile-p-normal-font;
+        }
+
+        a {
+            color: $black;
+
+            @include _link-underline (1px, 1px, $green400);
+        }
     }
 }

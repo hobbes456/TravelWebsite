@@ -1,24 +1,22 @@
 .footer {    
+    margin-top: -2px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: $header-and-footer-height;
-    
-    &_bg-color_beinge_200 {
-        background-color: $beige200;
-    }
 
+    background-color: $beige200;
+
+    @include p-normal-font;
+        
     @include _769 {
-        padding: 21px;      
-    }
-    
-    &_margin {
-        margin-top: -2px;
+        margin-top: 0;
+            
+        padding: 21px;     
 
-        @include _769 {
-            margin-top: 0;  
-        }
+        @include mobile-p-normal-font;
     }
     
     &__information {
@@ -33,6 +31,10 @@
             flex-direction: column;
             gap: 7px;
         }
+    }
+
+    &__text {
+        color: $grey300;
     }
     
     &__links {
@@ -50,22 +52,10 @@
         align-items: center;
         gap: 10px;
 
-        text-decoration: underline;
-        text-underline-offset: 6px;
-        text-decoration-color: transparent;
-        
-        transition: text-decoration-color 150ms ease-in-out;
+        @include _link-underline (6px, 1px, $green400);
 
         @include _769 {
             gap: 5px;
         }
-    }
-
-    &__link:hover {
-        text-decoration-color: inherit;
-    }
-
-    &__link:active {
-        color: $green400;
     }
 }

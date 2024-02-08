@@ -5,11 +5,29 @@
     align-items: center;
     gap: 30px;
 
+    text-align: center;
+
     @include _769 {
         gap: 18px;
     }
 
+    &__title {
+        @include h2-font;
+
+        @include _769 {
+            @include mobile-h1-font;
+        }
+    }
+
     &__subtitle {
         width: 418px;
+
+        color: $grey300;
+
+        @include p-normal-font;
+
+        @include _769 {
+            @include mobile-p-normal-font;
+        }
     }
 }

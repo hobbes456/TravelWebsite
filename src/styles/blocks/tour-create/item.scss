@@ -6,9 +6,17 @@
     align-items: flex-start;
     gap: 8px;
 
+    @include p-normal-font;
+
+    @include _769 {
+        @include mobile-p-normal-font;
+    }
+
     &__field {
         width: 100%;
         padding: 20px;
+
+        background-color: $beige100;
 
         border: 1px solid $beige200;
         border-radius: 10px;
@@ -18,26 +26,37 @@
         @include _769 {
             padding: 10px;
         }
+
+        &:hover {
+            background-color: $beige200;
+        }
     }
     
-    &__field_bg-color_beinge100 {
-        background-color: $beige100;
-    }
-    
-    &__field:hover {
-        background-color: $beige200;
+
+    & > input[type="date"],
+    & > select {
+        color: $grey300;
     }
 
-    &__arrow_absolute {
+    & > textarea {
+        resize: none;
+
+        @include _769 {
+            height: 130px;
+        }
+    }
+
+    &__arrow {
         position: absolute;
+        top: 70%;
+        transform: translateY(-50%);
         right: 22px;
-        bottom: 20px;
 
         pointer-events: none;
 
         @include _769 {
             right: 10px;
-            bottom: 8px;
+            bottom: -3px;
         }
     }
 }

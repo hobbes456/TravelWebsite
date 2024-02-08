@@ -6,27 +6,9 @@
     gap: 135px;
     width: 100vw;
     
+    background-color: $beige100;
+    
     @include _769 {
         gap: 75px;
-    }
-
-    &_bg-color_beinge100 {
-        background-color: $beige100;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 100px;
-        width: 100%;
-        max-width: 1270px;
-        padding: 0 50px;
-
-        @include _769 {
-            padding: 0 21px;
-            gap: 50px;
-        }
     }
 }

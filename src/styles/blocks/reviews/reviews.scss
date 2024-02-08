@@ -1,8 +1,8 @@
 .reviews {
-    &_margin {
-        @include _769 {
-            margin-top: 22px;
-        }
+    @include _content;
+
+    @include _769 {
+        margin-top: 22px;
     }
 
     &__content {

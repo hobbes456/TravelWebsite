@@ -15,10 +15,14 @@
     }
 
     &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+
         width: inherit;
         height: inherit;
 
-        & > img {
+        img {
             z-index: 0;
 
             width: 100%;
@@ -28,25 +32,19 @@
 
             object-fit: cover;
         }
-    }
 
-    &__image_position {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    &__image::before {
-        position: absolute;
-        
-        width: inherit;
-        height: inherit;
-        
-        background: 
-            linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 40%),
-            linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
-
-        content: "";
+        &::before {
+            position: absolute;
+            
+            width: inherit;
+            height: inherit;
+            
+            background: 
+                linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 40%),
+                linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    
+            content: "";
+        }
     }
 
     &__bottom {
@@ -66,18 +64,30 @@
     &__title {
         width: 768px;
 
+        color: $white;
+        text-align: center;
+
+        @include h1-font;
+
         @include _1124 {
             width: 914px;
         }
-
+        
         @include _769 {
             width: 100%;
             padding: 0 20px;
+
+            @include mobile-h1-font;
         }
     }
 
     &__subtitle {
         width: 562px;
+
+        color: $white;
+        text-align: center;
+
+        @include p-normal-font;
 
         @include _1124 {
             width: 422px;
@@ -86,23 +96,27 @@
         @include _769 {
             width: 310px;
             padding: 0 20px;
+
+            @include mobile-p-normal-font;
         }
     }
 
     &__button {
-        transition: 
-            color 150ms ease-in-out,
-            background-color 150ms ease-in-out;
-    }
+        padding: 5px 20px;
 
-    &__button:hover {
-        color: $white;
-        background-color: $orange200;
-    }
+        text-align: center;
 
-    &__button:active {
-        color: $black;
-        background-color: $orange100;
+        border-radius: 10px;
+
+        background-color: $white;
+
+        @include p-small-font;
+
+        @include _769 {
+            @include mobile-p-small-font;
+        }
+
+        @include _hover-c-bg ($white, $orange200, $black, $orange100, 150ms);
     }
 }
 

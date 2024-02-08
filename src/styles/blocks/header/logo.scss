@@ -4,9 +4,9 @@
             width: 133px;
             height: 25px;
         }
-    }
 
-    &__img:active {
-        opacity: 50%;
+        &:active {
+            opacity: 50%;
+        }
     }
 }

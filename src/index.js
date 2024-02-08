@@ -12,9 +12,9 @@ const resetBtn = document.getElementById("reset-btn");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 450) {
-        fixedHeader.classList.add("top-header_shown");
+        fixedHeader.classList.add("top-header_show");
     } else {
-        fixedHeader.classList.remove("top-header_shown");
+        fixedHeader.classList.remove("top-header_show");
     }
 });
 
@@ -28,21 +28,21 @@ menuNavigation.addEventListener("click", (e) => {
 });
 
 select.addEventListener("change", () => {
-    select.classList.remove("text_grey_300");
+    select.style.color = "black";
 })
 
 dateTo.addEventListener("change", () => {
-    dateTo.classList.remove("text_grey_300");
+    dateTo.style.color = "black";
 })
 
 dateFrom.addEventListener("change", () => {
-    dateFrom.classList.remove("text_grey_300");
+    dateFrom.style.color = "black";
 })
 
 resetBtn.addEventListener("click", () => {
-    select.classList.add("text_grey_300");
-    dateTo.classList.add("text_grey_300");
-    dateFrom.classList.add("text_grey_300");
+    select.style.color = "#A6A6A6";
+    dateTo.style.color = "#A6A6A6";
+    dateFrom.style.color = "#A6A6A6";
 });
 
 const maskOptions = {

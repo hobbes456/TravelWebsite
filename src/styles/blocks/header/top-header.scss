@@ -1,4 +1,6 @@
 .top-header {
+    $root: &;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,28 +12,31 @@
         position: fixed;
         top: 0;
         left: 0;
-    }
-
-    &_hidden {
         z-index: -1;
-
+        
         opacity: 0;
 
-        transition: 
-            opacity 300ms ease-in-out,
-            z-index 300ms ease-in-out;
-    }
-
-    &_shown {
-        z-index: 2;
-
-        opacity: 1;
-    }
-
-    &_bg-color_blur {
         -webkit-backdrop-filter: blur(6px);
         backdrop-filter: blur(6px);
         background-color: rgba(255, 255, 255, 0.75);
+        
+        transition: 
+            opacity 300ms ease-in-out,
+            z-index 300ms ease-in-out;
+
+        #{$root}__link {
+            color: $black;
+        }
+
+        #{$root}__phone {
+            color: $black;
+        }
+    }
+
+    &_show {
+        z-index: 2;
+
+        opacity: 1;
     }
 
     &__body {
@@ -63,23 +68,28 @@
     }
 
     &__link {
-        text-decoration: underline;
-        text-decoration-color: transparent;
-        text-decoration-thickness: 1px;
-        text-underline-offset: 6px;
-        
-        transition: text-decoration-color 150ms ease-in-out;
-    }
-    
-    &__link:hover {
-        text-decoration-color: inherit;
+        color: $white;
+
+        @include p-normal-font;
+
+        @include _link-underline (6px, 1px, $orange200);
+
+        @include _769 {
+            @include mobile-p-normal-font;
+        }
     }
 
-    &__link:active {
-        color: $orange200;
-    }
+    &__phone {
+        color: $white;
 
-    &__phone:active {
-        opacity: 50%;
+        @include p-normal-font;
+
+        @include _769 {
+            @include mobile-p-normal-font;
+        }
+
+        &:active {
+            opacity: 50%;
+        }
     }
 }
