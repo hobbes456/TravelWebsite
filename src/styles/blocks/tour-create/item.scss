@@ -21,7 +21,7 @@
         border: 1px solid $beige200;
         border-radius: 10px;
 
-        transition: background-color 300ms ease;
+        transition: background-color 300ms ease-in-out;
 
         @include _769 {
             padding: 10px;

@@ -25,7 +25,7 @@
         max-width: inherit;
         height: inherit;
 
-        transition: transform 300ms ease;
+        transition: transform 300ms ease-in-out;
         
         @include _1124 {
             max-width: none;
