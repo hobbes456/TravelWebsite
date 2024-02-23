@@ -4,7 +4,7 @@
     align-items: center;
     gap: 30px;
     
-    @include _769 {
+    @include _770 {
         margin-top: 5px;
 
         flex-direction: column;
@@ -16,7 +16,7 @@
 
         border-radius: 50px;
 
-        @include _769 {
+        @include _770 {
             width: 130px;
             height: 130px;
 
@@ -33,7 +33,7 @@
         justify-content: center;
         gap: 20px;
 
-        @include _769 {
+        @include _770 {
             align-items: center;
         }
     }
@@ -41,7 +41,7 @@
     &__title {
         @include h3-font;
 
-        @include _769 {
+        @include _770 {
             text-align: center;
 
             @include mobile-h3-font;
@@ -53,7 +53,7 @@
 
         @include p-normal-font;
 
-        @include _769 {
+        @include _770 {
             text-align: center;
 
             @include mobile-p-normal-font;

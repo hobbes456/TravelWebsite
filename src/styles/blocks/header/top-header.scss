@@ -45,9 +45,9 @@
         align-items: center;
         width: 100%;
         max-width: 1282px;
-        padding: 0 57px;
+        padding: 0 57px; 
 
-        @include _769 {
+        @include _770 {
             padding: 20px;
         }
     }
@@ -56,13 +56,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 50px;
-
-        @include _1124 {
-            gap: 30px;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        
+        @include _1024 {
+            column-gap: 30px;
+            row-gap: 8px;
+            padding: 0 15px;
         }
 
-        @media screen and (max-width: 900px) {
+        @include _770 {
             display: none;
         }
     }
@@ -74,17 +77,17 @@
 
         @include _link-underline (6px, 1px, $orange200);
 
-        @include _769 {
+        @include _770 {
             @include mobile-p-normal-font;
         }
     }
 
     &__phone {
-        color: $white;
+        color: $white; 
 
         @include p-normal-font;
 
-        @include _769 {
+        @include _770 {
             @include mobile-p-normal-font;
         }
 

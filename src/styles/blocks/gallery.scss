@@ -5,13 +5,13 @@
     max-width: 1920px;
     padding: 0 30px;
 
-    @include _1124 {
+    @include _1024 {
         margin-top: -5px;
 
         padding: 0 20px;
     }
     
-    @include _769 {
+    @include _770 {
         margin-top: 2px;
     }
 
@@ -25,7 +25,7 @@
             "J J J J J K K K K K N N N N N M M M M M";
         gap: 30px;
 
-        @include _1124 {     
+        @include _1024 {     
             grid-template-areas: 
                 "A A A A C C C C D D D D"
                 "E E E F F F H H H I I I"
@@ -33,7 +33,7 @@
             gap: 30px 20px;
         }
 
-        @include _750 {     
+        @include _770 {     
             grid-template-areas: 
                 "A A A D D D"
                 "E E H H I I"
@@ -51,13 +51,11 @@
 
         background-color: $lightgrey;
         border-radius: 50px;
-
-        @include _769 {
-            border-radius: 20px;
-        }
-
-        @include _500 {
+        
+        @include _770 {
             height: 110px;
+
+            border-radius: 20px;
         }
 
         img {
@@ -72,18 +70,12 @@
 
         &:nth-child(1) {
             grid-area: A;
-
-            @include _750 {
-                & img {
-                    padding-right: 5px;
-                }
-            }
         }
 
         &:nth-child(2) {
             grid-area: B;
 
-            @include _1124 {
+            @include _1024 {
                 display: none;
             }
         }
@@ -91,19 +83,13 @@
         &:nth-child(3) {
             grid-area: C;
 
-            @include _750 {
+            @include _770 {
                 display: none;
             }
         }
 
         &:nth-child(4) {
             grid-area: D;
-
-            @include _750 {
-                img {
-                    padding-left: 5px;
-                }
-            }
         }
 
         &:nth-child(5) {
@@ -113,7 +99,7 @@
         &:nth-child(6) {
             grid-area: F;
 
-            @include _750 {
+            @include _770 {
                 display: none;
             }
         }
@@ -121,7 +107,7 @@
         &:nth-child(7) {
             grid-area: G;
 
-            @include _1124 {
+            @include _1024 {
                 display: none;
             }
         }
@@ -145,7 +131,7 @@
         &:nth-child(12) {
             grid-area: N;
 
-            @include _750 {
+            @include _770 {
                 display: none;
             }
         }
@@ -157,7 +143,7 @@
                 object-position: 50% 92%;
             }
 
-            @include _1124 {
+            @include _1024 {
                 display: none;
             }
         }

@@ -1,7 +1,7 @@
 .reviews {
     @include _content;
 
-    @include _769 {
+    @include _770 {
         margin-top: 22px;
     }
 
@@ -10,11 +10,11 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
 
-        @include _1124 {
+        @include _1024 {
             gap: 18px;
         }
 
-        @include _769 {
+        @include _770 {
             display: flex;
             flex-direction: column;
             justify-content: center;

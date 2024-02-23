@@ -8,7 +8,7 @@
 
     @include p-normal-font;
 
-    @include _769 {
+    @include _770 {
         @include mobile-p-normal-font;
     }
 
@@ -23,7 +23,7 @@
 
         transition: background-color 300ms ease-in-out;
 
-        @include _769 {
+        @include _770 {
             padding: 10px;
         }
 
@@ -41,7 +41,7 @@
     & > textarea {
         resize: none;
 
-        @include _769 {
+        @include _770 {
             height: 130px;
         }
     }
@@ -54,7 +54,7 @@
 
         pointer-events: none;
 
-        @include _769 {
+        @include _770 {
             right: 10px;
             bottom: -3px;
         }

@@ -8,7 +8,7 @@
         align-items: center;
         gap: 35px;
 
-        @include _769 {
+        @include _770 {
             gap: 30px;
         }
     }
@@ -18,7 +18,7 @@
 
         @include h2-font;
 
-        @include _769 {
+        @include _770 {
             @include mobile-h1-font;
         }
     }
@@ -27,7 +27,7 @@
         display: flex;
         gap: 30px;
 
-        @include _769 {
+        @include _770 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,7 +42,7 @@
         
         @include _link-underline (10px, 2px, inherit);     
 
-        @include _769 {
+        @include _770 {
             text-underline-offset: 4px;
 
             @include mobile-p-big-font;
@@ -66,13 +66,13 @@
         gap: 30px;
         width: 100%;
 
-        @include _1124 {
+        @include _1024 {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
             gap: 18px;
         }
 
-        @include _500 {
+        @include _770 {
             margin-top: 0;
 
             grid-template-columns: repeat(1, 1fr);
@@ -86,16 +86,13 @@
         height: 531px;
         padding: 50px;
         
-        @include _1124 {
+        @include _1024 {
             max-width: none;
         }
 
-        @include _769 {
+        @include _770 {
             height: 318px;
             padding: 25px;
         }
     }
 }
-
-@import "./card";
-@import "./button-with-arrow";

@@ -9,7 +9,7 @@
     width: 100%;
     height: 831px;
 
-    @include _769 {
+    @include _770 {
         row-gap: 52px;
         height: 488px;
     }
@@ -56,24 +56,21 @@
         align-items: center;
         gap: 50px;
 
-        @include _769 {
+        @include _770 {
             gap: 40px;
         }
     }
 
     &__title {
-        width: 768px;
-
+        width: 100%;
+        max-width: 768px;
+        
         color: $white;
         text-align: center;
-
-        @include h1-font;
-
-        @include _1124 {
-            width: 914px;
-        }
         
-        @include _769 {
+        @include h1-font;
+        
+        @include _770 {
             width: 100%;
             padding: 0 20px;
 
@@ -89,11 +86,11 @@
 
         @include p-normal-font;
 
-        @include _1124 {
+        @include _1024 {
             width: 422px;
         }
 
-        @include _769 {
+        @include _770 {
             width: 310px;
             padding: 0 20px;
 
@@ -112,7 +109,7 @@
 
         @include p-small-font;
 
-        @include _769 {
+        @include _770 {
             @include mobile-p-small-font;
         }
 
@@ -120,5 +117,4 @@
     }
 }
 
-@import "./top-header";
-@import "./logo";
+@import "./top-header.scss";

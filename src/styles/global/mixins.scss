@@ -1,29 +1,11 @@
-@mixin _1124 {
-    @media screen and (max-width: $viewport1124) {
+@mixin _1024 {
+    @media screen and (max-width: $viewport1024) {
         @content;
     }
 }
 
-@mixin _900 {
-    @media screen and (max-width: $viewport900) {
-        @content;
-    }
-}
-
-@mixin _769 {
-    @media screen and (max-width: $viewport769) {
-        @content;
-    }
-}
-
-@mixin _750 {
-    @media screen and (max-width: $viewport750) {
-        @content;
-    }
-}
-
-@mixin _500 {
-    @media screen and (max-width: $viewport500) {
+@mixin _770 {
+    @media screen and (max-width: $viewport770) {
         @content;
     }
 }
@@ -52,7 +34,7 @@
     font-size: 59px;
     font-weight: 700;
     line-height: 124%;
-    letter-spacing: -0.9px;
+    letter-spacing: -1px;
 }
 
 @mixin h3-font {
@@ -67,7 +49,6 @@
     font-size: 23px;
     font-weight: 700;
     line-height: 122%;
-    letter-spacing: -0.3px;
 }
 
 @mixin p-normal-font {
@@ -82,7 +63,7 @@
     font-size: 17px;
     font-weight: 400;
     line-height: 142%;
-    letter-spacing: -0.17px;
+    letter-spacing: -0.2px;
 }
 
 @mixin mobile-h1-font {
@@ -98,7 +79,7 @@
     font-size: 23px;
     font-weight: 700;
     line-height: 120%;
-    letter-spacing: 0.35px;
+    letter-spacing: 0.4px;
 }
 
 @mixin mobile-p-big-font {
@@ -132,7 +113,7 @@
     max-width: 1270px;
     padding: 0 50px;
 
-    @include _769 {
+    @include _770 {
         padding: 0 21px;
         gap: 50px;
     }
